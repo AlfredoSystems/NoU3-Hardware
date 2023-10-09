@@ -8353,7 +8353,7 @@
   (gr_text "M1+" (at -22 -9.021429 -90) (layer "B.SilkS") (tstamp 28348efd-08df-49c6-8b79-9d9bfea37ae1)
     (effects (font (size 1 1) (thickness 0.3)) (justify mirror))
   )
-  (gr_text "© 2022 Alfredo Systems\n" (at -9.8 13.1 180) (layer "B.SilkS") (tstamp 2860bd5c-126b-460c-af78-9e91c032c0b4)
+  (gr_text "© 2023 Alfredo Systems\n" (at -9.8 13.1 180) (layer "B.SilkS") (tstamp 2860bd5c-126b-460c-af78-9e91c032c0b4)
     (effects (font (size 0.8 0.8) (thickness 0.2)) (justify mirror))
   )
   (gr_text "M7-" (at 22 2 90) (layer "B.SilkS") (tstamp 2c0597f1-58f9-4956-bdd1-c073cd9c87fd)
