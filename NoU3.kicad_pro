@@ -459,8 +459,8 @@
       "idf": "",
       "netlist": "NoU V2.8.net",
       "specctra_dsn": "",
-      "step": "",
-      "vrml": ""
+      "step": "NoU3.step",
+      "vrml": "NoU3.wrl"
     },
     "page_layout_descr_file": ""
   },

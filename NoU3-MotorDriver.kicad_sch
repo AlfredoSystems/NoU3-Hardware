@@ -384,6 +384,8 @@
     (uuid f1d9f9b7-a473-4b00-b861-4126d9e416e2)
   )
 
+  (no_connect (at 171.45 91.44) (uuid 376c4eac-17af-4411-90c0-7e5c9bcac213))
+
   (wire (pts (xy 158.75 111.76) (xy 156.21 111.76))
     (stroke (width 0) (type default))
     (uuid 04b42c2a-79aa-4ccc-aac5-43d6184120a9)
@@ -532,10 +534,6 @@
   (hierarchical_label "Bout2" (shape input) (at 190.5 88.9 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 63f163a1-31af-41d8-8c89-c8ea5ada2e0f)
-  )
-  (hierarchical_label "nSleep" (shape input) (at 140.97 73.66 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid b3f685d3-55b8-4a0f-851f-27b89cf215d0)
   )
   (hierarchical_label "AIN2" (shape input) (at 138.43 99.06 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
