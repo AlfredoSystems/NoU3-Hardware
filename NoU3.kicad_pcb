@@ -3141,6 +3141,17 @@
 			(pintype "passive")
 			(uuid "2020948b-bbbd-4cad-bdf5-6215fe14dde6")
 		)
+		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_B3U-1000P.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -4803,7 +4814,7 @@
 			(roundrect_rratio 0.208333)
 			(uuid "6e9aa077-e6b3-44fa-b47b-3e513223fc48")
 		)
-		(model "${KIPRJMOD}/BM06B-SRSS-TB.STEP"
+		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/BM06B-SRSS-TB.STEP"
 			(offset
 				(xyz 0 1.1 0)
 			)
@@ -5283,7 +5294,7 @@
 		(descr "JST SH series connector, BM06B-SRSS-TB (http://www.jst-mfg.com/product/pdf/eng/eSH.pdf), generated with kicad-footprint-generator")
 		(tags "connector JST SH side entry")
 		(property "Reference" "J13"
-			(at 0 -3.3 -90)
+			(at 0 -3.3 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "f4859a47-158a-4137-a788-bf78f671279c")
@@ -5295,7 +5306,7 @@
 			)
 		)
 		(property "Value" "JST SR/SZ"
-			(at 0 3.3 -90)
+			(at 0 3.3 90)
 			(layer "F.Fab")
 			(uuid "b67335fa-89d7-4c20-99ea-1032091b39bd")
 			(effects
@@ -5342,7 +5353,7 @@
 			)
 		)
 		(property "LCSC" "C160392"
-			(at 0 0 0)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5895ba1c-2e0b-4a51-b657-809a3e39a15d")
@@ -5759,7 +5770,7 @@
 			(uuid "3ff8642f-b2f1-4743-ac9f-2823a3f10dcc")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.25 -90)
+			(at 0 -0.25 90)
 			(layer "F.Fab")
 			(uuid "d748b584-53d7-4971-a844-8fc10a5575f8")
 			(effects
@@ -5843,7 +5854,7 @@
 			(roundrect_rratio 0.208333)
 			(uuid "952786e2-5e03-44cb-909b-091f009e3cf1")
 		)
-		(model "${KIPRJMOD}/BM06B-SRSS-TB.STEP"
+		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/BM06B-SRSS-TB.STEP"
 			(offset
 				(xyz 0 1.1 0)
 			)
@@ -7837,7 +7848,7 @@
 			(pintype "passive")
 			(uuid "41089074-2e89-4c7a-9b91-714c6d459f1b")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_2016-4Pin_2.0x1.6mm.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_2520-4Pin_2.5x2.0mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8082,7 +8093,7 @@
 		(descr "simple 4-pin terminal block, pitch 5.08mm, revamped version of bornier4")
 		(tags "terminal block bornier4")
 		(property "Reference" "J11"
-			(at -0.08 -7.62 -90)
+			(at -0.08 -7.62 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "315efbc4-3797-4570-b4fc-a452804d8a32")
@@ -8094,7 +8105,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at -0.08 5.08 -90)
+			(at -0.08 5.08 90)
 			(layer "F.Fab")
 			(uuid "1dc7e846-4a99-4e95-943c-102aa47f9119")
 			(effects
@@ -8141,7 +8152,7 @@
 			)
 		)
 		(property "LCSC" "C557646"
-			(at 0 0 0)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e3ec6bbc-8275-4dfc-9c80-288e4c7c3e08")
@@ -8220,7 +8231,7 @@
 			(pintype "passive")
 			(uuid "ab3a8f9b-1a6a-478b-a91a-a5c8802f88d7")
 		)
-		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/terminal block GDO.step"
+		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/terminal block GDO green.step"
 			(offset
 				(xyz -5 -4 0)
 			)
@@ -8872,7 +8883,7 @@
 			(roundrect_rratio 0.208333)
 			(uuid "b67b2351-f5aa-45e3-9269-f7a084641a21")
 		)
-		(model "${KIPRJMOD}/BM06B-SRSS-TB.STEP"
+		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/BM06B-SRSS-TB.STEP"
 			(offset
 				(xyz 0 1.1 0)
 			)
@@ -9030,7 +9041,7 @@
 			(pintype "passive")
 			(uuid "9383694e-2beb-490e-aea4-c5765e06a2a6")
 		)
-		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/terminal block GDO.step"
+		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/terminal block GDO green.step"
 			(offset
 				(xyz -5 -4 0)
 			)
@@ -13661,7 +13672,7 @@
 			(roundrect_rratio 0.208333)
 			(uuid "2ff8be94-721d-4314-81ba-e6b0827f1cd0")
 		)
-		(model "${KIPRJMOD}/BM06B-SRSS-TB.STEP"
+		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/BM06B-SRSS-TB.STEP"
 			(offset
 				(xyz 0 1.1 0)
 			)
@@ -15444,7 +15455,7 @@
 		(descr "simple 4-pin terminal block, pitch 5.08mm, revamped version of bornier4")
 		(tags "terminal block bornier4")
 		(property "Reference" "J2"
-			(at -0.08 -7.62 -90)
+			(at -0.08 -7.62 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "331ae7f1-9a08-41dc-b47c-729aab94b5ac")
@@ -15456,7 +15467,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at -0.08 5.08 -90)
+			(at -0.08 5.08 90)
 			(layer "F.Fab")
 			(uuid "e917c4d5-99e3-492d-a251-34a7c8e310b5")
 			(effects
@@ -15503,7 +15514,7 @@
 			)
 		)
 		(property "LCSC" "C557646"
-			(at 0 0 0)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bb82a716-ec81-4781-a57e-2daebed3580f")
@@ -15582,7 +15593,7 @@
 			(pintype "passive")
 			(uuid "8004c6b5-2fa6-4f32-bac0-dd577fa8fe71")
 		)
-		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/terminal block GDO.step"
+		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/terminal block GDO green.step"
 			(offset
 				(xyz -5 -4 0)
 			)
@@ -16053,7 +16064,7 @@
 		(descr "simple 4-pin terminal block, pitch 5.08mm, revamped version of bornier4")
 		(tags "terminal block bornier4")
 		(property "Reference" "J12"
-			(at -0.08 -7.62 -90)
+			(at -0.08 -7.62 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "743b91be-ef90-4b99-9d51-fa0054379c18")
@@ -16065,7 +16076,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at -0.08 5.08 -90)
+			(at -0.08 5.08 90)
 			(layer "F.Fab")
 			(uuid "9ed5ee1b-0737-46f3-9f7f-10864635308d")
 			(effects
@@ -16112,7 +16123,7 @@
 			)
 		)
 		(property "LCSC" "C557646"
-			(at 0 0 0)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bc09c6df-2c16-4ebf-91ca-ddbe79170870")
@@ -16191,7 +16202,7 @@
 			(pintype "passive")
 			(uuid "dd403525-5fdf-41d7-ae96-21953385d12c")
 		)
-		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/terminal block GDO.step"
+		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/terminal block GDO green.step"
 			(offset
 				(xyz -5 -4 0)
 			)
@@ -16435,7 +16446,7 @@
 		(descr "JST SH series connector, BM06B-SRSS-TB (http://www.jst-mfg.com/product/pdf/eng/eSH.pdf), generated with kicad-footprint-generator")
 		(tags "connector JST SH side entry")
 		(property "Reference" "J4"
-			(at 0 -3.3 -90)
+			(at 0 -3.3 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "798da1cd-171d-4cf0-a252-ad058461f1e3")
@@ -16447,7 +16458,7 @@
 			)
 		)
 		(property "Value" "JST SR/SZ"
-			(at 0 3.3 -90)
+			(at 0 3.3 90)
 			(layer "F.Fab")
 			(uuid "edcaacad-1c1b-44e0-a745-73e66c1561c2")
 			(effects
@@ -16494,7 +16505,7 @@
 			)
 		)
 		(property "LCSC" "C160392"
-			(at 0 0 0)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9014dc0d-6fb2-43b6-b2b5-37b4b9670796")
@@ -16911,7 +16922,7 @@
 			(uuid "33c013d4-ae74-467f-9d72-8de828165a9e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.25 -90)
+			(at 0 -0.25 90)
 			(layer "F.Fab")
 			(uuid "e1b716d1-784c-46ef-94dc-f55830b25b12")
 			(effects
@@ -16995,7 +17006,7 @@
 			(roundrect_rratio 0.208333)
 			(uuid "33ff388d-8906-4450-97c3-395f71ede9c8")
 		)
-		(model "${KIPRJMOD}/BM06B-SRSS-TB.STEP"
+		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/BM06B-SRSS-TB.STEP"
 			(offset
 				(xyz 0 1.1 0)
 			)
@@ -17240,7 +17251,7 @@
 		(descr "simple 4-pin terminal block, pitch 5.08mm, revamped version of bornier4")
 		(tags "terminal block bornier4")
 		(property "Reference" "J3"
-			(at -0.08 -7.62 -90)
+			(at -0.08 -7.62 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "3cb272f5-a700-4ebb-80c4-452db10ab6be")
@@ -17252,7 +17263,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at -0.08 5.08 -90)
+			(at -0.08 5.08 90)
 			(layer "F.Fab")
 			(uuid "b4c92a9b-1028-4699-8a03-9fbacb2c86cf")
 			(effects
@@ -17299,7 +17310,7 @@
 			)
 		)
 		(property "LCSC" "C557646"
-			(at 0 0 0)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "dbb02317-fe3d-44a9-b601-ac3c7338600d")
@@ -17378,7 +17389,7 @@
 			(pintype "passive")
 			(uuid "05cc8063-0139-46ce-8052-b5fde9707ec3")
 		)
-		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/terminal block GDO.step"
+		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/terminal block GDO green.step"
 			(offset
 				(xyz -5 -4 0)
 			)
@@ -17966,6 +17977,17 @@
 			(pinfunction "2")
 			(pintype "passive")
 			(uuid "26d47666-2f47-46f9-9bb0-aad022b566a1")
+		)
+		(model "${KICAD8_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
 		)
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
@@ -20047,7 +20069,7 @@
 			(pintype "passive")
 			(uuid "bd9e47eb-5cdb-461f-9096-a34141ba7cb6")
 		)
-		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/terminal block GDO.step"
+		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/terminal block GDO green.step"
 			(offset
 				(xyz -5 -4 0)
 			)
@@ -20526,15 +20548,15 @@
 			(roundrect_rratio 0.208333)
 			(uuid "9f813931-2fcd-4b51-a427-42662744a9b6")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/Connector_JST.3dshapes/JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical.wrl"
+		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/BM04B-SRSS-TB.STEP"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 1 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 0 0)
 			)
 		)
 	)
@@ -21421,7 +21443,7 @@
 			(pintype "passive")
 			(uuid "c572e6b4-fc05-4736-a8df-2b423066f59e")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm_Blue.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21667,7 +21689,7 @@
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "b6d90311-787f-47c1-84b2-ce9e4c01d3eb")
+			(uuid "ad4b85b7-aab4-48cb-a162-82834f937d60")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -21680,7 +21702,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4c7d241f-6231-40bf-adca-cae2bccfae6a")
+			(uuid "fef503ce-3873-4a39-9e0e-1995d8a3d2d3")
 			(effects
 				(font
 					(size 1 1)
@@ -21693,7 +21715,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "add6af0c-0763-4545-91d7-89adfe8b9294")
+			(uuid "e06d6cde-6a4c-433a-9a9d-b1125521cfd2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21705,7 +21727,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3d4c41e0-b303-4aa2-9441-fbf6523e9948")
+			(uuid "35a4cad0-8fc5-4930-980d-813b0667685e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21717,7 +21739,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6429b63d-daaa-44f1-b97a-5559019c56ab")
+			(uuid "c74fe750-6b3e-4b0e-878a-7fab4047c210")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21749,7 +21771,7 @@
 			)
 			(fill none)
 			(layer "F.SilkS")
-			(uuid "d3856053-f1c7-424e-a3d7-a3e2a8d1be17")
+			(uuid "1bfef883-0360-41fb-9f25-8b9a8e7f5609")
 		)
 		(fp_rect
 			(start -2.5 -1.25)
@@ -21760,14 +21782,14 @@
 			)
 			(fill none)
 			(layer "F.SilkS")
-			(uuid "9bb6c528-6a08-4263-9809-5d88822f6599")
+			(uuid "504b9e0b-fa76-4f40-9d1c-649e6a061669")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -4.25 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e70228dc-6df9-468b-9f52-7db1d2321c11")
+			(uuid "4cad1413-67e3-40dd-80a7-59213ed6a7a0")
 			(effects
 				(font
 					(size 1 1)
@@ -21784,7 +21806,7 @@
 			(net 91 "unconnected-(U8-Pad1)")
 			(pinfunction "1")
 			(pintype "input")
-			(uuid "fdcbbbc6-7bcd-42e3-b5e8-24720509766d")
+			(uuid "118d1470-9af2-4389-9946-f2438698f641")
 		)
 		(pad "2" thru_hole circle
 			(at 0 -2.25 90)
@@ -21795,7 +21817,7 @@
 			(net 126 "Net-(Q1-D)")
 			(pinfunction "2")
 			(pintype "input")
-			(uuid "9e666321-79a7-47e4-9ea8-20f2df93a263")
+			(uuid "5cea5ed3-bfec-414c-ba48-5a1b7d1f32e8")
 		)
 		(pad "3" thru_hole circle
 			(at 2 -2.25 90)
@@ -21806,7 +21828,7 @@
 			(net 95 "Net-(J15-Pad1)")
 			(pinfunction "3")
 			(pintype "input")
-			(uuid "f5e52582-76ea-4810-bddc-7c973936f7a2")
+			(uuid "f4dc3894-8b40-4c40-98e0-998ba1ee9240")
 		)
 		(pad "4" thru_hole circle
 			(at -2 2.25 90)
@@ -21817,7 +21839,7 @@
 			(net 56 "unconnected-(U8-Pad4)")
 			(pinfunction "4")
 			(pintype "input")
-			(uuid "a021e7d5-d504-4fe5-9afd-c31adaef241b")
+			(uuid "1351417d-8d3f-43bd-b2bc-fc9d4e93fd68")
 		)
 		(pad "5" thru_hole circle
 			(at 0 2.25 90)
@@ -21828,7 +21850,7 @@
 			(net 57 "unconnected-(U8-Pad5)")
 			(pinfunction "5")
 			(pintype "input")
-			(uuid "b05b88eb-b5e8-460c-82f2-1dc9fe47583f")
+			(uuid "9baf6cab-5d28-462a-9300-c1cd9367b4a7")
 		)
 		(pad "6" thru_hole circle
 			(at 2 2.25 90)
@@ -21839,7 +21861,18 @@
 			(net 58 "unconnected-(U8-Pad6)")
 			(pinfunction "6")
 			(pintype "input")
-			(uuid "75f34080-b379-4e0f-ab70-1a5965783117")
+			(uuid "4467e9d2-4e8b-4c53-b472-b228d171c3e7")
+		)
+		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/XKB5858-Z-75.STEP"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 90)
+			)
 		)
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
@@ -23114,7 +23147,7 @@
 			(pintype "passive")
 			(uuid "f3f3cbc1-8995-4734-8000-9b692bcfeb2d")
 		)
-		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/terminal block GDO.step"
+		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/terminal block GDO green.step"
 			(offset
 				(xyz -5 -4 0)
 			)
@@ -23537,7 +23570,7 @@
 			(pintype "passive")
 			(uuid "d856097b-ff52-4757-afde-1ffbc8af4f89")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm_Green.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23695,7 +23728,7 @@
 			(pintype "passive")
 			(uuid "bf2362c5-7195-4149-b7ea-bf8b1799fe73")
 		)
-		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/terminal block GDO.step"
+		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/terminal block GDO green.step"
 			(offset
 				(xyz -5 -4 0)
 			)
@@ -23833,6 +23866,17 @@
 			(pinfunction "2")
 			(pintype "passive")
 			(uuid "51618c8d-b5e6-4bd9-b27d-00449ac83e8c")
+		)
+		(model "${KICAD8_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_1008_2520Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
 		)
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
@@ -27454,6 +27498,17 @@
 			(pintype "passive")
 			(uuid "aaed0503-dbd2-4f55-8ed4-23fdb5eeb7f9")
 		)
+		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_B3U-1000P.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "PCM_kikit:Tab"
 		(layer "F.Cu")
@@ -28031,7 +28086,7 @@
 		(descr "JST SH series connector, BM06B-SRSS-TB (http://www.jst-mfg.com/product/pdf/eng/eSH.pdf), generated with kicad-footprint-generator")
 		(tags "connector JST SH side entry")
 		(property "Reference" "J7"
-			(at 0 -3.3 -90)
+			(at 0 -3.3 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "93cc2260-4935-4436-a9ef-88d57bcacd09")
@@ -28043,7 +28098,7 @@
 			)
 		)
 		(property "Value" "JST SR/SZ"
-			(at 0 3.3 -90)
+			(at 0 3.3 90)
 			(layer "F.Fab")
 			(uuid "53663581-3df1-4c0b-bb3d-4fde03e3a8ab")
 			(effects
@@ -28090,7 +28145,7 @@
 			)
 		)
 		(property "LCSC" "C160392"
-			(at 0 0 0)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0841a998-9fa9-4d82-8e58-7531d2b12bf2")
@@ -28507,7 +28562,7 @@
 			(uuid "cf1bb01f-35d1-4d25-9a9f-2cbf9a4b05a4")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.25 -90)
+			(at 0 -0.25 90)
 			(layer "F.Fab")
 			(uuid "69192b0d-3d79-48ea-9d1b-080a16b40353")
 			(effects
@@ -28591,7 +28646,7 @@
 			(roundrect_rratio 0.208333)
 			(uuid "791e33b5-cbec-4799-b840-49b5d0c187af")
 		)
-		(model "${KIPRJMOD}/BM06B-SRSS-TB.STEP"
+		(model "C:/Users/Jacob/Documents/KiCAD/8.0/3dmodels/BM06B-SRSS-TB.STEP"
 			(offset
 				(xyz 0 1.1 0)
 			)
