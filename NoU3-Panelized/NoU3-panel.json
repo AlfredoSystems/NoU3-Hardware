@@ -1,0 +1,31 @@
+{
+    "layout": {
+        "hspace": "2mm",
+        "vspace": "2mm",
+        "rows": "2",
+        "cols": "5",
+        "vbonecut": "False",
+        "hbonecut": "False"
+    },
+    "source": {
+        "tolerance": "30mm",
+        "stack": "4layer"
+    },
+    "tabs": {
+        "type": "annotation",
+        "tabfootprints": "PCM_kikit:Tab",
+        "fillet": "1mm"
+    },
+    "cuts": {
+        "type": "mousebites",
+        "drill": "0.5 mm",
+        "spacing": "1 mm",
+        "offset": "0.25mm"
+    },
+    "framing": {
+        "type": "railstb"
+    },
+    "post": {
+        "millradius": "0.99mm"
+    }
+}
