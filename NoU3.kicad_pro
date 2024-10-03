@@ -626,7 +626,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "NoU3-Media/",
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -643,19 +643,23 @@
       "Root"
     ],
     [
-      "9d00c82b-a63d-48c8-a087-ca03e0f7b83a",
+      "023b4df2-74fa-473a-85f9-5c0251fa5595",
+      "MotorSystem"
+    ],
+    [
+      "168e54f9-ad57-43fb-858f-563992cf0dc4",
       "MotorDriver-1"
     ],
     [
-      "1f426c13-9812-4a54-acf9-8bfc20256e33",
+      "effd9ea2-ab6a-45db-ac14-0a90b48b44ef",
       "MotorDriver-2"
     ],
     [
-      "96418c08-a60c-47ec-aa14-bc1c55e3c924",
+      "5ac6842d-21ec-4136-97d4-4945b97c774c",
       "MotorDriver-3"
     ],
     [
-      "3894b403-fba6-471e-ab0a-253efe7a8dae",
+      "75fe67a7-abdc-45df-8399-29a3950a166e",
       "MotorDriver-4"
     ]
   ],
