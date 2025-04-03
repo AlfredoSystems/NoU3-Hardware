@@ -3095,6 +3095,12 @@
 		(uuid "187faf12-7fb2-4ae3-8aff-7d207fc08f08")
 	)
 	(junction
+		(at 166.37 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1bde8210-c9d5-4601-8364-2118c3e028e9")
+	)
+	(junction
 		(at 72.39 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3111,12 +3117,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "397ee707-03e7-4d6e-81db-c8ab32125f71")
-	)
-	(junction
-		(at 166.37 35.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3bd76ef6-b15e-4b44-a52f-bdb9dd13ad3a")
 	)
 	(junction
 		(at 80.01 171.45)
@@ -3147,12 +3147,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6d24e06b-9f76-4d27-87f8-69026e09c304")
-	)
-	(junction
-		(at 215.9 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6e618730-c85c-425a-bd6b-3d2286db53d1")
 	)
 	(junction
 		(at 59.69 116.84)
@@ -3396,16 +3390,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 36.83) (xy 224.79 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0876781f-f13f-4a63-a587-23ea980c27c9")
-	)
-	(wire
-		(pts
 			(xy 189.23 116.84) (xy 198.12 116.84)
 		)
 		(stroke
@@ -3453,16 +3437,6 @@
 			(type default)
 		)
 		(uuid "0e56196a-c865-4a66-b731-fdd3fa7ebe78")
-	)
-	(wire
-		(pts
-			(xy 224.79 35.56) (xy 166.37 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e80c590-664f-4068-a605-f2fc4c52482d")
 	)
 	(wire
 		(pts
@@ -3766,6 +3740,16 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 36.83) (xy 198.12 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "460da929-a05a-43a3-a6c2-6c5d5c07aede")
+	)
+	(wire
+		(pts
 			(xy 128.27 104.14) (xy 120.65 104.14)
 		)
 		(stroke
@@ -4016,6 +4000,16 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 40.64) (xy 166.37 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f0b9657-8278-4de9-a137-ffc95410f62d")
+	)
+	(wire
+		(pts
 			(xy 181.61 71.12) (xy 181.61 96.52)
 		)
 		(stroke
@@ -4073,16 +4067,6 @@
 			(type default)
 		)
 		(uuid "79124481-78c8-4653-aa6f-96bffa0ebc8f")
-	)
-	(wire
-		(pts
-			(xy 166.37 35.56) (xy 166.37 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7bbb27ed-76ce-4745-8501-e779aa4ba920")
 	)
 	(wire
 		(pts
@@ -4303,16 +4287,6 @@
 			(type default)
 		)
 		(uuid "abc152cb-cd91-413c-9373-e8d85cd4197c")
-	)
-	(wire
-		(pts
-			(xy 224.79 36.83) (xy 224.79 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad274785-c93b-4155-81f3-19705690836c")
 	)
 	(wire
 		(pts
@@ -4576,16 +4550,6 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 36.83) (xy 215.9 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8f1d6ac-0d1d-41bd-a690-92cfed75487c")
-	)
-	(wire
-		(pts
 			(xy 48.26 140.97) (xy 59.69 140.97)
 		)
 		(stroke
@@ -4643,6 +4607,16 @@
 			(type default)
 		)
 		(uuid "dd936a7b-a2bc-4be6-b89c-3e4244322088")
+	)
+	(wire
+		(pts
+			(xy 166.37 36.83) (xy 166.37 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2ba70dd-d28a-4500-b317-32b68ee5703c")
 	)
 	(wire
 		(pts
@@ -8370,7 +8344,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 166.37 35.56 90)
+		(at 166.37 40.64 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8378,7 +8352,7 @@
 		(dnp no)
 		(uuid "8ba997fc-adb5-4059-8657-1911beedb9ea")
 		(property "Reference" "TP5"
-			(at 161.29 35.56 90)
+			(at 161.29 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8387,7 +8361,7 @@
 			)
 		)
 		(property "Value" "LED0"
-			(at 161.29 33.02 90)
+			(at 161.29 38.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8396,7 +8370,7 @@
 			)
 		)
 		(property "Footprint" "AlfredoFootprints:PogoPad1"
-			(at 166.37 30.48 0)
+			(at 166.37 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8405,7 +8379,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 166.37 30.48 0)
+			(at 166.37 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8414,7 +8388,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 166.37 35.56 0)
+			(at 166.37 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8423,7 +8397,7 @@
 			)
 		)
 		(property "LCSC" "~"
-			(at 166.37 35.56 0)
+			(at 166.37 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
