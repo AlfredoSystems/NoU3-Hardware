@@ -8126,7 +8126,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/Screw-terminal_Ningbo-Xinlaiya-Elec.-Ningbo-Xinlaiya-Elec.-XY126V-5.0-2P_C557646.html"
+		(property "Datasheet" ""
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8150,7 +8150,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C557646"
+		(property "LCSC" "C8404 "
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -8936,7 +8936,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/Screw-terminal_Ningbo-Xinlaiya-Elec.-Ningbo-Xinlaiya-Elec.-XY126V-5.0-2P_C557646.html"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8960,7 +8960,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C557646"
+		(property "LCSC" "C8404 "
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15488,7 +15488,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/Screw-terminal_Ningbo-Xinlaiya-Elec.-Ningbo-Xinlaiya-Elec.-XY126V-5.0-2P_C557646.html"
+		(property "Datasheet" ""
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15512,7 +15512,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C557646"
+		(property "LCSC" "C8404 "
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -16097,7 +16097,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/Screw-terminal_Ningbo-Xinlaiya-Elec.-Ningbo-Xinlaiya-Elec.-XY126V-5.0-2P_C557646.html"
+		(property "Datasheet" ""
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16121,7 +16121,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C557646"
+		(property "LCSC" "C8404 "
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -17284,7 +17284,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/Screw-terminal_Ningbo-Xinlaiya-Elec.-Ningbo-Xinlaiya-Elec.-XY126V-5.0-2P_C557646.html"
+		(property "Datasheet" ""
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17308,7 +17308,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C557646"
+		(property "LCSC" "C8404 "
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -19964,7 +19964,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/Screw-terminal_Ningbo-Xinlaiya-Elec.-Ningbo-Xinlaiya-Elec.-XY126V-5.0-2P_C557646.html"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19988,7 +19988,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C557646"
+		(property "LCSC" "C8404 "
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -23042,7 +23042,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/Screw-terminal_Ningbo-Xinlaiya-Elec.-Ningbo-Xinlaiya-Elec.-XY126V-5.0-2P_C557646.html"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23066,7 +23066,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C557646"
+		(property "LCSC" "C8404 "
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -23623,7 +23623,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/Screw-terminal_Ningbo-Xinlaiya-Elec.-Ningbo-Xinlaiya-Elec.-XY126V-5.0-2P_C557646.html"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23647,7 +23647,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C557646"
+		(property "LCSC" "C8404 "
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)

@@ -2,8 +2,8 @@
     "layout": {
         "hspace": "2mm",
         "vspace": "2mm",
-        "rows": "2",
-        "cols": "5",
+        "rows": "3",
+        "cols": "3",
         "vbonecut": "False",
         "hbonecut": "False"
     },
