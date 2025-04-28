@@ -2,8 +2,8 @@
     "layout": {
         "hspace": "2mm",
         "vspace": "2mm",
-        "rows": "3",
-        "cols": "3",
+        "rows": "2",
+        "cols": "4",
         "vbonecut": "False",
         "hbonecut": "False"
     },
@@ -23,7 +23,7 @@
         "offset": "0.25mm"
     },
     "framing": {
-        "type": "railstb"
+        "type": "railslr"
     },
     "post": {
         "millradius": "0.99mm"

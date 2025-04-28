@@ -37,23 +37,31 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 3.2,
+          "height": 3.2,
+          "width": 3.2
         },
-        "silk_line_width": 0.1,
+        "silk_line_width": 0.2,
         "silk_text_italic": false,
-        "silk_text_size_h": 1.0,
-        "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.1,
+        "silk_text_size_h": 0.8,
+        "silk_text_size_v": 0.8,
+        "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "45_degree_only": false,
+          "min_clearance": 0.2
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
+        "filename": "board_design_settings.json",
         "version": 2
       },
       "rule_severities": {
@@ -62,17 +70,21 @@
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
-        "courtyards_overlap": "error",
+        "courtyards_overlap": "ignore",
+        "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
+        "footprint_filters_mismatch": "ignore",
         "footprint_symbol_mismatch": "warning",
-        "footprint_type_mismatch": "ignore",
+        "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "hole_to_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -82,11 +94,13 @@
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
+        "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
         "net_conflict": "warning",
+        "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
-        "padstack": "warning",
+        "padstack": "error",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
@@ -94,12 +108,15 @@
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
-        "starved_thermal": "error",
+        "starved_thermal": "warning",
         "text_height": "warning",
+        "text_on_edge_cuts": "error",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
+        "track_angle": "error",
         "track_dangling": "warning",
+        "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
         "unconnected_items": "error",
@@ -107,32 +124,38 @@
         "via_dangling": "warning",
         "zones_intersect": "error"
       },
+      "rule_severitieslegacy_courtyards_overlap": true,
+      "rule_severitieslegacy_no_courtyard_defined": false,
       "rules": {
+        "allow_blind_buried_vias": false,
+        "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.09,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
-        "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
+        "min_copper_edge_clearance": 0.2,
+        "min_groove_width": 0.0,
+        "min_hole_clearance": 0.2,
+        "min_hole_to_hole": 0.5,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_through_hole_diameter": 0.15,
+        "min_track_width": 0.0254,
+        "min_via_annular_width": 0.05,
+        "min_via_diameter": 0.3,
         "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
         {
-          "td_onpadsmd": true,
+          "td_onpthpad": true,
           "td_onroundshapesonly": false,
+          "td_onsmdpad": true,
           "td_ontrackend": false,
-          "td_onviapad": true
+          "td_onvia": true
         }
       ],
       "teardrop_parameters": [
@@ -170,7 +193,18 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.04,
+        0.0889,
+        0.2032,
+        0.2794,
+        0.4064,
+        0.508,
+        0.75,
+        1.016,
+        1.5
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -197,8 +231,22 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
-      "zones_allow_external_fillets": false
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.3,
+          "drill": 0.15
+        },
+        {
+          "diameter": 0.45,
+          "drill": 0.2
+        }
+      ],
+      "zones_allow_external_fillets": false,
+      "zones_use_no_outline": true
     },
     "ipc2581": {
       "dist": "",
@@ -207,6 +255,7 @@
       "mfg": "",
       "mpn": ""
     },
+    "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
@@ -220,13 +269,13 @@
   },
   "meta": {
     "filename": "NoU3-Panelized.kicad_pro",
-    "version": 1
+    "version": 3
   },
   "net_settings": {
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.18,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -235,19 +284,4613 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "track_width": 0.2032,
+        "via_diameter": 0.3,
+        "via_drill": 0.15,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.18,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_0-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2032,
+        "via_diameter": 0.3,
+        "via_drill": 0.15,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.18,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_1-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2032,
+        "via_diameter": 0.3,
+        "via_drill": 0.15,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.18,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_2-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2032,
+        "via_diameter": 0.3,
+        "via_drill": 0.15,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.18,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_3-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2032,
+        "via_diameter": 0.3,
+        "via_drill": 0.15,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.18,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_4-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2032,
+        "via_diameter": 0.3,
+        "via_drill": 0.15,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.18,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_5-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2032,
+        "via_diameter": 0.3,
+        "via_drill": 0.15,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.18,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_6-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2032,
+        "via_diameter": 0.3,
+        "via_drill": 0.15,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.18,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Board_7-Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2032,
+        "via_diameter": 0.3,
+        "via_drill": 0.15,
         "wire_width": 6
       }
     ],
     "meta": {
-      "version": 3
+      "version": 4
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-E3A"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(J14-FEED)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U26-OSDO-Pad11)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(J14-PCB_Trace-Pad2)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U15-FB)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U1-VCP)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-E_D+"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-E1B"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U17-CC1)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U25-NC-Pad6)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-GPIO_MISC1"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U17-SHIELD-PadS1)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U2-GPIO14-Pad19)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U8-Pad6)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-2/Bout2"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U5-VINT)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U4-VCP)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-3/AIN2"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-3/Aout2"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U25-CAP)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U17-D--PadA7)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U17-SHIELD-PadS1)_2"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U26-CSB)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U26-INT2-Pad9)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U16-BS)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U6-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U1-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U26-OCSB-Pad10)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U25-NC-Pad12)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-3/BIN1"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U25-NC-Pad7)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-4/Aout2"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-E4B"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-1/Bout2"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-2/BIN2"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U2-SPIQ-Pad34)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-4/BIN2"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U16-LX)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U10-EXTCLK)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U17-CC2)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U17-SBU2-PadB8)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-3/Aout1"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U17-D+-PadA6)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-VCC"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(JP1-C)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U2-LNA_IN)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-SF_SCL"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-SNS_VER"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U2-GPIO46-Pad52)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-E1A"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U2-SPICLK-Pad33)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-LED_MISC"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U2-XTAL_N)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-SNS_VIN"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-2/Aout2"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U2-CHIP_PU)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U2-U0RXD)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-SF_INT2"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U2-U0TXD)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-1/Bout1"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-1/Aout1"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U17-SHIELD-PadS1)_1"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-MD4_B2"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-2/Aout1"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U2-XTAL_P)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U8-Pad5)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-1/BIN2"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U4-VINT)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U6-VINT)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U4-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U2-SPICS1-Pad28)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-E6A"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Q_SCL"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U6-VCP)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-3/BIN2"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U15-LX)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-1/BIN1"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U15-BS)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-1/Aout2"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U2-GPIO0)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U2-SPIS0-Pad32)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-4/AIN1"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(D1-A)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U17-SHIELD-PadS1)_0"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U8-Pad4)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-E2B"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-E4A"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U8-Pad1)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(J15-Pad1)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-3/AIN1"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U5-VCP)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-MD3_B2"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U2-SPIHD-Pad30)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-SF_SDA"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-MD4_B1"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-E5A"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U2-SPIWP-Pad31)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-2/AIN2"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U25-NC-Pad8)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Q_SDA"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-1/AIN2"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U2-GPIO21-Pad27)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-E_D-"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-GPIO_MISC2"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-SRV4"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-GND"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U25-NC-Pad3)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(D5-A)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-2/BIN1"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-+3V3"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(D6-A)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U2-GPIO3-Pad8)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/VUSB"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-SRV3"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-E2A"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-1/AIN1"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-E5B"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U2-SPID-Pad35)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U26-SDO)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-4/Aout1"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U25-NC-Pad14)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-2/Bout1"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-E6B"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-+5V"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U17-SBU1-PadA8)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U1-VINT)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(Q1-D)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U5-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-2/AIN1"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-unconnected-(U2-GPIO13-Pad18)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U16-FB)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-E3B"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-/MotorSystem/MotorDriver-4/BIN1"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-SF_INT1"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-SRV1"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-Net-(U25-SPI_SDO)"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-SRV2"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-M_OE"
+      },
+      {
+        "netclass": "Board_0-Default",
+        "pattern": "Board_0-MD3_B1"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U8-Pad4)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U2-GPIO21-Pad27)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-+3V3"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-SF_INT2"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-E1A"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U2-U0RXD)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-SF_INT1"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-E3A"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U2-SPIQ-Pad34)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Q_SCL"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-GPIO_MISC1"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-SRV4"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/VUSB"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-1/Bout2"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-4/BIN1"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-E4B"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U2-U0TXD)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-2/BIN2"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U6-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-MD3_B1"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U2-LNA_IN)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-3/BIN2"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-E2A"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(Q1-D)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-3/Aout2"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-GND"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-3/AIN2"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-1/AIN2"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U2-SPIWP-Pad31)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(J14-FEED)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U2-GPIO13-Pad18)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-2/AIN1"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-GPIO_MISC2"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-SF_SCL"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U6-VINT)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U26-INT2-Pad9)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-3/BIN1"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-SRV1"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U25-NC-Pad12)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-VCC"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U6-VCP)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U25-NC-Pad8)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U17-SBU2-PadB8)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-2/BIN1"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-1/Aout2"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U2-SPICS1-Pad28)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-E3B"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U25-NC-Pad14)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U16-BS)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U25-NC-Pad6)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U8-Pad6)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U2-GPIO46-Pad52)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(D6-A)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Q_SDA"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U26-CSB)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U17-CC1)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(J14-PCB_Trace-Pad2)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-1/BIN2"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-2/Bout2"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U4-VINT)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U5-VCP)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-SNS_VER"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U25-SPI_SDO)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U2-CHIP_PU)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-2/AIN2"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U16-FB)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-4/Aout2"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U26-SDO)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(J15-Pad1)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U2-GPIO3-Pad8)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U2-SPIHD-Pad30)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-M_OE"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U8-Pad1)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U16-LX)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U2-XTAL_P)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-2/Aout1"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-MD4_B1"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-E2B"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U26-OCSB-Pad10)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U2-SPIS0-Pad32)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-MD3_B2"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U2-XTAL_N)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U17-D+-PadA6)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-E1B"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U15-LX)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(D1-A)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U5-VINT)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U2-SPID-Pad35)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U1-VINT)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U25-NC-Pad7)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-SNS_VIN"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-SF_SDA"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U17-SHIELD-PadS1)_2"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-4/Aout1"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-3/AIN1"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(D5-A)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-1/BIN1"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U25-NC-Pad3)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-4/AIN1"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-E5A"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-4/BIN2"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U1-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U17-SBU1-PadA8)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U17-SHIELD-PadS1)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-LED_MISC"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U26-OSDO-Pad11)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-SRV2"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(JP1-C)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U8-Pad5)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-2/Bout1"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U15-FB)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-1/AIN1"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-1/Aout1"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-1/Bout1"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-E5B"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-3/Aout1"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U17-SHIELD-PadS1)_0"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U2-GPIO14-Pad19)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U25-CAP)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-E_D+"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U17-CC2)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U17-SHIELD-PadS1)_1"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-E4A"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U10-EXTCLK)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U4-VCP)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-MD4_B2"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-E_D-"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-E6B"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U1-VCP)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U2-GPIO0)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U5-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U2-SPICLK-Pad33)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-E6A"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U15-BS)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-SRV3"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-/MotorSystem/MotorDriver-2/Aout2"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-unconnected-(U4-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-+5V"
+      },
+      {
+        "netclass": "Board_1-Default",
+        "pattern": "Board_1-Net-(U17-D--PadA7)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-E5A"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-LED_MISC"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-E2A"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-4/BIN1"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U26-CSB)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U25-NC-Pad12)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-E5B"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-SRV1"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-2/BIN2"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U2-SPICLK-Pad33)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-2/Bout2"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U4-VCP)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U17-CC1)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U2-LNA_IN)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U25-NC-Pad3)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(D5-A)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(J15-Pad1)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-3/BIN2"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U8-Pad4)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-E4B"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-3/Aout1"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U2-GPIO14-Pad19)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-2/AIN2"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U2-U0RXD)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U5-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U2-SPIHD-Pad30)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U16-BS)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U17-CC2)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-2/Aout1"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-E1B"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-1/Bout2"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U4-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(JP1-C)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-MD4_B2"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-VCC"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/VUSB"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-MD3_B2"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-2/BIN1"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Q_SCL"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U1-VCP)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U17-SHIELD-PadS1)_2"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(D1-A)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U17-SHIELD-PadS1)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U2-SPIQ-Pad34)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U15-BS)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-E_D-"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U2-GPIO13-Pad18)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U1-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-1/AIN2"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(D6-A)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-SNS_VIN"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U25-SPI_SDO)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-3/BIN1"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-4/BIN2"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-2/Aout2"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-+5V"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-SRV2"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U8-Pad6)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U17-SBU2-PadB8)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U6-VCP)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U5-VCP)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U15-LX)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-4/Aout2"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U25-NC-Pad14)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-SNS_VER"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U8-Pad5)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-E3A"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U6-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U15-FB)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-SF_INT1"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-E4A"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U2-SPICS1-Pad28)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-1/Aout1"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-E6A"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(J14-PCB_Trace-Pad2)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U2-GPIO0)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-SRV3"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U6-VINT)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U2-SPID-Pad35)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-MD3_B1"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U2-GPIO21-Pad27)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-M_OE"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-GPIO_MISC2"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U2-GPIO46-Pad52)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-3/AIN2"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-3/Aout2"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-E3B"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U25-CAP)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-SF_INT2"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-SF_SCL"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U26-INT2-Pad9)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U2-GPIO3-Pad8)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U2-XTAL_P)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-GPIO_MISC1"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U25-NC-Pad8)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Q_SDA"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-MD4_B1"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U10-EXTCLK)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-2/AIN1"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-E2B"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U17-SHIELD-PadS1)_1"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U2-SPIWP-Pad31)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U2-CHIP_PU)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-SRV4"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U16-FB)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U25-NC-Pad6)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-1/Aout2"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-1/BIN1"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-E_D+"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-1/AIN1"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-GND"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(J14-FEED)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-1/Bout1"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U17-D+-PadA6)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U2-U0TXD)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-3/AIN1"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U5-VINT)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-1/BIN2"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U26-OCSB-Pad10)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U2-SPIS0-Pad32)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U1-VINT)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U17-SBU1-PadA8)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-4/Aout1"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-E1A"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U2-XTAL_N)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U4-VINT)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U8-Pad1)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(Q1-D)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-2/Bout1"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U25-NC-Pad7)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U16-LX)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-SF_SDA"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U26-OSDO-Pad11)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U17-D--PadA7)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-unconnected-(U17-SHIELD-PadS1)_0"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-E6B"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-Net-(U26-SDO)"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-+3V3"
+      },
+      {
+        "netclass": "Board_2-Default",
+        "pattern": "Board_2-/MotorSystem/MotorDriver-4/AIN1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U17-SHIELD-PadS1)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-E_D+"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(J14-FEED)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U17-SBU1-PadA8)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-2/BIN2"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U17-D--PadA7)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-E5B"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U2-SPID-Pad35)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U17-SHIELD-PadS1)_0"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-SRV4"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-1/Aout2"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U8-Pad4)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-1/AIN2"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U2-XTAL_P)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U4-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U26-OCSB-Pad10)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U6-VCP)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U17-CC2)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-E1A"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-4/AIN1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-E1B"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-VCC"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U5-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U8-Pad5)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-MD4_B1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U26-OSDO-Pad11)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U2-LNA_IN)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U17-SHIELD-PadS1)_1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Q_SCL"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-E3B"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-MD3_B2"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U2-GPIO46-Pad52)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-LED_MISC"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U16-FB)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-2/Bout2"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U4-VCP)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U2-U0RXD)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U8-Pad6)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-GND"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U25-NC-Pad6)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(D6-A)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-E6B"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U25-SPI_SDO)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U26-INT2-Pad9)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-GPIO_MISC2"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U5-VINT)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U2-GPIO14-Pad19)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U2-SPICLK-Pad33)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-MD3_B1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-SF_SDA"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U17-SHIELD-PadS1)_2"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Q_SDA"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(Q1-D)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U2-U0TXD)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-SRV1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U15-FB)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-3/Aout1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-E4A"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-E2B"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U2-SPICS1-Pad28)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-1/AIN1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U25-NC-Pad8)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-SF_INT1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U2-SPIWP-Pad31)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U10-EXTCLK)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/VUSB"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-4/BIN1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(JP1-C)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U25-CAP)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-SNS_VIN"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-SRV2"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U17-SBU2-PadB8)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-E_D-"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-1/Aout1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-+5V"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U15-BS)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U5-VCP)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-4/Aout1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U8-Pad1)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U2-CHIP_PU)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-2/AIN2"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U2-XTAL_N)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U25-NC-Pad14)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U2-SPIQ-Pad34)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-2/Aout2"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U26-SDO)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-1/BIN1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U1-VINT)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-SF_INT2"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U16-BS)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-SNS_VER"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-3/BIN2"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-2/BIN1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-3/AIN2"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-+3V3"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-2/Aout1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-3/AIN1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U25-NC-Pad3)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-E3A"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(J14-PCB_Trace-Pad2)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-E5A"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-E2A"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U2-SPIHD-Pad30)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-3/Aout2"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-1/Bout2"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U25-NC-Pad12)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-E6A"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(J15-Pad1)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U2-GPIO21-Pad27)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U4-VINT)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-3/BIN1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-M_OE"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U26-CSB)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(D1-A)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U16-LX)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-4/Aout2"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U6-VINT)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U6-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-SRV3"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-SF_SCL"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U2-SPIS0-Pad32)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-E4B"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-2/Bout1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-1/BIN2"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-2/AIN1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U17-CC1)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U2-GPIO13-Pad18)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-MD4_B2"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-4/BIN2"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U1-VCP)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U25-NC-Pad7)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-/MotorSystem/MotorDriver-1/Bout1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U15-LX)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U17-D+-PadA6)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-GPIO_MISC1"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(U2-GPIO0)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U1-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-unconnected-(U2-GPIO3-Pad8)"
+      },
+      {
+        "netclass": "Board_3-Default",
+        "pattern": "Board_3-Net-(D5-A)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-E3B"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U2-SPICS1-Pad28)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-1/BIN2"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-3/AIN1"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-2/AIN1"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-SNS_VIN"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-E5A"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U4-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-3/Aout1"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U17-SBU2-PadB8)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U16-FB)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-1/Bout2"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-SRV1"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-1/BIN1"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(J14-FEED)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U1-VCP)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U2-XTAL_N)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(J15-Pad1)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U2-SPID-Pad35)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(J14-PCB_Trace-Pad2)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-+3V3"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U2-GPIO46-Pad52)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-VCC"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U26-CSB)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U17-CC2)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-4/AIN1"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U2-XTAL_P)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-E2B"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U2-LNA_IN)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U17-SHIELD-PadS1)_2"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-1/Aout1"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-3/AIN2"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U1-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U17-D--PadA7)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U25-CAP)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Q_SDA"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U25-NC-Pad14)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(D6-A)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U5-VINT)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U2-GPIO3-Pad8)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-MD4_B2"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U2-CHIP_PU)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U1-VINT)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U2-U0RXD)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U25-NC-Pad12)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-E4B"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U25-NC-Pad3)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U6-VINT)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-2/Bout2"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-1/Bout1"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-SRV3"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-+5V"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U16-BS)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-E4A"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U17-D+-PadA6)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(D1-A)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-LED_MISC"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U2-SPIQ-Pad34)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U25-NC-Pad7)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U15-BS)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-4/BIN2"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(JP1-C)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-E_D-"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-2/BIN1"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U2-GPIO14-Pad19)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U26-INT2-Pad9)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-MD3_B1"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U4-VINT)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-SF_SDA"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U5-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U10-EXTCLK)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-1/AIN2"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U17-SBU1-PadA8)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U6-VCP)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U4-VCP)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-2/AIN2"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(Q1-D)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-1/AIN1"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U2-SPICLK-Pad33)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-2/BIN2"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U16-LX)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U15-FB)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U26-SDO)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U17-SHIELD-PadS1)_0"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-E_D+"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U2-GPIO0)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U2-GPIO21-Pad27)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-E6B"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-SNS_VER"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-E5B"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-1/Aout2"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U8-Pad1)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-MD4_B1"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U2-GPIO13-Pad18)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-E1B"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U6-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-4/Aout1"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U2-SPIS0-Pad32)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U26-OCSB-Pad10)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-E6A"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-3/BIN2"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U25-NC-Pad6)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U17-SHIELD-PadS1)_1"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-SF_INT2"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-2/Bout1"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U26-OSDO-Pad11)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-3/BIN1"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-GPIO_MISC1"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U8-Pad6)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-SRV4"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-GPIO_MISC2"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U15-LX)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U2-U0TXD)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Q_SCL"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-SF_SCL"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-MD3_B2"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-E1A"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-E3A"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U2-SPIHD-Pad30)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-SRV2"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U2-SPIWP-Pad31)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-3/Aout2"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(D5-A)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-E2A"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U25-NC-Pad8)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/VUSB"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-4/Aout2"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-2/Aout2"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-4/BIN1"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-/MotorSystem/MotorDriver-2/Aout1"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U25-SPI_SDO)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-GND"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U5-VCP)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U8-Pad4)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-M_OE"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-Net-(U17-CC1)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-SF_INT1"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U8-Pad5)"
+      },
+      {
+        "netclass": "Board_4-Default",
+        "pattern": "Board_4-unconnected-(U17-SHIELD-PadS1)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U8-Pad6)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U2-SPIQ-Pad34)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-E3B"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U17-CC2)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U2-GPIO46-Pad52)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U16-FB)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U17-SHIELD-PadS1)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U5-VINT)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-+5V"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-3/BIN1"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-E2A"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-SF_INT1"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-SRV1"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-+3V3"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-3/AIN2"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U6-VCP)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-MD4_B1"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U25-NC-Pad7)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U6-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U4-VINT)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U5-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U25-NC-Pad14)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-VCC"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-2/AIN1"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U17-SHIELD-PadS1)_0"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U1-VINT)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-E1A"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U8-Pad1)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U26-SDO)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(D1-A)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U25-SPI_SDO)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-1/Aout1"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(D5-A)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U2-LNA_IN)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Q_SCL"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U15-LX)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U2-CHIP_PU)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-2/Bout1"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(J14-PCB_Trace-Pad2)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-4/Aout2"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U2-GPIO21-Pad27)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-1/Bout1"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U2-SPICS1-Pad28)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U26-OCSB-Pad10)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-E5A"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U2-SPIHD-Pad30)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/VUSB"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Q_SDA"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-E3A"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-1/AIN2"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-SRV2"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-SRV3"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-SRV4"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U17-SBU1-PadA8)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(J15-Pad1)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-E2B"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-1/BIN2"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-3/Aout2"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U15-BS)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-3/AIN1"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-E_D+"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-SF_INT2"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U17-SHIELD-PadS1)_1"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(D6-A)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U1-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(JP1-C)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U4-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-2/BIN1"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-LED_MISC"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U2-XTAL_N)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U6-VINT)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U10-EXTCLK)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-3/BIN2"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U26-OSDO-Pad11)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U25-NC-Pad8)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-4/AIN1"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-GND"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-4/Aout1"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(Q1-D)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-GPIO_MISC1"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U25-CAP)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U17-SHIELD-PadS1)_2"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-2/Aout2"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U2-GPIO13-Pad18)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U2-U0RXD)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-MD4_B2"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-M_OE"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U17-CC1)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-4/BIN2"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U2-GPIO3-Pad8)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-4/BIN1"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U17-SBU2-PadB8)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-SF_SDA"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-2/Aout1"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-2/Bout2"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U2-GPIO0)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U1-VCP)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U2-GPIO14-Pad19)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U5-VCP)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U2-U0TXD)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U26-INT2-Pad9)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U25-NC-Pad3)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-2/BIN2"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U2-SPICLK-Pad33)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-E5B"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-2/AIN2"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-1/BIN1"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-3/Aout1"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-E6A"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-MD3_B1"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U2-SPIWP-Pad31)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-1/Aout2"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-GPIO_MISC2"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U17-D--PadA7)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U2-XTAL_P)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-SF_SCL"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U8-Pad4)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U25-NC-Pad12)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-E1B"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-E6B"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-1/AIN1"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-E4A"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U15-FB)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U25-NC-Pad6)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U4-VCP)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-E_D-"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U8-Pad5)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U2-SPIS0-Pad32)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U17-D+-PadA6)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-E4B"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-/MotorSystem/MotorDriver-1/Bout2"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(J14-FEED)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-unconnected-(U2-SPID-Pad35)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-SNS_VIN"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U26-CSB)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U16-BS)"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-SNS_VER"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-MD3_B2"
+      },
+      {
+        "netclass": "Board_5-Default",
+        "pattern": "Board_5-Net-(U16-LX)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-E4B"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U2-GPIO0)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-1/Aout1"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-2/AIN2"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-E4A"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-MD3_B2"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U6-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-4/BIN2"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U2-GPIO46-Pad52)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U15-LX)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U8-Pad1)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U2-GPIO21-Pad27)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-E5B"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-E5A"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-3/Aout2"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(J15-Pad1)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-SF_SCL"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-2/BIN1"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U17-CC1)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U16-FB)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-2/BIN2"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U17-D+-PadA6)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U2-GPIO13-Pad18)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(Q1-D)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U17-SBU1-PadA8)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-3/AIN1"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-4/Aout1"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-E_D-"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(D6-A)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U25-NC-Pad12)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U17-CC2)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-GPIO_MISC1"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-3/BIN1"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U26-CSB)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U2-SPIWP-Pad31)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-E1B"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-1/Bout1"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-MD4_B2"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U10-EXTCLK)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(J14-PCB_Trace-Pad2)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U25-NC-Pad7)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-SRV4"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(D5-A)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-1/BIN1"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U2-CHIP_PU)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U2-SPID-Pad35)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-4/BIN1"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-SRV2"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-1/AIN2"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U4-VINT)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U16-BS)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-E6B"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U2-SPICLK-Pad33)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U8-Pad6)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-SF_INT2"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U2-SPICS1-Pad28)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-4/Aout2"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-2/Aout2"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U1-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U8-Pad5)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U2-SPIQ-Pad34)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-VCC"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U2-SPIS0-Pad32)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U26-OCSB-Pad10)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-1/Bout2"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-1/BIN2"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-MD3_B1"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-1/Aout2"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U15-BS)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U4-VCP)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U17-SHIELD-PadS1)_1"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U25-NC-Pad14)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-E2A"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-SNS_VIN"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-2/AIN1"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(JP1-C)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U25-CAP)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U17-SHIELD-PadS1)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U25-SPI_SDO)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-+5V"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-+3V3"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-SRV3"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U26-INT2-Pad9)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-LED_MISC"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U1-VINT)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U2-U0RXD)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U17-SHIELD-PadS1)_2"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U5-VINT)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U25-NC-Pad8)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U2-GPIO14-Pad19)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-GND"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U26-SDO)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-1/AIN1"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U26-OSDO-Pad11)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-SF_SDA"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U2-XTAL_N)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U25-NC-Pad3)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(D1-A)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-E3B"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U2-SPIHD-Pad30)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-2/Aout1"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U6-VINT)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-SRV1"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-E1A"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-E3A"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-E6A"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U2-LNA_IN)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U5-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U2-U0TXD)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U2-XTAL_P)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-3/BIN2"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U6-VCP)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-M_OE"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-E2B"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-MD4_B1"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-SF_INT1"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U2-GPIO3-Pad8)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U16-LX)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U17-SHIELD-PadS1)_0"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-2/Bout1"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/VUSB"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U17-SBU2-PadB8)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-3/Aout1"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-SNS_VER"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U4-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Q_SDA"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-2/Bout2"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U1-VCP)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Q_SCL"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-3/AIN2"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U8-Pad4)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-unconnected-(U25-NC-Pad6)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-GPIO_MISC2"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U17-D--PadA7)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U5-VCP)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(J14-FEED)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-Net-(U15-FB)"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-E_D+"
+      },
+      {
+        "netclass": "Board_6-Default",
+        "pattern": "Board_6-/MotorSystem/MotorDriver-4/AIN1"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U8-Pad4)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-VCC"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-2/BIN1"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-SRV1"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U26-OCSB-Pad10)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U25-NC-Pad14)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(JP1-C)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U15-LX)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-SNS_VER"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U4-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U25-CAP)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-1/Bout1"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U16-FB)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-1/BIN2"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-4/BIN2"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U1-VCP)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U5-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U8-Pad5)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U2-GPIO46-Pad52)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-SF_SCL"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U25-NC-Pad6)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U25-NC-Pad8)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U17-SBU1-PadA8)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-2/AIN2"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U6-VINT)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U6-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-MD3_B2"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U26-INT2-Pad9)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U25-NC-Pad12)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(J14-FEED)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-E_D-"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-3/AIN1"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-E1B"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U8-Pad1)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-3/BIN2"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U15-FB)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U2-U0RXD)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/VUSB"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U2-SPICS1-Pad28)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-+5V"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-E2B"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Q_SCL"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-1/Aout2"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-E3B"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-3/AIN2"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U26-OSDO-Pad11)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-GND"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U2-GPIO3-Pad8)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-1/AIN1"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-E2A"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-E5B"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-E6B"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-2/Bout1"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U1-nFAULT-Pad8)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U8-Pad6)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-E4A"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U17-SBU2-PadB8)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-SF_SDA"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U17-SHIELD-PadS1)_1"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U16-BS)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U10-EXTCLK)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U25-NC-Pad7)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-MD4_B2"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U2-SPIHD-Pad30)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U5-VCP)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U17-SHIELD-PadS1)_2"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-4/AIN1"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(D1-A)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-E_D+"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-MD4_B1"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Q_SDA"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-MD3_B1"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-SF_INT2"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-GPIO_MISC2"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-GPIO_MISC1"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-2/Aout1"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U2-LNA_IN)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-SRV2"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U17-CC2)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U26-SDO)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-2/Bout2"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U5-VINT)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U6-VCP)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U2-XTAL_P)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-3/BIN1"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U2-GPIO13-Pad18)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-1/AIN2"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(D6-A)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-1/Bout2"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-1/Aout1"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U15-BS)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U26-CSB)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-+3V3"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U2-SPIWP-Pad31)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U17-SHIELD-PadS1)_0"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(Q1-D)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-2/Aout2"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-E4B"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-2/AIN1"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U16-LX)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-4/Aout2"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-E3A"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U17-D--PadA7)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-2/BIN2"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-4/BIN1"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-SRV4"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-LED_MISC"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U1-VINT)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-SF_INT1"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-E5A"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(J14-PCB_Trace-Pad2)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-1/BIN1"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U2-GPIO14-Pad19)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-3/Aout2"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-SRV3"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-SNS_VIN"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U17-SHIELD-PadS1)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U17-D+-PadA6)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U2-SPID-Pad35)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U25-SPI_SDO)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U2-SPIQ-Pad34)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(J15-Pad1)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-M_OE"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-3/Aout1"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U2-GPIO21-Pad27)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(D5-A)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-E6A"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U17-CC1)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-E1A"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U2-CHIP_PU)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-/MotorSystem/MotorDriver-4/Aout1"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U4-VINT)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U2-GPIO0)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U25-NC-Pad3)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U4-VCP)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U2-U0TXD)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-Net-(U2-XTAL_N)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U2-SPICLK-Pad33)"
+      },
+      {
+        "netclass": "Board_7-Default",
+        "pattern": "Board_7-unconnected-(U2-SPIS0-Pad32)"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
