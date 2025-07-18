@@ -3231,12 +3231,6 @@
 		(uuid "5934993f-03f3-4941-a230-b8f6f757e2d8")
 	)
 	(junction
-		(at 186.69 119.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6cad66f1-80fe-45e8-b552-346f0e330be3")
-	)
-	(junction
 		(at 146.05 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3265,12 +3259,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "72cdc5ac-31f6-40bc-87d4-bbbae5e5167f")
-	)
-	(junction
-		(at 189.23 119.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7f57e9c9-f351-4e87-8e89-f69f73dbcd58")
 	)
 	(junction
 		(at 30.48 133.35)
@@ -3404,6 +3392,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 116.84) (xy 181.61 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02734b9c-b33d-495b-b638-794a480b1ba2")
+	)
+	(wire
+		(pts
 			(xy 215.9 116.84) (xy 232.41 116.84)
 		)
 		(stroke
@@ -3411,6 +3409,16 @@
 			(type default)
 		)
 		(uuid "030c498b-e9c2-46c5-88cb-b4b7d2350a95")
+	)
+	(wire
+		(pts
+			(xy 189.23 119.38) (xy 189.23 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0486318f-4c27-46b6-8d98-863b6ef205c9")
 	)
 	(wire
 		(pts
@@ -3484,16 +3492,6 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 116.84) (xy 198.12 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b77bfea-30da-4136-ac9a-ec54b3815adf")
-	)
-	(wire
-		(pts
 			(xy 30.48 148.59) (xy 39.37 148.59)
 		)
 		(stroke
@@ -3511,6 +3509,16 @@
 			(type default)
 		)
 		(uuid "0cefa7cd-2342-4006-a34d-5320832b8ef7")
+	)
+	(wire
+		(pts
+			(xy 186.69 116.84) (xy 198.12 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cf33339-7697-4389-9a43-495bd14cac0a")
 	)
 	(wire
 		(pts
@@ -3664,6 +3672,16 @@
 	)
 	(wire
 		(pts
+			(xy 189.23 118.11) (xy 181.61 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24e24b51-2d93-4f74-8645-2b9f20f3bd15")
+	)
+	(wire
+		(pts
 			(xy 215.9 90.17) (xy 232.41 90.17)
 		)
 		(stroke
@@ -3734,6 +3752,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 119.38) (xy 186.69 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3158bd1a-bede-4ba6-8dea-5b88c5b7c33e")
+	)
+	(wire
+		(pts
 			(xy 69.85 109.22) (xy 72.39 109.22)
 		)
 		(stroke
@@ -3771,6 +3799,16 @@
 			(type default)
 		)
 		(uuid "36b21e55-a2f1-4940-bed4-ee550534cc3f")
+	)
+	(wire
+		(pts
+			(xy 186.69 119.38) (xy 186.69 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38cc9c34-1d50-4254-8eb1-466e7e120d94")
 	)
 	(wire
 		(pts
@@ -3821,16 +3859,6 @@
 			(type default)
 		)
 		(uuid "4297b318-9d27-45c8-a960-bbfe63ba15c5")
-	)
-	(wire
-		(pts
-			(xy 163.83 119.38) (xy 186.69 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "451722ce-57bd-4825-b524-eb6bbe4eced9")
 	)
 	(wire
 		(pts
@@ -3951,16 +3979,6 @@
 			(type default)
 		)
 		(uuid "598a8605-9cfd-4555-b736-5b4666f9188c")
-	)
-	(wire
-		(pts
-			(xy 186.69 119.38) (xy 186.69 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a7f6855-eef8-409b-a694-0ebcd3f6bc8a")
 	)
 	(wire
 		(pts
@@ -4111,16 +4129,6 @@
 			(type default)
 		)
 		(uuid "733dd157-93ba-4d2a-92bd-4210ff983131")
-	)
-	(wire
-		(pts
-			(xy 186.69 116.84) (xy 163.83 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7448a658-dd01-41fc-9591-71844f377c9d")
 	)
 	(wire
 		(pts
@@ -4284,16 +4292,6 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 119.38) (xy 189.23 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0647c62-5b54-4101-9c25-fd84c17afbfc")
-	)
-	(wire
-		(pts
 			(xy 232.41 41.91) (xy 223.52 41.91)
 		)
 		(stroke
@@ -4311,6 +4309,16 @@
 			(type default)
 		)
 		(uuid "a1a25a5c-a947-45d4-b907-3defdfdbaa39")
+	)
+	(wire
+		(pts
+			(xy 181.61 118.11) (xy 181.61 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2024325-d7ce-46ab-8778-e2b52a09c755")
 	)
 	(wire
 		(pts
@@ -4581,16 +4589,6 @@
 			(type default)
 		)
 		(uuid "d2341659-428d-4d25-b02d-eac0e0052dae")
-	)
-	(wire
-		(pts
-			(xy 186.69 119.38) (xy 189.23 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2586ee1-06e0-4688-a15e-10034c85c53b")
 	)
 	(wire
 		(pts
