@@ -28816,19 +28816,6 @@
 		(layer "F.SilkS")
 		(uuid "29bd49bc-406e-438b-8e6a-2fcd96930931")
 	)
-	(gr_poly
-		(pts
-			(xy 12.8 -4.954783) (xy 12.800001 -14.754783) (xy 3 -14.754783) (xy 3.000001 -4.954783)
-		)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(fill no)
-		(locked yes)
-		(layer "F.SilkS")
-		(uuid "85ca131c-eb15-4927-997c-8fc8ea4b7712")
-	)
 	(gr_line
 		(start 2.6 21.94)
 		(end 2.6 15.14)
@@ -28880,6 +28867,19 @@
 		)
 		(layer "B.SilkS")
 		(uuid "d9fe1daa-72f2-421d-a41e-5f33f36afa7d")
+	)
+	(gr_poly
+		(pts
+			(xy 12.8 -4.954783) (xy 12.800001 -14.754783) (xy 3 -14.754783) (xy 3.000001 -4.954783)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(locked yes)
+		(layer "Dwgs.User")
+		(uuid "85ca131c-eb15-4927-997c-8fc8ea4b7712")
 	)
 	(gr_arc
 		(start -23 -24)
@@ -29490,7 +29490,7 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "Alfredo NoU V3.3"
+	(gr_text "Alfredo NoU V3.4"
 		(at -6.6 28.1 180)
 		(layer "B.SilkS")
 		(uuid "ccfa0621-4559-400b-a344-67eeea68ae60")
