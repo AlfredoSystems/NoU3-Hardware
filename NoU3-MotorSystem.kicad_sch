@@ -6638,7 +6638,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4K7"
+		(property "Value" "13K7"
 			(at 81.788 184.023 0)
 			(effects
 				(font
@@ -6656,7 +6656,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/Chip-Resistor---Surface-Mount_UNI-ROYALUniroyal-Elec-UNI-ROYALUniroyal-Elec-0402WGF4701TCE_C25900.html"
+		(property "Datasheet" ""
 			(at 80.01 182.88 0)
 			(effects
 				(font
@@ -6674,7 +6674,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25900"
+		(property "LCSC" "C25854"
 			(at 80.01 182.88 0)
 			(effects
 				(font
@@ -8302,7 +8302,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "220uF"
 			(at 73.66 119.38 0)
 			(effects
 				(font
@@ -8534,7 +8534,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15K"
+		(property "Value" "22K1"
 			(at 81.788 153.543 0)
 			(effects
 				(font
@@ -8552,7 +8552,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor---Surface-Mount_UNI-ROYALUniroyal-Elec-UNI-ROYALUniroyal-Elec-0402WGF1502TCE_C25756.html"
+		(property "Datasheet" ""
 			(at 80.01 152.4 0)
 			(effects
 				(font
@@ -8570,7 +8570,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25756"
+		(property "LCSC" "C163478 "
 			(at 80.01 152.4 0)
 			(effects
 				(font
@@ -8612,7 +8612,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "68K"
+		(property "Value" "100K"
 			(at 81.788 145.923 0)
 			(effects
 				(font
@@ -8630,7 +8630,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor---Surface-Mount_UNI-ROYALUniroyal-Elec-UNI-ROYALUniroyal-Elec-0402WGF6802TCE_C36871.html"
+		(property "Datasheet" ""
 			(at 80.01 144.78 0)
 			(effects
 				(font
@@ -8648,7 +8648,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C36871"
+		(property "LCSC" ""
 			(at 80.01 144.78 0)
 			(effects
 				(font
@@ -8756,7 +8756,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "33K"
+		(property "Value" "100K"
 			(at 81.788 176.403 0)
 			(effects
 				(font
@@ -8774,7 +8774,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/Chip-Resistor---Surface-Mount_UNI-ROYALUniroyal-Elec-UNI-ROYALUniroyal-Elec-0402WGF3302TCE_C25779.html"
+		(property "Datasheet" ""
 			(at 80.01 175.26 0)
 			(effects
 				(font
@@ -8792,7 +8792,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25779"
+		(property "LCSC" "C25741"
 			(at 80.01 175.26 0)
 			(effects
 				(font
