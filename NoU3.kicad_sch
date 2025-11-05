@@ -5668,7 +5668,7 @@
 		)
 		(uuid "49267b88-37f9-4d51-9c14-f6014e47bb32")
 	)
-	(text "later:\nuse diode + bulk cap for extra brown out protection?\nregs output a lil low? 3.26V, 4.91V\nbreak out 3 extra gpio?\nbulk up RPP fet?\nswap 3v3 reg to LDO?\n\nADC notes:\nD3 is probably fine to leave\nSNS VIN is good with analogReadMilliVolts() and setting attenuation\n\nDONE:\nfix encoder schema\njumper pad to select any voltage on V out duponts\nsmd bulk cap\nget rid of red led, move LEDs further from JST\npull nSleep down?\nAisense lines need to be wayyyy beefier\nremove SF_INT line\nadd QWiic connector\nRemove unused 6DOF\nsilk: name, CC, version, motor #\nEncoder connector\nQWiic connector\nESP32-S3 Antenna\nIMU (BMI160, BMM150?)\nServo ports\nchange vreg IC?\nLEDs\n6DOF + Mag should share an I2C bus, test this on azIMUth\nput both BMI270 and LSM(C2829074) IMUs on next rev\nchange servo pins to be in numeric order\nswitch IMUs to I2C for more gpios (or dont for faster speed?)\nNo LEDC PWM on GPIO 7?\nvin-sns resistor\nversion resistor devider\nswitch to BMI 270, find BMM150 alt, use pull resistors\nadd 2 extra encoder ports\nbreakout all usable GPIO\nGPIO to motor driver nSleep pins. (nsleep: active high, internal pulldown)\nGPIO ports (covered by encoder ports?)\nVIN and GND pads\nprotect USB with tvs circuit\nchoose bigger RPP Pfet?\nsilkscreen: led pin, version sns ratio\nuse tht leds?\nadd test pads for any internal signal\neasier bolt hole acccess for top cover\nput 6DOF and mag sns chips next to eachother\npower switch near barrel jack is hard to reach\nput buttons in better spot\n"
+	(text "later:\nuse diode + bulk cap for extra brown out protection?\nregs output a lil low? 3.26V, 4.91V\nbreak out 3 extra gpio?\nbulk up RPP fet?\nswap 3v3 reg to LDO?\n8 encoders\nextra bulk cap\nremove mag sensor\n\nchanges for V3.4:\n- shrunk slots for USB-C connector\n- extclk for pwm chip\n\nADC notes:\nD3 is probably fine to leave\nSNS VIN is good with analogReadMilliVolts() and setting attenuation\n\nDONE:\nfix encoder schema\njumper pad to select any voltage on V out duponts\nsmd bulk cap\nget rid of red led, move LEDs further from JST\npull nSleep down?\nAisense lines need to be wayyyy beefier\nremove SF_INT line\nadd QWiic connector\nRemove unused 6DOF\nsilk: name, CC, version, motor #\nEncoder connector\nQWiic connector\nESP32-S3 Antenna\nIMU (BMI160, BMM150?)\nServo ports\nchange vreg IC?\nLEDs\n6DOF + Mag should share an I2C bus, test this on azIMUth\nput both BMI270 and LSM(C2829074) IMUs on next rev\nchange servo pins to be in numeric order\nswitch IMUs to I2C for more gpios (or dont for faster speed?)\nNo LEDC PWM on GPIO 7?\nvin-sns resistor\nversion resistor devider\nswitch to BMI 270, find BMM150 alt, use pull resistors\nadd 2 extra encoder ports\nbreakout all usable GPIO\nGPIO to motor driver nSleep pins. (nsleep: active high, internal pulldown)\nGPIO ports (covered by encoder ports?)\nVIN and GND pads\nprotect USB with tvs circuit\nchoose bigger RPP Pfet?\nsilkscreen: led pin, version sns ratio\nuse tht leds?\nadd test pads for any internal signal\neasier bolt hole acccess for top cover\nput 6DOF and mag sns chips next to eachother\npower switch near barrel jack is hard to reach\nput buttons in better spot\n"
 		(exclude_from_sim no)
 		(at 302.26 201.93 0)
 		(effects
@@ -8190,6 +8190,28 @@
 		(uuid "9dd020e3-e122-4ae5-9714-672acb953e4a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 98.3203 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "M_ECLK"
+		(shape input)
+		(at 77.47 105.41 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a0f7a75f-25d3-4146-b4b6-c3cd269e67eb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.0029 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11841,9 +11863,9 @@
 		(at 58.42 162.56 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "67cd3896-b533-4c34-b024-6058112d83d1")
 		(property "Reference" "U25"
 			(at 53.594 156.718 0)
@@ -12124,7 +12146,7 @@
 				)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "5K"
 			(at 26.67 125.73 0)
 			(effects
 				(font
@@ -12141,7 +12163,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor---Surface-Mount_UNI-ROYALUniroyal-Elec-UNI-ROYALUniroyal-Elec-0402WGF1001TCE_C11702.html"
+		(property "Datasheet" ""
 			(at 22.86 124.46 0)
 			(effects
 				(font
@@ -12159,7 +12181,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C11702"
+		(property "LCSC" ""
 			(at 22.86 124.46 0)
 			(effects
 				(font
@@ -14662,7 +14684,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_ALPSALPINE-ALPSALPINE-SKRKAEE020_C115357.html"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/ALPSALPINE-SKRKAEE020/C115357"
 			(at 55.88 69.85 0)
 			(effects
 				(font
@@ -14887,7 +14909,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_ALPSALPINE-ALPSALPINE-SKRKAEE020_C115357.html"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/ALPSALPINE-SKRKAEE020/C115357"
 			(at 35.56 67.31 0)
 			(effects
 				(font
