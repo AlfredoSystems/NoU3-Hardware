@@ -11864,7 +11864,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp yes)
 		(uuid "67cd3896-b533-4c34-b024-6058112d83d1")
 		(property "Reference" "U25"
@@ -13273,7 +13273,7 @@
 				)
 			)
 		)
-		(property "Footprint" "AlfredoFootprints:LED_3mm"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 38.1 101.6 0)
 			(effects
 				(font
@@ -13282,7 +13282,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/Light-Emitting-Diodes-LED_XINGLIGHT-XINGLIGHT-XL-302UGD_C2895476.html"
+		(property "Datasheet" "~"
 			(at 38.1 101.6 0)
 			(effects
 				(font
@@ -13300,7 +13300,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2895476"
+		(property "LCSC" "~"
 			(at 38.1 101.6 0)
 			(effects
 				(font
@@ -13572,82 +13572,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 38.1 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "add9d61d-bae7-4055-b63a-4628397204b9")
-		(property "Reference" "D5"
-			(at 38.1 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED_blue"
-			(at 37.084 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "AlfredoFootprints:LED_3mm"
-			(at 38.1 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/Light-Emitting-Diodes-LED_XINGLIGHT-XINGLIGHT-XL-302UBD_C2895474.html"
-			(at 38.1 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 38.1 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2895474"
-			(at 38.1 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f90d14d0-c5da-4ca9-9a0e-ed175bd0328d")
-		)
-		(pin "2"
-			(uuid "c8cd32d3-48a0-43d3-ac9e-12b6bdb34ad5")
-		)
-		(instances
-			(project "NoU3"
-				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a"
-					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 262.89 152.4 0)
 		(unit 1)
@@ -13862,6 +13786,82 @@
 			(project "NoU3"
 				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a"
 					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 38.1 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b61cdf14-da6f-4fe9-920f-ad97fb4d8550")
+		(property "Reference" "D5"
+			(at 38.1 96.266 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_Blue"
+			(at 36.83 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 38.1 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 38.1 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "~"
+			(at 38.1 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c8b39b14-33c6-43d1-b436-f6960134376a")
+		)
+		(pin "2"
+			(uuid "55290c8c-b535-4443-8045-d898da70bcac")
+		)
+		(instances
+			(project "NoU3"
+				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a"
+					(reference "D5")
 					(unit 1)
 				)
 			)
