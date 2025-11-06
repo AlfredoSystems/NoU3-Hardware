@@ -5737,6 +5737,17 @@
 		)
 		(uuid "939af756-ff7c-47f7-8333-16bb5c04008e")
 	)
+	(text "JST-SH-6:\nOfficial: C160392\nUnofficial: C3029336\n\nJST-SH-4:\nOfficial: C160390\nUnofficial: C51940129"
+		(exclude_from_sim no)
+		(at 227.33 -19.05 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "b9742be4-4a28-41c7-ad07-abc419dd6b7e")
+	)
 	(text "GPIO47\nGPIO48\n"
 		(exclude_from_sim no)
 		(at 160.528 108.712 0)
@@ -5759,7 +5770,7 @@
 		)
 		(uuid "e94d0edc-9eb9-4abe-92a4-25d45aa2ded2")
 	)
-	(text "V3.0 incompatible!\nV3.1 1K/1K -> 0.500*3.3V\nV3.2 3K/1K -> 0.250*3.3V\nV3.3 1K/3K -> 0.750*3.3V\nV3.4 7K/1K -> 0.125*3.3V\nV3.5 5K/3K -> 0.375*3.3V\nV3.6 3K/5K -> 0.625*3.3V\nV3.7 1K/7K -> 0.875*3.3V\n"
+	(text "V3.0 incompatible!\nV3.1 1K/1K -> 0.500*3.3V\nV3.2 3K/1K -> 0.250*3.3V\nV3.3 1K/3K -> 0.750*3.3V\nV3.4 7K/1K -> 0.125*3.3V\nV3.5 3.3K/2K ~> 0.375*3.3V\nV3.6 3K/5K -> 0.625*3.3V\nV3.7 1K/7K -> 0.875*3.3V\n"
 		(exclude_from_sim no)
 		(at -32.258 137.668 0)
 		(effects
@@ -8895,7 +8906,7 @@
 				)
 			)
 		)
-		(property "Value" "3K"
+		(property "Value" "2K"
 			(at 26.67 133.35 0)
 			(effects
 				(font
@@ -8930,7 +8941,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C4109"
 			(at 22.86 132.08 0)
 			(effects
 				(font
@@ -12146,7 +12157,7 @@
 				)
 			)
 		)
-		(property "Value" "5K"
+		(property "Value" "3K3"
 			(at 26.67 125.73 0)
 			(effects
 				(font
@@ -12181,7 +12192,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25890"
 			(at 22.86 124.46 0)
 			(effects
 				(font
@@ -13300,7 +13311,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "~"
+		(property "LCSC" "C965804"
 			(at 38.1 101.6 0)
 			(effects
 				(font
@@ -13843,7 +13854,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "~"
+		(property "LCSC" "C19171394"
 			(at 38.1 93.98 0)
 			(effects
 				(font
@@ -15058,7 +15069,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-BM04B-SRSS-TB-LF-SN_C160390.html"
+		(property "Datasheet" ""
 			(at 242.57 130.81 0)
 			(effects
 				(font
@@ -15076,7 +15087,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C160390"
+		(property "LCSC" "C51940129"
 			(at 242.57 118.11 0)
 			(effects
 				(font

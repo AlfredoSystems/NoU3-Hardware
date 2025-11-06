@@ -7733,7 +7733,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/171772-BM06B_SRSS_TB_LF_SN/C160392"
+		(property "Datasheet" ""
 			(at 237.49 97.79 0)
 			(effects
 				(font
@@ -7751,7 +7751,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C160392"
+		(property "LCSC" "C3029336"
 			(at 237.49 97.79 0)
 			(effects
 				(font
@@ -9114,7 +9114,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25741"
 			(at 80.01 144.78 0)
 			(effects
 				(font

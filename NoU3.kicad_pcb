@@ -7008,7 +7008,7 @@
 		(layer "F.Cu")
 		(uuid "3e995a77-03b1-4dbd-ae48-65c4211dccd4")
 		(at -20 -23)
-		(property "Reference" ""
+		(property "Reference" "H1"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -7058,6 +7058,7 @@
 				)
 			)
 		)
+		(attr board_only exclude_from_pos_files exclude_from_bom dnp)
 		(pad "" np_thru_hole circle
 			(at 0 0)
 			(size 3.2 3.2)
@@ -7697,7 +7698,7 @@
 		(layer "F.Cu")
 		(uuid "49837706-7e88-4ed4-b19d-dcaa4c5b0516")
 		(at 20 27)
-		(property "Reference" ""
+		(property "Reference" "H2"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -7747,6 +7748,7 @@
 				)
 			)
 		)
+		(attr board_only exclude_from_pos_files exclude_from_bom dnp)
 		(pad "" np_thru_hole circle
 			(at 0 0)
 			(size 3.2 3.2)
@@ -12896,7 +12898,7 @@
 		(path "/9aa5b45a-4284-41b3-ba4d-e941f82a8e6d")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
-		(attr smd)
+		(attr through_hole)
 		(fp_line
 			(start 4.47 4.84)
 			(end 4.47 3.38)

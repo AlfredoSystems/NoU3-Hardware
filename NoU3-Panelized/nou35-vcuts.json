@@ -1,0 +1,23 @@
+{
+    "layout": {
+        "rows": "3",
+        "cols": "3"
+    },
+    "source": {
+        "tolerance": "30mm",
+        "stack": "4layer"
+    },
+    "tabs": {
+        "type": "full"
+    },
+    "cuts": {
+        "type": "vcuts",
+        "clearance": "0.4mm",
+        "linewidth": "0.4mm",
+        "layer": "Edge.Cuts"
+    },
+    "framing": {
+        "type": "railslr",
+        "hspace": "0mm"
+    }
+}
