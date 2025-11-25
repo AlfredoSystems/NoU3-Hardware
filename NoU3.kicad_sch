@@ -5770,7 +5770,7 @@
 		)
 		(uuid "e94d0edc-9eb9-4abe-92a4-25d45aa2ded2")
 	)
-	(text "V3.0 incompatible!\nV3.1 1K/1K -> 0.500*3.3V\nV3.2 3K/1K -> 0.250*3.3V\nV3.3 1K/3K -> 0.750*3.3V\nV3.4 7K/1K -> 0.125*3.3V\nV3.5 3.3K/2K ~> 0.375*3.3V\nV3.6 3K/5K -> 0.625*3.3V\nV3.7 1K/7K -> 0.875*3.3V\n"
+	(text "V3.0 incompatible!\nV3.1 1K/1K -> 0.500*3.3V\nV3.2 3K/1K -> 0.250*3.3V\nV3.3 1K/3K -> 0.750*3.3V\nV3.4 7K/1K -> 0.125*3.3V\nV3.5 3.3K/2K ~> 0.375*3.3V\nV3.6 3.3K/5.1K -> 0.625*3.3V\nV3.7 1K/7K -> 0.875*3.3V\n"
 		(exclude_from_sim no)
 		(at -32.258 137.668 0)
 		(effects
@@ -7594,6 +7594,28 @@
 		)
 		(uuid "f4e7c068-6401-490e-b128-1bd43910e846")
 	)
+	(global_label "E7A"
+		(shape input)
+		(at 77.47 107.95 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "01e2f2f0-bfa2-4e3e-8a07-b3087a74cd47")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 71.6919 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Q_SCL"
 		(shape input)
 		(at 237.49 120.65 180)
@@ -8074,6 +8096,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "E7B"
+		(shape input)
+		(at 77.47 123.19 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8efe521a-4b19-41a7-9565-bc24bb07a5c1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 71.5105 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -8906,7 +8950,7 @@
 				)
 			)
 		)
-		(property "Value" "2K"
+		(property "Value" "5.1K"
 			(at 26.67 133.35 0)
 			(effects
 				(font
@@ -8941,7 +8985,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C4109"
+		(property "LCSC" ""
 			(at 22.86 132.08 0)
 			(effects
 				(font
