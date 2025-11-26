@@ -9387,7 +9387,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "LSM6DSDTR"
+		(property "Value" "LSM6DS3TR-C"
 			(at 130.2259 162.56 0)
 			(effects
 				(font
@@ -9405,7 +9405,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/STMicroelectronics-LSM6DSDTR/C472550"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/STMicroelectronics-LSM6DS3TRC/C967633"
 			(at 110.49 149.86 0)
 			(effects
 				(font
@@ -9423,7 +9423,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C472550"
+		(property "LCSC" "C967633"
 			(at 128.27 171.45 0)
 			(effects
 				(font

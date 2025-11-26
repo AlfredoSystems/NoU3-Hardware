@@ -28181,6 +28181,17 @@
 		(embedded_fonts no)
 	)
 	(gr_circle
+		(center 18.2 -18)
+		(end 18.3 -17.9)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "223390ea-c6a2-477a-b252-23d98e0c3812")
+	)
+	(gr_circle
 		(center -20 -23)
 		(end -16.952 -22.8)
 		(stroke
