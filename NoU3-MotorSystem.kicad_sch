@@ -5420,7 +5420,7 @@
 	)
 	(global_label "MD2_A2"
 		(shape input)
-		(at 269.24 58.42 180)
+		(at 269.24 60.96 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5430,7 +5430,7 @@
 		)
 		(uuid "70322af6-5154-46b1-8d03-af3e9d414144")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 259.7124 58.42 0)
+			(at 259.7124 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5662,7 +5662,7 @@
 	)
 	(global_label "MD2_A1"
 		(shape input)
-		(at 269.24 60.96 180)
+		(at 269.24 58.42 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5672,7 +5672,7 @@
 		)
 		(uuid "e4b08a2d-1cd3-4e14-976a-e9f74af2484d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 259.7124 60.96 0)
+			(at 259.7124 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
