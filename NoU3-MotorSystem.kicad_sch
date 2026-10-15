@@ -6279,7 +6279,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/171772-BM06B_SRSS_TB_LF_SN/C160392"
+		(property "Datasheet" ""
 			(at 243.84 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -6301,7 +6301,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C160392"
+		(property "LCSC" "C3029336 "
 			(at 243.84 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -6814,7 +6814,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/171772-BM06B_SRSS_TB_LF_SN/C160392"
+		(property "Datasheet" ""
 			(at 237.49 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -6836,7 +6836,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C160392"
+		(property "LCSC" "C3029336 "
 			(at 237.49 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -7745,7 +7745,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/171772-BM06B_SRSS_TB_LF_SN/C160392"
+		(property "Datasheet" ""
 			(at 265.43 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -7767,7 +7767,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C160392"
+		(property "LCSC" "C3029336 "
 			(at 265.43 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -8028,7 +8028,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/171772-BM06B_SRSS_TB_LF_SN/C160392"
+		(property "Datasheet" ""
 			(at 237.49 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -8050,7 +8050,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C160392"
+		(property "LCSC" "C3029336 "
 			(at 237.49 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -8407,7 +8407,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C3029336"
+		(property "LCSC" "C3029336 "
 			(at 237.49 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -8721,7 +8721,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/171772-BM06B_SRSS_TB_LF_SN/C160392"
+		(property "Datasheet" ""
 			(at 265.43 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -8743,7 +8743,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C160392"
+		(property "LCSC" "C3029336 "
 			(at 265.43 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -8903,7 +8903,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/171772-BM06B_SRSS_TB_LF_SN/C160392"
+		(property "Datasheet" ""
 			(at 274.32 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -8925,7 +8925,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C160392"
+		(property "LCSC" "C3029336 "
 			(at 274.32 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -10515,7 +10515,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/Power-Inductors_Sunlord-Sunlord-WPN252012H4R7MT_C98354.html"
+		(property "Datasheet" ""
 			(at 66.04 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -10537,7 +10537,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C98354"
+		(property "LCSC" "C88528"
 			(at 66.04 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -11434,7 +11434,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/Power-Inductors_Sunlord-Sunlord-WPN252012H4R7MT_C98354.html"
+		(property "Datasheet" ""
 			(at 66.04 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -11456,7 +11456,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C98354"
+		(property "LCSC" "C88528"
 			(at 66.04 140.97 0)
 			(hide yes)
 			(show_name no)
