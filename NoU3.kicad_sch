@@ -14216,7 +14216,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "1uF"
 			(at 44.45 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14238,7 +14238,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC---SMD-SMT_Samsung-Electro-Mechanics-Samsung-Electro-Mechanics-CL05B104KB54PNC_C307331.html"
+		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC---SMD-SMT_Samsung-Electro-Mechanics-Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.html"
 			(at 50.8 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -14260,7 +14260,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C307331"
+		(property "LCSC" "C52923"
 			(at 50.8 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -17029,7 +17029,7 @@
 				)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "10K"
 			(at 53.34 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17050,7 +17050,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor---Surface-Mount_UNI-ROYALUniroyal-Elec-UNI-ROYALUniroyal-Elec-0402WGF1001TCE_C11702.html"
+		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor---Surface-Mount_UNI-ROYALUniroyal-Elec-UNI-ROYALUniroyal-Elec-0402WGF1002TCE_C25744.html"
 			(at 55.88 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -17072,7 +17072,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C11702"
+		(property "LCSC" "C25744"
 			(at 55.88 55.88 0)
 			(hide yes)
 			(show_name no)
