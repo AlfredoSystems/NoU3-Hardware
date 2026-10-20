@@ -254,7 +254,7 @@
 			(at 0 -1.16 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "c8cc505f-b00f-4c00-a8a0-1140bf419779")
+			(uuid "4c66df98-87fd-489a-8c79-2cbee904c800")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -266,7 +266,7 @@
 			(at 0 1.16 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ffc68938-505f-4240-b41f-00ee495da5db")
+			(uuid "246fe056-b9db-4cbe-947d-60bc352d47e2")
 			(effects
 				(font
 					(size 1 1)
@@ -279,7 +279,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0c3d1b4a-76f8-41c4-a0b0-c05ac27d3688")
+			(uuid "27435ff0-c311-42c2-8d43-0e6e5b688807")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -292,7 +292,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fbacb602-d1d8-4af1-a9be-ef58e75ebe40")
+			(uuid "34cc866a-628d-43d3-bb6a-fb4b05faa622")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -312,10 +312,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C32949"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6897867-641b-4518-ae19-a0002fe1bfe6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/58b7adc7-3357-42d0-9de4-8dc49329f922")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -412,7 +431,7 @@
 			(at 0 -1.16 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "1eeb3bac-f0f7-4c17-b77a-7dccfd8b3f11")
+			(uuid "cbf62cdb-5e38-4f22-9602-2670d6d319b7")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -424,7 +443,7 @@
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "549e593e-0bd2-4264-a98c-b99ea878d44c")
+			(uuid "5bbc61ee-a5ab-433f-9c79-fea6aa6fa936")
 			(effects
 				(font
 					(size 1 1)
@@ -437,7 +456,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7b3d899a-4374-4fee-9b3f-fc535acbd11e")
+			(uuid "75a4db49-51b7-4bbe-b0ad-6b8c7b24a290")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -450,7 +469,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1c1460d9-98ba-4ac7-9cf7-3d79ab6e9a07")
+			(uuid "b0a6dcfc-7b5a-4a1d-9ae9-6526e87e6d3b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -470,10 +489,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C12530"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fbd9ecca-eaa3-424e-9dcb-b730a0eeac40")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/effd9ea2-ab6a-45db-ac14-0a90b48b44ef/b30a7604-ef4c-4a4a-83d2-8f5b15e02add")
 		(sheetname "/MotorSystem/MotorDriver-2/")
 		(sheetfile "NoU3-MotorDriver.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -571,7 +609,7 @@
 			(at 0 -3.45 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "91bcf955-6fa3-4f3b-b30d-a5b712e8db9a")
+			(uuid "f40e27a4-8440-44fe-a3bd-0e2e2c925c33")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -583,7 +621,7 @@
 			(at 0 3.45 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3eb875d9-1894-4f0e-bb93-645a2408b782")
+			(uuid "a0afbabb-6630-4a45-9c1e-ef9b713e46d5")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -596,7 +634,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6e687b09-8129-4b17-8acf-0c71cb2b4398")
+			(uuid "31612000-ef65-413f-b898-effa4a2bc349")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -609,7 +647,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1e716fbd-dfc1-4ac9-b90b-4f3d06811058")
+			(uuid "0908c19f-9c49-4e5a-9d6f-27c314140f4a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -967,299 +1005,6 @@
 			)
 		)
 	)
-	(footprint "AlfredoFootprints:D_SOD-323"
-		(layer "F.Cu")
-		(uuid "07f2e0ac-2a6d-4a73-9cf6-e86ef27ebb8c")
-		(at 12 -17.2 180)
-		(descr "SOD-323")
-		(tags "SOD-323")
-		(property "Reference" "D2"
-			(at 0 -1.85 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "b312ce71-5fdf-4464-bf55-896ea8f899c7")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "1N5819"
-			(at 0.1 1.9 0)
-			(layer "F.Fab")
-			(uuid "b42f947c-1c7d-465f-b75e-e943f3fc5c6f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_Guangdong-Hottech-Guangdong-Hottech-1N5819WS_C191023.html"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0087862d-c016-4164-b689-f9846ef6ed32")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "79904754-a9e6-4ecb-aebf-b438f502dc1c")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C191023"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3edafb02-8453-4287-adc9-f2e58d1d8e42")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
-		(path "/f0335fa4-89bc-4449-9f71-fe9e1cc83e12")
-		(sheetname "/")
-		(sheetfile "NoU3.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
-		(attr smd)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -1.85 0.75)
-			(end 1.26 0.75)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "0174dfb7-94a0-451e-843a-17ce24939cb8")
-		)
-		(fp_line
-			(start -1.85 -0.75)
-			(end 1.25 -0.75)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "46e31d09-2f1e-4cf6-9561-f911d6f7f41d")
-		)
-		(fp_line
-			(start -1.85 -0.75)
-			(end -1.85 0.75)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "b8a3ad3c-c958-4986-8f1e-495c498f55bb")
-		)
-		(fp_line
-			(start 1.85 -0.75)
-			(end 1.85 0.75)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "73462ef2-8aa6-4e91-8b96-3f1801709c12")
-		)
-		(fp_line
-			(start -1.85 0.75)
-			(end 1.85 0.75)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "c587db96-51db-40ee-9692-065b604aaf51")
-		)
-		(fp_line
-			(start -1.85 -0.75)
-			(end 1.85 -0.75)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "6aac33eb-f7db-495b-8036-5cd74bfbd0f1")
-		)
-		(fp_line
-			(start -1.85 -0.75)
-			(end -1.85 0.75)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "ee0b16a4-6650-4141-8387-2d41ea0bf9a9")
-		)
-		(fp_line
-			(start 0.9 0.7)
-			(end -0.9 0.7)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "922a317c-f98d-40dd-b8ca-962237a01502")
-		)
-		(fp_line
-			(start 0.9 -0.7)
-			(end 0.9 0.7)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "3411a460-9bc5-4a5c-9668-110c15df1df5")
-		)
-		(fp_line
-			(start 0.2 0.35)
-			(end -0.3 0)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "3e95c31f-561d-4eef-baba-1ada15073496")
-		)
-		(fp_line
-			(start 0.2 0)
-			(end 0.45 0)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "711877e9-9d84-4fa5-aa4e-08782ea830a5")
-		)
-		(fp_line
-			(start 0.2 -0.35)
-			(end 0.2 0.35)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "b97572df-78bb-4c47-bde9-4a71d6b748de")
-		)
-		(fp_line
-			(start -0.3 0)
-			(end 0.2 -0.35)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "086e6d70-e2a7-496c-a09c-621f75d06c5a")
-		)
-		(fp_line
-			(start -0.3 0)
-			(end -0.5 0)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "fff6cad8-2904-4a5b-9d7e-c919c73a4271")
-		)
-		(fp_line
-			(start -0.3 -0.35)
-			(end -0.3 0.35)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "2d500409-16b4-4682-9d0a-d8936c3deef3")
-		)
-		(fp_line
-			(start -0.9 0.7)
-			(end -0.9 -0.7)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "3b61fef7-2045-4b3e-9210-0fb0bf5979bd")
-		)
-		(fp_line
-			(start -0.9 -0.7)
-			(end 0.9 -0.7)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "6d2145cb-af9f-415d-b02b-c73ff679d17a")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 0)
-			(layer "F.Fab")
-			(uuid "48d35b94-f29f-4ff0-8752-7a2be7e6dc04")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" smd roundrect
-			(at -1.25 0 180)
-			(size 1 1)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net "VCC")
-			(pinfunction "K_1")
-			(pintype "passive")
-			(uuid "36aff722-77fc-4ad1-95af-bc4721f6771e")
-		)
-		(pad "2" smd roundrect
-			(at 1.25 0 180)
-			(size 1 1)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net "/VUSB")
-			(pinfunction "A_2")
-			(pintype "passive")
-			(uuid "f43b00fc-b71e-459f-9a4e-b2767143bac0")
-		)
-		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "0ebaf2f1-2b29-4c63-9c6c-7dbfb8ee80b4")
@@ -1270,7 +1015,7 @@
 			(at 0 -1.16 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "0e200ddb-fe26-4778-9244-217335083d9c")
+			(uuid "9b4e80b2-f171-4c51-9374-45086c47fb64")
 			(effects
 				(font
 					(size 1 1)
@@ -1282,7 +1027,7 @@
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "32ead603-6ec8-4c9a-bdea-7ef2ce587791")
+			(uuid "7188931c-cc35-4427-9517-a507466eb446")
 			(effects
 				(font
 					(size 1 1)
@@ -1295,7 +1040,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "477b3f08-5a2e-48c0-a263-22a493e74cc7")
+			(uuid "c703616b-77f3-404e-99b5-11ec7697a08a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1308,7 +1053,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c5be6315-8f11-4517-8e21-44e58478e9d1")
+			(uuid "e0aa93a1-c1d8-4ee2-ae6c-42b5867567e1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1344,6 +1089,12 @@
 		(path "/7bad8425-62fa-4a6e-a134-818974283ea2")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1440,7 +1191,7 @@
 			(at 0 -1.17 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "0a739c85-e32c-4492-9093-d91dd9ac7094")
+			(uuid "9cb2b023-63c6-4258-8e29-898e9d0b7054")
 			(effects
 				(font
 					(size 1 1)
@@ -1452,7 +1203,7 @@
 			(at 0 1.17 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5bc8e72c-8030-4c43-a467-905a74ff6338")
+			(uuid "e0b3e005-3f95-4785-8972-319d67cb15b7")
 			(effects
 				(font
 					(size 1 1)
@@ -1465,7 +1216,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5801f691-0b8f-4038-847f-6fe247bf112e")
+			(uuid "42091bcd-c0c6-4a98-ac0b-e9fa8e2e3e2e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1478,7 +1229,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8213a167-86ce-4fd1-8072-e2d83c882d92")
+			(uuid "b536c5fe-2438-4c6d-9e8c-cc54832aaf67")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1498,10 +1249,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "77a0d285-1a34-497c-bf47-aefa36c5148b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/4c39350d-60a9-4d74-bd80-e6c0e3a838ef")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1703,7 +1473,7 @@
 			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "ea4cf4dc-9f48-4d99-85a4-6acca93bcd16")
+			(uuid "cbf278c8-99bd-42af-8395-30821b37c7c1")
 			(effects
 				(font
 					(size 1 1)
@@ -1715,7 +1485,7 @@
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4e6c9be1-655a-414b-9551-132d9a94196e")
+			(uuid "6724b8c3-3d12-4008-a93f-88ec49905650")
 			(effects
 				(font
 					(size 1 1)
@@ -1728,7 +1498,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "62affb35-961c-417e-9f9a-c2837d9df235")
+			(uuid "3e499022-dd50-4c89-8fb9-246ac5df479b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1741,7 +1511,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ac20af73-386e-40ed-8835-0ee88d8bf9d8")
+			(uuid "1c2ed418-5a2f-49d0-93b3-16d71284e4e0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1761,10 +1531,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C25756"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c9fa70e1-c5af-43f5-ac52-0a4c8574e8b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/d304c318-db7f-40bb-bbe6-02342151b7f3")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1861,7 +1650,7 @@
 			(at 0 -1.16 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "e9cc3894-4c53-4c0a-9859-67b1f70c37f7")
+			(uuid "263040fa-966a-4220-b896-a9cb4ccb8bfc")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -1873,7 +1662,7 @@
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d9e57de9-f4d7-4ae0-91e3-722abe701399")
+			(uuid "73957e9f-27d5-4ddb-b17a-b6306f2e3da4")
 			(effects
 				(font
 					(size 1 1)
@@ -1886,7 +1675,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "490897f1-73d8-4c70-a423-9df9ce25eecf")
+			(uuid "e152deaf-15b1-44b9-a1dd-2ca6546694b8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1899,7 +1688,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "41264c23-e956-4d33-9995-30881639d4fe")
+			(uuid "57fff383-03f0-47a0-9990-83c97ff57707")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1935,6 +1724,12 @@
 		(path "/8d1ef3a9-0a61-4a19-ad92-4ecd80b35535")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2031,7 +1826,7 @@
 			(at 0 -1.43 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "da09953a-69e0-469f-a3cd-c267b17daa09")
+			(uuid "d4760669-3ee6-478b-b6ed-267fd6e4ac49")
 			(effects
 				(font
 					(size 1 1)
@@ -2042,7 +1837,7 @@
 		(property "Value" "22uF, 6V3"
 			(at 0 1.43 90)
 			(layer "F.Fab")
-			(uuid "7fbe8b1e-a523-4f8e-8fac-22570704ed91")
+			(uuid "7905ef87-b631-4113-88c1-c4a742622282")
 			(effects
 				(font
 					(size 1 1)
@@ -2055,7 +1850,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "501d9a46-266b-4e1c-9aac-efe07b635547")
+			(uuid "2998201f-cea7-444e-828c-05b6b214b158")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2068,7 +1863,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "50872072-1728-43e5-b14c-e62c0a656f61")
+			(uuid "d04cdc41-9879-4eac-a769-6c0add54a2eb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2104,6 +1899,12 @@
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/143bb70a-d4dc-4aa9-81bd-67624747a749")
 		(sheetname "/MotorSystem/")
 		(sheetfile "NoU3-MotorSystem.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2200,7 +2001,7 @@
 			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "87ee005e-b99c-4b4f-9ee3-f35c1fa37b99")
+			(uuid "6ff0fffb-7fa2-4ecc-a690-f43edf8599be")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -2212,7 +2013,7 @@
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ea4f6af3-1d30-4972-97cf-9a59f66afe03")
+			(uuid "e8ee4c30-a58c-4aae-afdc-f72c03214ea8")
 			(effects
 				(font
 					(size 1 1)
@@ -2225,7 +2026,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f05517bb-0f48-4ea9-a810-1e444f11b167")
+			(uuid "6d4a886b-adcd-45aa-97d3-2696c592bf07")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2238,7 +2039,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1341cd77-1367-4403-be1a-2b394a002868")
+			(uuid "c50b1a85-c59d-4991-a455-cbe58fa3b2ef")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2258,10 +2059,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C25905"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "704a986f-060e-4637-9d0b-90ced3b35cb1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/39d8855e-73bf-437c-80ca-b414197c08ca")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2358,7 +2178,7 @@
 			(at 0 -1.17 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "434870ce-a626-4357-9c36-5929284a5ad1")
+			(uuid "5a82c22f-a76f-4634-a053-a08a0e92e672")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -2370,7 +2190,7 @@
 			(at 0 1.17 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "524016fa-645c-405d-9c96-85b263fb453e")
+			(uuid "3db42276-2f37-49fd-a2ae-732c47f98612")
 			(effects
 				(font
 					(size 1 1)
@@ -2383,7 +2203,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "eeb82f19-c20c-420d-ae7f-846ac88aab01")
+			(uuid "2ce0feed-39d4-4eef-aa5c-7056e74b99e2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2396,7 +2216,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e6e8597d-88b1-44f2-aec0-476ad7d2589e")
+			(uuid "03d8d976-f847-46e4-9b79-dca61882973b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2416,10 +2236,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C25905"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b3f58a25-baa6-4116-a56e-4fc46bd4181a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/b23f90f4-9ee7-4ad5-bd10-e39c87870140")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2650,7 +2489,7 @@
 			(at 0 -1.17 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "cccd7d44-186e-41a1-85bc-52743c410565")
+			(uuid "896a7016-998c-4927-97d4-1f648ab33e57")
 			(effects
 				(font
 					(size 1 1)
@@ -2662,7 +2501,7 @@
 			(at 0 1.17 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8a687973-bbe4-4bf5-92f9-ea6f548db55b")
+			(uuid "2643cca8-52d8-40d5-9c9a-608ca87151de")
 			(effects
 				(font
 					(size 1 1)
@@ -2675,7 +2514,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3216bf68-4827-499e-ae69-5a004fd63e4d")
+			(uuid "f3cbfef0-56da-4e1b-b209-f6092bd465ce")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2688,7 +2527,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2466f370-844d-4c20-94dd-3d1f1a09e45b")
+			(uuid "aba7a83f-228e-4956-a546-babfa4bd960f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2724,6 +2563,12 @@
 		(path "/37c552f5-a1e0-4704-aee7-c4cee4ae2e13")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2821,7 +2666,7 @@
 			(at 0 -3.45 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "92907510-5663-485a-bcc9-47b053657f6d")
+			(uuid "926518b4-9a7b-43b0-8837-b27e9185ae60")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -2833,7 +2678,7 @@
 			(at 0 3.45 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d7c1829c-8f6e-4028-8c34-ccbba5470d5e")
+			(uuid "d02bdee1-74ba-46d1-8cfc-e9c83d2238ea")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -2846,7 +2691,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "58132bfa-3918-4fe9-bd2d-d7d41838ea4a")
+			(uuid "1287a17b-99e9-4a0d-a59e-5d249ca0fea7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2859,7 +2704,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6c05b6a1-6110-4bc3-b390-0fb234dcc777")
+			(uuid "ef97790f-e534-43d2-ae88-386c87fe0c7c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3227,7 +3072,7 @@
 			(at 0 -1.16 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "16e8acf8-3945-4d15-bf7f-fe141f09153c")
+			(uuid "75031305-5ff7-4d6f-83b5-d19b1a3e3284")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -3239,7 +3084,7 @@
 			(at 0 1.16 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "02af71a6-e1b2-4fd6-9348-646ee0db07da")
+			(uuid "ad76dd82-70e6-45c7-827c-592aa9a660ce")
 			(effects
 				(font
 					(size 1 1)
@@ -3252,7 +3097,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b14e9bc1-d6dd-4e66-a7ce-892e2e5256d2")
+			(uuid "de2bbbfb-b07d-49f8-afc9-db9fa053bbef")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3265,7 +3110,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "10a15b84-2f77-4d5f-8155-e9148868cacc")
+			(uuid "7697f44a-30ae-4267-b0c9-8535039ffb35")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3301,6 +3146,12 @@
 		(path "/02b6184a-cb54-4ec9-87ac-c7ca529efe9b")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3397,7 +3248,7 @@
 			(at 0 -1.43 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "aa99036b-2157-4879-9a19-b65a2f988c87")
+			(uuid "8e3a75d8-21b3-4f71-9c98-fbbe9d2c512f")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -3409,7 +3260,7 @@
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "491bcd93-a9cd-4acb-896c-b1a950cb0a0c")
+			(uuid "4678f3c1-2d16-44fd-9175-7f380889cd71")
 			(effects
 				(font
 					(size 1 1)
@@ -3422,7 +3273,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7b455b4d-3215-42a6-8309-cebe7245fa85")
+			(uuid "c5d78ec1-cdbd-482d-9a03-982c098852a3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3435,7 +3286,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "690b41dc-e48a-4c93-8685-9378115b2198")
+			(uuid "8123674b-890b-4746-8ebc-f2aee3154000")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3471,6 +3322,12 @@
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/f53403f3-b8c2-4526-bc7c-2cb46da2d563")
 		(sheetname "/MotorSystem/")
 		(sheetfile "NoU3-MotorSystem.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3567,7 +3424,7 @@
 			(at 0 -3.3 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "68cbac2a-7db1-4ef8-982b-276dbf4c3e91")
+			(uuid "84590567-7fb2-46b4-95c6-53ad30c8cdb3")
 			(effects
 				(font
 					(size 1 1)
@@ -3578,7 +3435,7 @@
 		(property "Value" "JST SR/SZ"
 			(at 0 3.3 90)
 			(layer "F.Fab")
-			(uuid "20a5008e-ff9a-425f-a06b-f438ebf99cd0")
+			(uuid "c55066d4-9cac-4402-a06a-7b9458e71a2a")
 			(effects
 				(font
 					(size 1 1)
@@ -3591,7 +3448,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "259b5a24-c6c9-4402-8b44-5e72de995682")
+			(uuid "f685c76d-6620-4d30-a644-3f65bfb58d70")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3604,7 +3461,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4e8dc8fb-b6ce-4c6d-a5c4-6371b72e016e")
+			(uuid "60dbfb8e-e9d1-4dcc-8c22-52667e6cccc4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4378,7 +4235,7 @@
 			(at 0 -1.16 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "1b10f156-c048-42f5-a537-df78f46bbdc0")
+			(uuid "77cf1636-5269-40e8-bf10-ca45690ad926")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -4390,7 +4247,7 @@
 			(at 0 1.16 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2d0c0650-ce1c-45fc-a8b4-4f4061478e1c")
+			(uuid "3d0e1d81-8d1d-40ee-a9ef-36a2ca20ec5f")
 			(effects
 				(font
 					(size 1 1)
@@ -4403,7 +4260,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "82a94169-e2cd-4eba-970f-726a3a04fed6")
+			(uuid "29ce77a7-c117-4baf-ad1b-b51003cdb843")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4416,7 +4273,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "400f64a1-d437-4467-b03e-2edddd411fce")
+			(uuid "98058491-a6e9-4d45-9e0d-934497371d59")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4452,6 +4309,12 @@
 		(path "/b1574e31-7284-4990-8241-4d0a7dbc8ccf")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4548,7 +4411,7 @@
 			(at 0 -3.3 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "f4859a47-158a-4137-a788-bf78f671279c")
+			(uuid "bdb5e8b0-bcd5-43ab-80ba-0dc64fe7f0c0")
 			(effects
 				(font
 					(size 1 1)
@@ -4559,7 +4422,7 @@
 		(property "Value" "JST SR/SZ"
 			(at 0 3.3 90)
 			(layer "F.Fab")
-			(uuid "b67335fa-89d7-4c20-99ea-1032091b39bd")
+			(uuid "a341a585-0106-4cf9-81f3-db90912bade5")
 			(effects
 				(font
 					(size 1 1)
@@ -4572,7 +4435,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "baeed02f-9870-443a-adf5-f95e0dd95340")
+			(uuid "4c7252f5-d98c-4806-b1ec-715a92621daa")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4585,7 +4448,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "39ee1fbc-41c8-488d-88ad-4ec6d6a2c917")
+			(uuid "eb135dbe-ea2c-4ca9-9ad1-fd9d60fa3afc")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5125,7 +4988,7 @@
 			(at 0 -2.4 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "bc396339-0880-4371-8ff2-54ac71e2fdab")
+			(uuid "12b746e5-d2e3-47f8-bac5-af25ee37a84c")
 			(effects
 				(font
 					(size 1 1)
@@ -5137,7 +5000,7 @@
 			(at 0 2.4 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "83e0c49d-031b-435d-ba85-2ca0f7c9d1cc")
+			(uuid "8ad3c589-ddb8-4fea-8751-5a77f064915d")
 			(effects
 				(font
 					(size 1 1)
@@ -5150,7 +5013,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6e977f3e-f4d6-4460-97d1-3a2974963ecb")
+			(uuid "1cf73960-d524-4ef0-9c7c-d1d1d1a9e5d9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5163,7 +5026,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5ff94a71-b143-4d03-a633-861294da3126")
+			(uuid "b2def4d2-9603-4203-b6c3-515d1aadb470")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5198,6 +5061,12 @@
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/8737d9b0-a250-4319-b126-2dcd6ed5b7dd")
 		(sheetname "/MotorSystem/")
 		(sheetfile "NoU3-MotorSystem.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "4" "5" "2" "1" "6" "3")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5498,7 +5367,7 @@
 			(at 0 -1.16 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "f7e2026f-09ae-4c5a-a63b-002fbffdb0c0")
+			(uuid "27036566-6c07-4a14-9459-5e890e7d7427")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -5510,7 +5379,7 @@
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cc5e4219-7b45-4eaf-bae9-999565a685ba")
+			(uuid "38bcb473-4313-47ab-afda-920eb07db244")
 			(effects
 				(font
 					(size 1 1)
@@ -5523,7 +5392,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4e2276eb-d60e-4b7e-a9f9-26691e4d0439")
+			(uuid "8175c0ae-acf6-4b80-9615-03ee35be5137")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5536,7 +5405,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "698ddb7f-466c-46cc-b68f-807665ebd660")
+			(uuid "089ada66-4984-4cb2-88dc-2e7eaf9b5b20")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5556,10 +5425,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C12530"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ebb75548-36cb-45f9-bbfe-0cff4744b6c7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/5ac6842d-21ec-4136-97d4-4945b97c774c/b30a7604-ef4c-4a4a-83d2-8f5b15e02add")
 		(sheetname "/MotorSystem/MotorDriver-3/")
 		(sheetfile "NoU3-MotorDriver.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5657,7 +5545,7 @@
 			(at -1.75 0 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "a7f4965e-ec10-40bc-bb36-b47a295a9041")
+			(uuid "19292b1a-101a-481b-aa4c-db3f82be7255")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -5669,7 +5557,7 @@
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "00418227-5705-435a-a3ef-8eb841fadd05")
+			(uuid "4c816b74-78ce-439c-b89d-46ad937a3483")
 			(effects
 				(font
 					(size 1 1)
@@ -5682,7 +5570,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "500a68ca-7fa8-4511-8567-4b5b59386336")
+			(uuid "cfb3d151-3a02-4f08-a27a-8ffe2d5c8411")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5695,7 +5583,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0d5dff6f-9cf1-483b-86a0-b6bac6904921")
+			(uuid "21c344d2-dced-4ee9-bae4-915e8be22fba")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5715,10 +5603,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C12530"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dd3fff64-02a5-4031-b26c-7b5ff4d35f3d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/168e54f9-ad57-43fb-858f-563992cf0dc4/b30a7604-ef4c-4a4a-83d2-8f5b15e02add")
 		(sheetname "/MotorSystem/MotorDriver-1/")
 		(sheetfile "NoU3-MotorDriver.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5815,7 +5722,7 @@
 			(at 0 -1.16 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "6a6f41b6-a24a-460a-b979-5fe10fb70cdd")
+			(uuid "d42b1ffb-1769-444d-8091-322449387a3d")
 			(effects
 				(font
 					(size 1 1)
@@ -5827,7 +5734,7 @@
 			(at 0 1.16 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "620417b3-d7e8-4e65-920c-b5883f604bde")
+			(uuid "4308585f-edab-4c82-8517-651fd8224d2b")
 			(effects
 				(font
 					(size 1 1)
@@ -5840,7 +5747,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d0952829-80c4-470b-9483-324c91671bb6")
+			(uuid "7fe5eea4-9ff7-45ea-a7b4-4e5079102e4d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5853,7 +5760,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9163fb1d-1e50-4993-888a-a7dddbf926fd")
+			(uuid "8edb2c55-4b64-4ef1-8a12-4918b83d9634")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5889,6 +5796,12 @@
 		(path "/3174514b-3607-476d-87cb-bf6e6dd7b52c")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5985,7 +5898,7 @@
 			(at 0 -1.16 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "1725d82c-2622-4770-adb2-e317defe8ba6")
+			(uuid "88addb88-5369-4b7b-abcf-0bb4e5b9ed3e")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -5997,7 +5910,7 @@
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b4e64b63-f4c7-4b47-a430-dec115a03a6f")
+			(uuid "cc6a0ead-fd66-41cc-a2c2-f9fcb84d7648")
 			(effects
 				(font
 					(size 1 1)
@@ -6010,7 +5923,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d4483456-59d0-46d3-b3dd-e013fc6e3f73")
+			(uuid "aacda41e-69be-46a5-a63d-84bbcf7db0cd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6023,7 +5936,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0d1f6abd-8c7d-4b2a-af7f-ab065e023f6a")
+			(uuid "5381a884-1a3a-416f-b124-5d3afd623583")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6043,10 +5956,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C52923"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "047d3931-5a47-4ce3-81dd-8e9b636ced04")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/3446f2c0-8f43-4165-9b3f-12bab17a7c33")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6144,7 +6076,7 @@
 			(at 0 -3.45 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "e67fac56-103c-4e26-8520-cca32906343d")
+			(uuid "6e863f0e-7745-44f8-9bf8-0c124c9d9dbc")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -6156,7 +6088,7 @@
 			(at 0 3.45 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e2e7f2b3-7faf-422d-9784-dfea00c79876")
+			(uuid "fa4e99ec-428e-4433-b972-b858491808a9")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -6169,7 +6101,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1776b283-5f0c-43dd-a08e-0017d2d0e4ca")
+			(uuid "7325526b-a347-495a-a466-f3d0021f5576")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6182,7 +6114,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "64abda35-8491-4b10-89a6-ea2c9ba8733d")
+			(uuid "f8bde910-2a18-43c1-a80e-6f7e244902b9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6615,7 +6547,7 @@
 			(at 0 -2 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "0baceecf-1f6c-4001-92c6-af2a0d8451fa")
+			(uuid "58cdc4e6-195f-40ec-a87c-51ed198224f6")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -6627,7 +6559,7 @@
 			(at 0 2 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f146d078-b1cb-4f74-b12d-259a8c9a37ea")
+			(uuid "cec0a5af-2151-4f98-b6e6-8fa3e8ea676a")
 			(effects
 				(font
 					(size 1 1)
@@ -6640,7 +6572,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c6ec93e9-1b0a-4ccd-8070-35725dca5430")
+			(uuid "2a9c49eb-cbc2-49ed-b429-ed6e9c237361")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6653,7 +6585,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fb91d0fe-78c9-4fe6-bc77-a89f668a0611")
+			(uuid "cdad0a98-0843-4367-9ff5-c8aedbe5b6b0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6689,6 +6621,12 @@
 		(path "/35fac589-fdc4-49e9-afc7-59f2b7718cf9")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "4" "2" "3")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6808,7 +6746,7 @@
 			(at 0 -1.17 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "becedea6-6336-4125-9008-457ef38ddc32")
+			(uuid "807bd9fa-7acf-49c2-92d4-50b378c670e3")
 			(effects
 				(font
 					(size 1 1)
@@ -6820,7 +6758,7 @@
 			(at 0 1.17 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3be15375-6eb7-4d7d-b3e9-cfa955aa142b")
+			(uuid "d7901fa0-a62b-4f82-86a5-fb168eaa06b7")
 			(effects
 				(font
 					(size 1 1)
@@ -6833,7 +6771,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "abc9cf41-bc0d-4bd2-8163-03566e303333")
+			(uuid "03a6deb3-f06c-46e1-a5e8-f1d51ef48f61")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6846,7 +6784,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5058d463-e399-4627-8732-ff27d983aa3d")
+			(uuid "7715fa40-f701-4bc7-8170-8d7c1a5644e8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6882,6 +6820,12 @@
 		(path "/7f7076f5-973e-46f7-a1a0-c2073a7b1418")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7200,7 +7144,7 @@
 			(at 0 -3.3 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "e461caa8-80f7-4512-b1eb-c4c4e61a1f76")
+			(uuid "8b5bc57f-39ba-4a5d-b6f1-5c5712bd71ef")
 			(effects
 				(font
 					(size 1 1)
@@ -7211,7 +7155,7 @@
 		(property "Value" "JST SR/SZ"
 			(at 0 3.3 90)
 			(layer "F.Fab")
-			(uuid "eb14371a-6800-47e1-b8b8-4f3d5e03e34c")
+			(uuid "cb3dc907-c413-477d-b2cf-80774fbef246")
 			(effects
 				(font
 					(size 1 1)
@@ -7224,7 +7168,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c109b008-e8a6-4b93-8fb3-582c4d7b36ca")
+			(uuid "6be68d4c-dbfe-4d1e-97ce-f0af2117d1e9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7237,7 +7181,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ece3a169-fb19-42d6-ab31-bb93e599e085")
+			(uuid "f853e942-ecea-4681-975b-d4b7fcd491a6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7934,7 +7878,7 @@
 			(at 0 -4.82 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "2fbf7300-b891-4413-82b8-ed0cdda6dd37")
+			(uuid "70d3a422-286a-48f7-8c9b-b5918ef1b9b5")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -7946,7 +7890,7 @@
 			(at 0 4.82 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c0e0fece-9c75-461c-a40a-367a19d4506e")
+			(uuid "538ffc5a-cfa7-4342-8cd2-5d9f3a4d6205")
 			(effects
 				(font
 					(size 1 1)
@@ -7959,7 +7903,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5e218ee7-2369-44ce-b211-87585386b0a8")
+			(uuid "1f3ac943-3372-47ea-997e-ab16097a563c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7972,7 +7916,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3ea944cf-36d7-4bad-93ea-943d4d6ae093")
+			(uuid "c83d0978-dbb3-422e-98cb-1109450d9c5f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8008,6 +7952,17 @@
 		(path "/f4f32f7e-946c-4e04-b4d5-f3c36f9fe4b2")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "4" "5" "51" "52" "6" "7" "8" "9" "10" "11" "12" "13" "14"
+					"15" "16" "17" "18" "19" "23" "24" "25" "26" "27" "2" "3" "20" "29"
+					"57" "46" "55" "56" "54" "53" "50" "49" "48" "47" "45" "44" "22" "21"
+					"43" "42" "41" "40" "39" "38" "37" "36" "35" "34" "33" "32" "31" "30"
+					"28"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9106,7 +9061,7 @@
 			(at 0 -1.16 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "3be379db-bb02-4339-aed7-8d104ac07567")
+			(uuid "85943fd5-fe88-4d89-97d8-19fee230eb59")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -9118,7 +9073,7 @@
 			(at 0 1.16 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f46ffa70-0a3c-43e7-9983-71fefe3c62b3")
+			(uuid "2f339bcd-49f7-4ee0-829c-9554c7ba2a65")
 			(effects
 				(font
 					(size 1 1)
@@ -9131,7 +9086,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d5290bcd-fe8f-41c1-ac5d-ab200f9f3169")
+			(uuid "8e70d6ac-dc22-455c-8050-9f76feea81de")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9144,7 +9099,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "bebda21b-ff43-41bb-ab3c-1c41c710702d")
+			(uuid "9882aa5a-a66b-44c2-b1ce-45f50eb7a737")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9164,10 +9119,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C32949"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "60e9b82d-ed0d-4c4a-b305-7eecdc067d5e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/f678cfa0-46a8-4b48-99c1-56da2af3b752")
 		(sheetname "/MotorSystem/")
 		(sheetfile "NoU3-MotorSystem.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9264,7 +9238,7 @@
 			(at 5.5 -21.5 180)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "ca3d0a5a-519d-4715-a94a-ab264a370d9d")
+			(uuid "6efa6287-e260-4473-8854-f4ae9052149b")
 			(effects
 				(font
 					(size 1 1)
@@ -9275,7 +9249,7 @@
 		(property "Value" "Barrel_Jack"
 			(at 6.7 -19.4 180)
 			(layer "F.Fab")
-			(uuid "2ab40dc9-94cd-475f-a5a1-0ff131be7ef8")
+			(uuid "01542b60-7cb2-4767-8a56-a45f5a7b22be")
 			(effects
 				(font
 					(size 1 1)
@@ -9288,7 +9262,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f74fe58d-4ca5-4f3d-87e2-25c35012552e")
+			(uuid "1a45a692-1e02-47ce-97a4-ddb7f7433bfe")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9301,7 +9275,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b1e4ed7a-e71c-4978-9c11-e0adad031ef0")
+			(uuid "804bae27-ae6c-4749-a0e8-e009a4a701f4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9507,7 +9481,7 @@
 			(at 0 -1.16 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "f77ae50f-25f0-4683-bad8-42ed8fc44073")
+			(uuid "4b26908c-d85a-4ce4-931b-0630cd6b44b5")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -9519,7 +9493,7 @@
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "edb7ce09-a684-40e3-8f8a-d49ec4ff72fa")
+			(uuid "a4f2b006-47c3-4dfa-8805-3f4c06804ae1")
 			(effects
 				(font
 					(size 1 1)
@@ -9532,7 +9506,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "462cc5e9-942e-46cc-a8be-5dd1ecae3196")
+			(uuid "9d8be791-8470-496d-a03a-efb62dde6aec")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9545,7 +9519,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "35069d2d-bc22-4d2c-9f40-114056616a69")
+			(uuid "067a94c4-8975-4751-ae45-65e4fb2662ad")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9565,10 +9539,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C32949"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "35f8f23f-f41f-4224-b336-f348197b4e42")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/881907af-6283-46d5-ac19-f897a1cc076b")
 		(sheetname "/MotorSystem/")
 		(sheetfile "NoU3-MotorSystem.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9665,7 +9658,7 @@
 			(at 0 -1.17 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "b07c5eeb-8dc6-4168-a519-e4dace81342e")
+			(uuid "bf9f5e85-39d6-4c3a-8690-51cbb61f1f41")
 			(effects
 				(font
 					(size 1 1)
@@ -9677,7 +9670,7 @@
 			(at 0 1.17 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "aa307bd4-9912-4fc4-a28e-ff9a21693d8a")
+			(uuid "ca67243f-a118-4dc2-bb38-7fee5de7f556")
 			(effects
 				(font
 					(size 1 1)
@@ -9690,7 +9683,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5bfee5e5-90e2-40e2-a41c-923eeda25d1c")
+			(uuid "981c306c-b722-4ab7-b40c-5bc7dbcd6074")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9703,7 +9696,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "963dff10-ba67-4c10-9363-ee3c34fb6ed1")
+			(uuid "4ce58dfd-d280-4819-8217-21b051bc68b8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9723,10 +9716,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "387b0cd5-db76-4229-a91b-c5e3a63d67d6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/76451c94-1be5-4bbd-a7dd-332ffb26f293")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9824,7 +9836,7 @@
 			(at 0 -3.45 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "2e572366-bee6-4471-9c4a-ac3762961a3b")
+			(uuid "432a49af-5be0-48ab-952f-f7ef871af4d2")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -9836,7 +9848,7 @@
 			(at 0 3.45 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "247ef6ec-cd34-4555-a967-62f5dd1a0f17")
+			(uuid "6cd6b4de-e3f0-4c20-839e-346d45d80b78")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -9849,7 +9861,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "81e8c18f-d0fd-4a45-a700-afdcfb772adc")
+			(uuid "5455383f-d8d3-4d3c-a396-c5f6aa02838a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9862,7 +9874,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3c1860f1-bfd8-41f0-a9dc-ed67b0e34fc2")
+			(uuid "484cced2-b2be-4a79-8e87-601c4dc2b4d0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10230,7 +10242,7 @@
 			(at 0 -1.16 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "956beff1-0ac5-40b5-afa2-377d24d2ff99")
+			(uuid "801f4ebf-c313-4362-bf70-52e2d4e95eb9")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -10242,7 +10254,7 @@
 			(at 0 1.16 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "067ae293-8607-4d3d-b9fe-8793d7188d63")
+			(uuid "1b98a08b-646f-435c-b58b-4672b6678692")
 			(effects
 				(font
 					(size 1 1)
@@ -10255,7 +10267,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "750bdaf9-49be-4af2-ad50-125a2f178ee5")
+			(uuid "d7f5dede-36c1-42a2-9c24-d84ebcb34ab8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10268,7 +10280,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d1ddb187-5b9d-4e6f-b8f5-c977c1ba5fa6")
+			(uuid "914e35c2-22b9-4913-ba7d-015d83cc32b4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10288,10 +10300,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C32949"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1215583b-921d-48ac-969e-943f6a7b39d2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/0ba4bff9-3dcd-4548-90a7-f4fa98491316")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10673,7 +10704,7 @@
 			(at 0 -1.68 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "870cca8f-4d2c-4944-9bf1-816df6243d4b")
+			(uuid "3dd57768-47fb-4a56-8300-932aa4905f42")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -10685,7 +10716,7 @@
 			(at 0 1.68 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "baa2b4b7-1444-4f6d-b4a0-3ed443012554")
+			(uuid "f3140130-b6c4-4003-b5ac-e6581c377873")
 			(effects
 				(font
 					(size 1 1)
@@ -10698,7 +10729,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f023d452-d2f6-44f2-988a-457ba36a59f1")
+			(uuid "faeb2271-0707-45cb-989c-cb1f958f3bd9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10711,7 +10742,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f1b9c1e9-3419-4c14-b309-214d8216bfa7")
+			(uuid "a7231d81-c31c-420f-b5be-c691a077e2ae")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10747,6 +10778,12 @@
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/75fe67a7-abdc-45df-8399-29a3950a166e/5abe4d25-6c35-4966-b75b-adf0e4a66d83")
 		(sheetname "/MotorSystem/MotorDriver-4/")
 		(sheetfile "NoU3-MotorDriver.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10843,7 +10880,7 @@
 			(at 0 -1.17 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "8746c74d-06cc-4dd7-92df-c7e74f77fbfc")
+			(uuid "61d819e9-6999-4419-9838-f5434c0f1e07")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -10855,7 +10892,7 @@
 			(at 0 1.17 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c8c44d8d-6d7c-41b9-aff2-3395d6676a30")
+			(uuid "eb38e9bd-87a8-4072-b3f3-af2ff554fe64")
 			(effects
 				(font
 					(size 1 1)
@@ -10868,7 +10905,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0502fc20-5995-439e-826c-b944edcdb06a")
+			(uuid "ead13f6e-5f81-43ad-8fde-c039b6d042e2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10881,7 +10918,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a98c1c3d-0191-4095-ae65-d66fb2be068f")
+			(uuid "a9084d41-5a4d-4f08-97d0-bcc57b82994e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10917,6 +10954,12 @@
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/8dbd9a8d-674e-48c0-82a3-82bae3ed329f")
 		(sheetname "/MotorSystem/")
 		(sheetfile "NoU3-MotorSystem.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11014,7 +11057,7 @@
 			(at 0 -1.16 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "5076c002-2ad4-4f02-9693-7966e895786b")
+			(uuid "5aa6a0f4-71b8-4fab-b687-243721c7a5a4")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -11026,7 +11069,7 @@
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6c03913b-1411-4317-967f-1aca20f43698")
+			(uuid "5a996f7b-9c83-4865-8714-2c6246c56c67")
 			(effects
 				(font
 					(size 1 1)
@@ -11039,7 +11082,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a09eb8cb-ec6a-47f9-9c34-2379c85835d5")
+			(uuid "bdd21e77-1eba-44ae-89b3-c7ea9ac9a99e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11052,7 +11095,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ab6875b6-9d2d-44b1-83f0-c24cc190528c")
+			(uuid "54a406d8-de03-4ff9-83b7-5abbf66654a0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11072,10 +11115,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C12530"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ef1aff5d-c534-4d97-b5a1-108b705296c1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/75fe67a7-abdc-45df-8399-29a3950a166e/b30a7604-ef4c-4a4a-83d2-8f5b15e02add")
 		(sheetname "/MotorSystem/MotorDriver-4/")
 		(sheetfile "NoU3-MotorDriver.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11172,7 +11234,7 @@
 			(at 0 -3.3 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "ce22a71a-61c0-4fac-9502-ce21746ae5e4")
+			(uuid "313cea95-c58f-464a-94b4-0f5d806c3d89")
 			(effects
 				(font
 					(size 1 1)
@@ -11183,7 +11245,7 @@
 		(property "Value" "JST SR/SZ"
 			(at 0 3.3 90)
 			(layer "F.Fab")
-			(uuid "1756cdf6-cac0-4eee-81fc-c486d8447ab3")
+			(uuid "b25e8378-b354-4a3c-99e1-d45959b925d2")
 			(effects
 				(font
 					(size 1 1)
@@ -11196,7 +11258,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6b3dd1f1-de23-488c-bf73-7b8a473435bb")
+			(uuid "28776293-7550-456e-afa8-301761e92514")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11209,7 +11271,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "22541fff-7abd-4c5d-8a60-58b042d324ad")
+			(uuid "88069d0e-9983-4c45-9d30-61cfcce59731")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11749,7 +11811,7 @@
 			(at 0 -1.17 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "dd83a9de-a992-4989-82b6-0a336c7b7a39")
+			(uuid "4b30fecd-279e-48a0-a7f5-16eb737d377a")
 			(effects
 				(font
 					(size 1 1)
@@ -11760,7 +11822,7 @@
 		(property "Value" "10K"
 			(at 0 1.17 90)
 			(layer "F.Fab")
-			(uuid "2dadd75d-ce51-4ffa-a238-0290be6b4a45")
+			(uuid "91b09789-c8ed-4c75-b987-62abbae91668")
 			(effects
 				(font
 					(size 1 1)
@@ -11773,7 +11835,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f92036ad-d71a-4f2c-9642-f7b2ccb20b38")
+			(uuid "a9daa614-a270-467a-8e62-65287d3a0b5b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11786,7 +11848,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "374a3272-979b-46dc-9abe-d06e389e85c1")
+			(uuid "55f3fde2-8199-48e4-8f20-61b7e4f1896e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11806,10 +11868,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2a3a097a-57ba-4bcb-a202-9392bf85ed70")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/09567a18-be49-440e-ba80-4d4c56d84e61")
 		(sheetname "/MotorSystem/")
 		(sheetfile "NoU3-MotorSystem.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11906,7 +11987,7 @@
 			(at 0 -4.58 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "cd7716bf-29f0-42cd-afe5-11c000062ce8")
+			(uuid "f8c95af6-31f0-4f89-8e9c-a9d11a72e34a")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -11918,7 +11999,7 @@
 			(at 0 6.24 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6462b2ff-e544-4ec7-b8c4-d82b1cf65b87")
+			(uuid "d20a88b2-a061-47a7-a39e-e37c62dc4e94")
 			(effects
 				(font
 					(size 1 1)
@@ -11931,7 +12012,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c82958e4-2ded-45f9-ace9-dbfd5b8928c3")
+			(uuid "9ac199b0-0a27-4d61-b891-9c92054345e1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11944,7 +12025,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "eaa042d1-10ea-4635-b163-48e7ef95f20c")
+			(uuid "a5da5e87-64bb-4151-a4ec-4898840753dc")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11968,6 +12049,14 @@
 		(path "/9aa5b45a-4284-41b3-ba4d-e941f82a8e6d")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "S1" "A1" "A12" "B1" "B12" "A4" "A9" "B4" "B9" "A5" "B5" "A7" "B7"
+					"A6" "B6" "B10" "B11" "A3" "A2" "A10" "A11" "B3" "B2" "A8" "B8"
+				)
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12335,7 +12424,7 @@
 			(at 0 -1.17 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "ba0f2688-b9eb-4fda-a8e5-b4b9b0fe4328")
+			(uuid "0244a90a-d242-4c8c-9ece-a3c45b946f50")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -12347,7 +12436,7 @@
 			(at 0 1.17 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1650c3bd-115b-4d1a-a4be-7d66ca214c51")
+			(uuid "571b4e49-f96f-4231-8100-fa81286a98c2")
 			(effects
 				(font
 					(size 1 1)
@@ -12360,7 +12449,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "60e13bec-2a0b-47ed-ab37-7c03873f09f2")
+			(uuid "ac48859a-30ea-4352-9c12-7f503be9785f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12373,7 +12462,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e903fa60-83f0-4d84-b980-57bb5140597f")
+			(uuid "24e17c91-55ff-4b10-aa00-b1a141ca2224")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12409,6 +12498,12 @@
 		(path "/fe87fad0-1c39-4391-a85d-b1a42bc2cf77")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12505,7 +12600,7 @@
 			(at 0 -1.43 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "55579aaa-0c6e-47af-bec0-666cf2ed5b48")
+			(uuid "2576b07f-cbae-4106-b6d9-7879c9dade1f")
 			(effects
 				(font
 					(size 1 1)
@@ -12516,7 +12611,7 @@
 		(property "Value" "22uF, 6V3"
 			(at 0 1.43 90)
 			(layer "F.Fab")
-			(uuid "d52c6d7f-971f-4fc0-902f-e73b95e8a138")
+			(uuid "b85c6de6-a4c1-406d-b62f-28d8c93ff734")
 			(effects
 				(font
 					(size 1 1)
@@ -12529,7 +12624,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2b1e5446-279c-4353-b06c-641b32f49e15")
+			(uuid "29c4594c-09da-486c-8396-30e25ce97dcc")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12542,7 +12637,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6a798928-0eda-4e54-ab45-5021b81523a2")
+			(uuid "cf8b4c51-1b11-4541-8664-be53e5d14969")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12578,6 +12673,12 @@
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/8aff957f-d33b-4afa-af5e-b3e8244a347d")
 		(sheetname "/MotorSystem/")
 		(sheetfile "NoU3-MotorSystem.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12674,7 +12775,7 @@
 			(at 2.286 -0.508 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "334154ae-4864-40c8-9e21-ec96b1de48b3")
+			(uuid "91adf762-20a5-4bc2-a284-6107ed0e01b3")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -12686,7 +12787,7 @@
 			(at 0 1.68 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a8abe967-fd83-4fb1-9822-1ee0b4017632")
+			(uuid "83296f95-3340-48ba-bfa0-7c8af20d097a")
 			(effects
 				(font
 					(size 1 1)
@@ -12699,7 +12800,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ba932eef-b0ba-42cc-9c7a-4d675ddce688")
+			(uuid "7df59d1e-5a83-4add-9fec-b6fbaf109324")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12712,7 +12813,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d6cb8a17-0221-4d80-8817-7987b1d7d2fa")
+			(uuid "97ff2f03-224b-4742-9d5a-369ae23865af")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12748,6 +12849,12 @@
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/168e54f9-ad57-43fb-858f-563992cf0dc4/5abe4d25-6c35-4966-b75b-adf0e4a66d83")
 		(sheetname "/MotorSystem/MotorDriver-1/")
 		(sheetfile "NoU3-MotorDriver.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13393,7 +13500,7 @@
 			(at -0.988 0.762 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "ab6896f7-78b3-4002-a2b6-938a4a6924ad")
+			(uuid "7b7e69ff-20b2-4953-a6c3-d1b15b8f6225")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -13405,7 +13512,7 @@
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e33aa93c-8bc7-48f7-a95e-34da62659152")
+			(uuid "b55246c4-1b0f-479b-bfaa-f3ac21ffce4d")
 			(effects
 				(font
 					(size 1 1)
@@ -13418,7 +13525,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "09eff6a1-1b34-45b0-be25-4ed9df390c5f")
+			(uuid "e5dbfaf4-125d-4978-8233-3dcbdc1c3d15")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13431,7 +13538,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4c7b3bd7-fa94-4941-af07-a329d6d71672")
+			(uuid "6894712b-5803-46be-ba67-406f0693785d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13467,6 +13574,12 @@
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/168e54f9-ad57-43fb-858f-563992cf0dc4/8e062075-c571-443c-ae9e-7799fa29b66b")
 		(sheetname "/MotorSystem/MotorDriver-1/")
 		(sheetfile "NoU3-MotorDriver.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13563,7 +13676,7 @@
 			(at 0 -1.17 180)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "02ad3908-57b1-4706-b753-2cb2501b2588")
+			(uuid "0760760f-d4b4-4e2a-80f8-b97e96d242fd")
 			(effects
 				(font
 					(size 1 1)
@@ -13575,7 +13688,7 @@
 			(at 0 1.17 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6e72d4bb-460b-4403-af3d-a0f72644549e")
+			(uuid "5064775a-3101-498d-b330-88ddb82c3723")
 			(effects
 				(font
 					(size 1 1)
@@ -13588,7 +13701,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e6ab067d-9c53-4460-91d4-52b15804da65")
+			(uuid "3cc956ce-2642-4f87-b0e6-4acc3c185caf")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13601,7 +13714,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f390f044-63c6-4b11-a614-f219800f9e76")
+			(uuid "bf304d11-ef0b-4b7b-a423-d6a67c74f0e1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13621,10 +13734,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d0d8dbd4-03c4-43cf-88f8-78ef2b1a4169")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/ad717475-59fd-4f72-a72b-72cfd03a0e92")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13877,7 +14009,7 @@
 			(at 0 -1.17 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "86c7d8f4-03d9-4763-9323-525c6521d16e")
+			(uuid "dfc9c726-e789-42e8-8310-3493d0c10913")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -13889,7 +14021,7 @@
 			(at 0 1.17 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9375462e-cdf7-4828-87c3-f3d475c15604")
+			(uuid "0bd682c1-2ce7-4f82-8f6e-72dc78a691b7")
 			(effects
 				(font
 					(size 1 1)
@@ -13902,7 +14034,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e7629317-0a98-4af8-9be8-c019407fc608")
+			(uuid "c5c44b0b-38ab-49c5-bc30-6f4124319a51")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13915,7 +14047,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b9252906-10b2-40e6-b445-d9814313ab75")
+			(uuid "312fd268-6828-4a21-9d57-6ffecb969e9d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13935,10 +14067,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ba08a65-6910-4aef-b5a5-52c2f4de046e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/f0cbb672-be44-4ab9-8616-2c8a7c4cde51")
 		(sheetname "/MotorSystem/")
 		(sheetfile "NoU3-MotorSystem.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14035,7 +14186,7 @@
 			(at 0 -3.3 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "798da1cd-171d-4cf0-a252-ad058461f1e3")
+			(uuid "4b804282-c5d9-4094-977a-bf9e1ddc7da1")
 			(effects
 				(font
 					(size 1 1)
@@ -14046,7 +14197,7 @@
 		(property "Value" "JST SR/SZ"
 			(at 0 3.3 90)
 			(layer "F.Fab")
-			(uuid "edcaacad-1c1b-44e0-a745-73e66c1561c2")
+			(uuid "8a8eebf9-2956-4249-9baa-814d971097ea")
 			(effects
 				(font
 					(size 1 1)
@@ -14059,7 +14210,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6846eec2-afa6-4b1e-99eb-e434dc114e3b")
+			(uuid "1668aa40-3bc6-4a2f-a292-e39e2611b0bb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14072,7 +14223,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ecb2c914-f0cf-4b01-bfad-d7b74094dbab")
+			(uuid "955e7544-a589-448f-a852-ab3451653d46")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14612,7 +14763,7 @@
 			(at 0 -1.68 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "56781d2b-518c-446c-bb54-85d049782ea3")
+			(uuid "b1d0604f-8af1-4eb4-9e03-6edbd047c02a")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -14624,7 +14775,7 @@
 			(at 0 1.68 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4dcd7f98-7790-4f39-801c-6195d496444c")
+			(uuid "6a99cb9d-c0a7-4d2d-bce2-1764bcfb9a7b")
 			(effects
 				(font
 					(size 1 1)
@@ -14637,7 +14788,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6f169bf7-291b-472f-8d46-8ad30039cc4e")
+			(uuid "f6d3f348-dbc4-4f74-802b-c0fef9e50263")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14650,7 +14801,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "63528a91-85e8-43b8-9c27-1b64c3bb8c5d")
+			(uuid "fa7cb52b-cbc2-4c4b-b421-ae5dc1d94d9c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14686,6 +14837,12 @@
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/5ac6842d-21ec-4136-97d4-4945b97c774c/5abe4d25-6c35-4966-b75b-adf0e4a66d83")
 		(sheetname "/MotorSystem/MotorDriver-3/")
 		(sheetfile "NoU3-MotorDriver.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15043,7 +15200,7 @@
 			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "8970fc2c-53bd-4884-82d9-35f75b5b361c")
+			(uuid "d4b0c0b7-2645-4445-9939-6ebeb52fad29")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -15055,7 +15212,7 @@
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f07b520b-9f1d-4af9-badc-6a6fc1b72534")
+			(uuid "cf8cc192-a1e9-42dc-bc52-51a0820bb78f")
 			(effects
 				(font
 					(size 1 1)
@@ -15068,7 +15225,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "dfa7cf59-b14f-4f3d-bdd0-82a74208e80c")
+			(uuid "d0fc4811-427c-4b91-add0-a660bc1187bf")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15081,7 +15238,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9db93031-e127-4ed5-9946-5a77b7d22538")
+			(uuid "4b1ac8a7-48b9-472b-aef1-3ad22b4cdcb3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15101,10 +15258,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C25741"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3039dac9-4af6-461d-84ac-4eb8f5c7bad4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/94648969-11f1-40e8-8edb-95cd2786a049")
 		(sheetname "/MotorSystem/")
 		(sheetfile "NoU3-MotorSystem.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15201,7 +15377,7 @@
 			(at 0 -1.16 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "719d425d-e61e-48b3-966e-48468d92af52")
+			(uuid "f3f5ba81-50ef-456b-befd-0df59f07fc81")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -15213,7 +15389,7 @@
 			(at 0 1.16 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0fe51b42-2170-42c7-987c-98dce75d68ed")
+			(uuid "cb66a387-710d-4f42-a83c-0c6b97571b9c")
 			(effects
 				(font
 					(size 1 1)
@@ -15226,7 +15402,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1c80792a-92bc-4157-a142-5dd31392cfb6")
+			(uuid "841a997f-b490-48fa-af49-2a2d28277d84")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15239,7 +15415,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "08fb58ad-40be-4b01-8fb8-7f96c91bd429")
+			(uuid "69f65172-92c0-4c5e-ad37-554958fef80f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15259,10 +15435,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C52923"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "40fe1704-0507-48b6-b444-f17c464fa424")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/bff8b427-eeaf-4fae-88a8-27daaa26d341")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15484,7 +15679,7 @@
 			(at 0 -1.16 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "5165abc8-40a4-4969-8cb1-c929a4c01283")
+			(uuid "a9166e11-fc5e-4894-81c3-debee3a8e486")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -15496,7 +15691,7 @@
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1f3395b9-e946-4ed1-8361-a44049136a25")
+			(uuid "6247a38c-d36e-486f-888b-8cd59fabeade")
 			(effects
 				(font
 					(size 1 1)
@@ -15509,7 +15704,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e52f3012-275b-4034-8e07-750f7862d14a")
+			(uuid "76611ca5-9a11-4faa-a23a-cb1ce7a40451")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15522,7 +15717,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3a4d7250-a425-416d-8083-7f72321ad731")
+			(uuid "95cade84-68cd-416a-8962-bb50e84e9736")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15558,6 +15753,12 @@
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/5ac6842d-21ec-4136-97d4-4945b97c774c/8e062075-c571-443c-ae9e-7799fa29b66b")
 		(sheetname "/MotorSystem/MotorDriver-3/")
 		(sheetfile "NoU3-MotorDriver.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15654,7 +15855,7 @@
 			(at 0 -1.16 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "8a923448-4340-4410-b47d-17d6ed0f2031")
+			(uuid "53acee4e-e58b-414c-b722-d1bc9cc1a1ea")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -15666,7 +15867,7 @@
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "530ccd0e-ebcf-4087-bade-1beb0c4fbe4a")
+			(uuid "3726129d-314c-4fa6-8f66-8db14b739a78")
 			(effects
 				(font
 					(size 1 1)
@@ -15679,7 +15880,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7664362c-dc0f-45d5-a7c1-3dd2afe4f1b7")
+			(uuid "49448dae-a377-40b0-859d-84cbfb49d6d7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15692,7 +15893,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "48d3a3cb-4fba-4241-ae47-5c37a150c7c3")
+			(uuid "1c666a27-8c78-4fe0-bb55-053bd72de9e4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15712,10 +15913,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C15525"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d702c5dc-dff7-43f4-a91a-c3bc9609695f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/2088074e-94a3-423d-90cd-010476aa7369")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15812,7 +16032,7 @@
 			(at 0 -1.16 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "95955c0d-b96c-4c91-822b-387dd1e316d5")
+			(uuid "bc7eab9b-5aa6-4147-b997-856e389cd26b")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -15824,7 +16044,7 @@
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f947f9af-5d77-4b9e-9133-7e6ef64dc2fc")
+			(uuid "771e5b91-6bc7-4bb4-b154-241a4d867263")
 			(effects
 				(font
 					(size 1 1)
@@ -15837,7 +16057,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "801dd83b-6e33-435e-b7d7-0ee503592396")
+			(uuid "7950c02b-9cba-4644-aebc-0d1a3a64238d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15850,7 +16070,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0d58705d-def7-4bf0-a4b6-3079807b4ad6")
+			(uuid "8b97ef10-081a-417a-b07d-87fcf5fe85f2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15886,6 +16106,12 @@
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/effd9ea2-ab6a-45db-ac14-0a90b48b44ef/8e062075-c571-443c-ae9e-7799fa29b66b")
 		(sheetname "/MotorSystem/MotorDriver-2/")
 		(sheetfile "NoU3-MotorDriver.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16141,7 +16367,7 @@
 			(at 0 -2.4 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "21cd5d93-5e69-47e3-ac81-870dd1cd3d5f")
+			(uuid "d044681b-ee10-44d7-85a4-a1f0a1813798")
 			(effects
 				(font
 					(size 1 1)
@@ -16153,7 +16379,7 @@
 			(at 0 2.4 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3ffb05bf-e083-426c-818f-1f9663340c72")
+			(uuid "2c329cc9-0876-43ab-91ba-71e3a7a9a3e0")
 			(effects
 				(font
 					(size 1 1)
@@ -16166,7 +16392,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "dc4b04de-1950-4e9b-9373-502744a9dab7")
+			(uuid "2943dd6a-9be7-442f-b17e-d9059b6abe6c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16179,7 +16405,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "978f6397-d12b-4fc7-9227-bf9617ababc8")
+			(uuid "fda2365e-ad4d-4f74-b76a-3d789abc8d13")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16214,6 +16440,12 @@
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/9e019f01-2398-401b-b642-06a93a053c96")
 		(sheetname "/MotorSystem/")
 		(sheetfile "NoU3-MotorSystem.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "4" "5" "2" "1" "6" "3")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16514,7 +16746,7 @@
 			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "b02aba3c-5ced-4599-923a-83fb363b0e4d")
+			(uuid "46d860c2-d06a-4e3b-a756-f391c346825f")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -16526,7 +16758,7 @@
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e8a14b81-3b08-4ec6-9220-be9d021fecc9")
+			(uuid "e4116387-5a53-43c8-8aa6-ef0c7cc5b1cf")
 			(effects
 				(font
 					(size 1 1)
@@ -16539,7 +16771,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "834f5a94-de76-404c-a81b-13bf6b98ec69")
+			(uuid "d3c528b1-e6b1-46bd-82d1-3e9a320ad5d2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16552,7 +16784,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cc6079fb-1dee-4416-bc78-de65c64d8812")
+			(uuid "177d8c84-5f61-41e3-8507-bf2764aa4d0b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16572,10 +16804,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C25854"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "11a01664-e4fd-40c5-aced-3aae9e1dd663")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/3bcf7f3f-9921-4629-912a-ca8a4cab3645")
 		(sheetname "/MotorSystem/")
 		(sheetfile "NoU3-MotorSystem.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17280,7 +17531,7 @@
 			(at 0 -3.3 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "be9f4915-c004-4804-85e6-6baf2d66439b")
+			(uuid "21e01cec-3ef3-4ae4-a3b9-e7c09663d9cf")
 			(effects
 				(font
 					(size 1 1)
@@ -17291,7 +17542,7 @@
 		(property "Value" "Qwiic1"
 			(at 0 3.3 0)
 			(layer "F.Fab")
-			(uuid "6961012e-94a7-4ddc-9736-c7760f6e9fcb")
+			(uuid "7027c497-c74d-4fd2-8a40-b7ca7d3c2c67")
 			(effects
 				(font
 					(size 1 1)
@@ -17304,7 +17555,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b4d1000f-d542-4504-bd22-40a968f59cc8")
+			(uuid "809a9e7c-102a-4607-ae30-7ff6f007e9a5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17317,7 +17568,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e5293ff7-a718-442a-8a69-790049db7cf2")
+			(uuid "42df35c3-75a4-4ea7-bbbc-812c62478e9e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17352,6 +17603,12 @@
 		(path "/e280b721-62b5-48ad-88c5-66f2b91a579c")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "3" "4" "2" "1")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17925,7 +18182,7 @@
 			(at 0 -1.68 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "336641dc-4a26-48e0-b1b8-43a742a96559")
+			(uuid "384e027f-f5f1-45b2-9a73-8a18de45c0b6")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -17937,7 +18194,7 @@
 			(at 0 1.68 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ea8a2d4a-9a73-4819-bd5c-73537e58bbde")
+			(uuid "0e01575a-3d5c-430f-84c5-cb3bc8dbb66d")
 			(effects
 				(font
 					(size 1 1)
@@ -17950,7 +18207,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5b05bcb4-c2dc-4c00-b634-5a7536e01803")
+			(uuid "8d881cb6-3eb4-401e-9e89-4729aa0eb335")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17963,7 +18220,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6c989dde-5d92-4b69-8d3e-00ec3d6828ab")
+			(uuid "66f55659-f0bf-4be6-a50a-ba8675fb7407")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17999,6 +18256,12 @@
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/effd9ea2-ab6a-45db-ac14-0a90b48b44ef/5abe4d25-6c35-4966-b75b-adf0e4a66d83")
 		(sheetname "/MotorSystem/MotorDriver-2/")
 		(sheetfile "NoU3-MotorDriver.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18095,7 +18358,7 @@
 			(at 0 -1.16 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "26fab0a7-f8ed-40e6-b222-8c8777783f5c")
+			(uuid "75625e85-2310-4ea7-bcfe-0bcd0472d583")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -18107,7 +18370,7 @@
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1d4357a1-f183-49c8-a81e-1aa329351120")
+			(uuid "fc457f7e-eb69-443e-8e76-026d883c3e7f")
 			(effects
 				(font
 					(size 1 1)
@@ -18120,7 +18383,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2ea687df-406c-4642-a0ec-7e90b88df4d1")
+			(uuid "6f0d3950-7f39-4e65-83dc-811e2f74b6ca")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18133,7 +18396,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7f9e5456-48a2-4506-ba73-bb3581fc1fe7")
+			(uuid "2a4cbe40-b853-4441-bc2a-eb152c4afb3e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18153,10 +18416,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C52923"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "87cf44d7-8a3f-4b63-8095-fc9ef1154831")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/6cf0daa9-922d-4876-9354-7543b19d668d")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18253,7 +18535,7 @@
 			(at 0 -1.43 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "ac5e0592-63de-4fa6-9e7c-72b362bf1aff")
+			(uuid "81657f0c-3730-4e42-873f-252552685847")
 			(effects
 				(font
 					(size 1 1)
@@ -18264,7 +18546,7 @@
 		(property "Value" "LED_Blue"
 			(at 0 1.43 90)
 			(layer "F.Fab")
-			(uuid "4ec40bd3-7c91-495a-80e6-ad42fa767d0c")
+			(uuid "b303a865-2fd0-4e1c-b333-d6f7c98520b3")
 			(effects
 				(font
 					(size 1 1)
@@ -18276,7 +18558,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b7772a09-3d50-4b63-8386-7dc39b491d2f")
+			(uuid "3ecf04fe-069a-4aa7-9737-1fd0b1ed4935")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18288,7 +18570,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "91692fc9-55ed-4513-b409-37a18c3fbe35")
+			(uuid "1001c7b3-ede8-4ac9-94cd-b7192210af18")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18325,6 +18607,12 @@
 		(path "/b61cdf14-da6f-4fe9-920f-ad97fb4d8550")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18652,7 +18940,7 @@
 			(at 0 -1.16 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "2debe76d-3d53-43c6-883a-dd2b4ce08549")
+			(uuid "0d0260b9-36d5-470b-bfc6-0116cd17bca5")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -18664,7 +18952,7 @@
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ff1f4599-0abc-4d3b-87ff-2d3530d1eeaa")
+			(uuid "e9b22100-8e51-4c2a-8ee6-a3b8279b1b5e")
 			(effects
 				(font
 					(size 1 1)
@@ -18677,7 +18965,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5820ad37-91f5-47af-84c1-04a541073d8b")
+			(uuid "608644e4-f5c7-433b-904c-ff18c234b5f2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18690,7 +18978,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e691c4c3-e4af-448a-8eff-b63c73cefe96")
+			(uuid "c549bac6-edfc-48a6-8900-37e90599da59")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18726,6 +19014,12 @@
 		(path "/ab739238-36a1-4d5e-87d8-8665dc6b5d2b")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18822,7 +19116,7 @@
 			(at 0 -1.17 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "9ac3501f-720a-49ad-bf82-c1e8fda2c837")
+			(uuid "b32a2448-739a-4f8e-902a-b1b6ae1d84a0")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -18834,7 +19128,7 @@
 			(at 0 1.17 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e17684f7-1a6f-4ac2-82b0-ac8c25468a2d")
+			(uuid "30369674-5b48-4ae0-92c5-54afa16b15c5")
 			(effects
 				(font
 					(size 1 1)
@@ -18847,7 +19141,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "defa9624-a469-4d3d-971c-02187768ff5e")
+			(uuid "ffef5e77-34a3-479a-b021-5d6f65eab12e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18860,7 +19154,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "53a4d3ca-c239-4d9b-b915-d01285492bb3")
+			(uuid "4554bee4-ff7f-4ccc-b28f-84e3a386c404")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18880,10 +19174,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C25741"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d6fefb42-487e-4d35-9d26-9d32f524ad86")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/914c6c06-6600-4421-b541-6623743d27ec")
 		(sheetname "/MotorSystem/")
 		(sheetfile "NoU3-MotorSystem.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18981,7 +19294,7 @@
 			(at 0 -1.16 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "186692db-80e8-4ec1-8fc8-e0e2c530baee")
+			(uuid "1a686f99-dd02-4bee-9a32-e83a154167ec")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -18993,7 +19306,7 @@
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "97c6113f-3161-4a8d-8f68-57e70e34dae8")
+			(uuid "434e6e31-b689-4697-8797-f693298af27d")
 			(effects
 				(font
 					(size 1 1)
@@ -19006,7 +19319,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "eae7a882-f9b0-4f58-a891-ecc7420aec9c")
+			(uuid "1a69a124-7a6e-4a7b-9e42-94d851c74a11")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19019,7 +19332,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c469733e-3751-4087-b3b7-67d41d6d25c9")
+			(uuid "5690fe82-eca9-49f3-8430-d0c8abcea137")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19055,6 +19368,12 @@
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/75fe67a7-abdc-45df-8399-29a3950a166e/8e062075-c571-443c-ae9e-7799fa29b66b")
 		(sheetname "/MotorSystem/MotorDriver-4/")
 		(sheetfile "NoU3-MotorDriver.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19151,7 +19470,7 @@
 			(at 0 -3.3 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "1266c9ce-b1a4-438f-8a15-cdc849e743f9")
+			(uuid "1e3beb1e-289d-445a-bd4e-3c029b7685ad")
 			(effects
 				(font
 					(size 1 1)
@@ -19162,7 +19481,7 @@
 		(property "Value" "JST SR/SZ"
 			(at 0 3.3 90)
 			(layer "F.Fab")
-			(uuid "5539da02-6a01-4006-b4e1-dc824cd7ce02")
+			(uuid "cce43eef-7df3-487b-aee7-b61c66d7eed2")
 			(effects
 				(font
 					(size 1 1)
@@ -19174,7 +19493,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c795bb5e-1e7b-498e-a1c9-a4d7e1853b7a")
+			(uuid "9daf07f4-c765-4d9b-995e-54bda03c3b23")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19186,7 +19505,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e59f9982-16bb-479d-9329-5fab90cb1edf")
+			(uuid "f6cb10cd-52df-4aeb-91c4-2ff6ea8515b3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19727,7 +20046,7 @@
 			(at 0 -1.16 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "4b223cff-3c2f-43c5-baf4-7759a7f2ffc3")
+			(uuid "ccc7cd12-08a9-491a-9ee7-ed50ac81cdff")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -19739,7 +20058,7 @@
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0ced1d1d-26f6-4009-9cb7-d6c238b6ddfc")
+			(uuid "bb6d5d74-1728-4441-bd0d-90e37a459652")
 			(effects
 				(font
 					(size 1 1)
@@ -19752,7 +20071,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "70aa76c9-9d5c-4cf8-a2a0-b16fb48a56f4")
+			(uuid "aba97d08-2fd4-445b-9d8f-c49aabd3cda4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19765,7 +20084,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b81c5fb8-77ce-40ff-91ac-94e9564b3227")
+			(uuid "60e2895f-4704-444a-a402-8effcba98490")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19801,6 +20120,12 @@
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/d9eb5f72-f8d0-4429-b4a7-cc7f660d6082")
 		(sheetname "/MotorSystem/")
 		(sheetfile "NoU3-MotorSystem.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19897,7 +20222,7 @@
 			(at -0.254 -1.27 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "4fc8e4a7-4c54-4901-8e80-940fbaad9ba9")
+			(uuid "f4ff9dd6-c8b2-46b0-86c6-092ec45e013f")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -19909,7 +20234,7 @@
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "db624680-db16-4da5-addb-62c101c6026b")
+			(uuid "b510e6c2-4987-4d4e-a8f5-f51593028c99")
 			(effects
 				(font
 					(size 1 1)
@@ -19922,7 +20247,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d937b6c5-8b1c-4352-b711-70d9f8237b5e")
+			(uuid "463d9ad9-f2d5-4aac-96ef-ff37fb476de1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19935,7 +20260,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "38cdfb78-8393-4931-9c23-da259d364c04")
+			(uuid "4f7182cb-1409-4afc-a5cf-4deb980f5e8f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19971,6 +20296,12 @@
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/1efb7b8d-e057-4b5e-924a-d17e282cad81")
 		(sheetname "/MotorSystem/")
 		(sheetfile "NoU3-MotorSystem.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20223,7 +20554,7 @@
 			(at 0 -1.16 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "2bbea374-9858-4acc-bd38-81fee7a07df0")
+			(uuid "dd35686d-3a92-47f8-8438-d5ce5122df7d")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -20235,7 +20566,7 @@
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "19974c3f-aa65-4f6d-91f9-3318347d1dca")
+			(uuid "41908466-8e7e-4007-b1b4-2ee450c7c776")
 			(effects
 				(font
 					(size 1 1)
@@ -20248,7 +20579,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "17e2ecea-e809-4593-aae7-a319b4a7dd5e")
+			(uuid "16b242f5-9fa9-4d79-8ba7-8dc9623eab37")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20261,7 +20592,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "35e32e73-0fa9-4e98-b261-66f06a2bb98e")
+			(uuid "656c3620-f0ec-46fc-a43e-405e1fe5e014")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20297,6 +20628,12 @@
 		(path "/2a396b1b-dc63-4d76-b129-5e6441ac3063")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20393,7 +20730,7 @@
 			(at 0 -1.43 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "b0f3e758-b67a-4fee-ac13-93afa34e67fa")
+			(uuid "a0f91988-7dad-4aea-ac04-8f3f1f2262f5")
 			(effects
 				(font
 					(size 1 1)
@@ -20404,7 +20741,7 @@
 		(property "Value" "LED_green"
 			(at 0 1.43 90)
 			(layer "F.Fab")
-			(uuid "276550a5-64b2-466a-a891-040dd70d790f")
+			(uuid "ff4e33c3-2710-49df-ab46-253d4f44d7e1")
 			(effects
 				(font
 					(size 1 1)
@@ -20416,7 +20753,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "23855377-a1f6-4d30-aa22-7beeb7e5bba7")
+			(uuid "81f50aa3-6708-477c-bd95-fc9d530fdf46")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20428,7 +20765,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "21c2d753-53c8-4e6b-835b-1cef9e670bf3")
+			(uuid "93c9f708-9d33-462c-9768-b3586bcba763")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20465,6 +20802,12 @@
 		(path "/a1b87f36-78be-4f0b-9ed8-1b29cdf714cc")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20892,7 +21235,7 @@
 			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "461850fa-269a-4abe-a98e-c6d860faf73e")
+			(uuid "fa564e94-95d3-47f4-9130-efc71604c1da")
 			(effects
 				(font
 					(size 1 1)
@@ -20904,7 +21247,7 @@
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "621dbede-2256-4871-98a4-66cbe3e48615")
+			(uuid "0c2d329d-ecfe-4f11-bc27-35aa1b042e1b")
 			(effects
 				(font
 					(size 1 1)
@@ -20917,7 +21260,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "64049b0e-ff96-4210-8fdb-fa1948a358c2")
+			(uuid "481a4e41-552c-4a08-bdea-95ca8a8d8d7d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20930,7 +21273,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c777dccc-c478-44c0-b058-dc9890c4b338")
+			(uuid "62c7c994-53a4-4d67-b864-62fdd51d37ec")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20950,10 +21293,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "373f1011-1d2c-4bec-ad38-216ff6f58841")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/fb403f32-3703-4534-b750-172579f43cf0")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21050,7 +21412,7 @@
 			(at 0 -1.16 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "66e65a2b-1084-4ea4-9d09-c2d3302fa73d")
+			(uuid "a871f867-3de2-4425-979b-2908842917d6")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -21062,7 +21424,7 @@
 			(at 0 1.16 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "bfe9b7b8-63fa-4c07-ac5d-fe51030a78ca")
+			(uuid "9fd1c24b-8d27-4468-be0b-b91d89e7ac7a")
 			(effects
 				(font
 					(size 1 1)
@@ -21075,7 +21437,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "56f1fbff-793e-490d-9161-60f1e7406f87")
+			(uuid "37f51ca4-e98e-4272-87ab-28c042aa09ad")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21088,7 +21450,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8d5993c3-d3fe-4396-809d-eeec5bcf8c3f")
+			(uuid "86b82591-22f3-413e-b8fc-636936040c2d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21124,6 +21486,12 @@
 		(path "/a10a00b0-7401-4e6d-a497-182ebd8b8ee8")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21618,7 +21986,7 @@
 			(at 0 -4.3 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "80205704-e957-4514-9483-0965356fd14a")
+			(uuid "942fbe66-f548-44a7-9947-d34e87335876")
 			(effects
 				(font
 					(size 1 1)
@@ -21629,7 +21997,7 @@
 		(property "Value" "PCA9685BS"
 			(at 0 4.3 90)
 			(layer "F.Fab")
-			(uuid "82ff2ca3-1106-47ed-9fd7-1e3534fc75d2")
+			(uuid "469c3547-492a-4d1d-ae39-040feb5e2e5f")
 			(effects
 				(font
 					(size 1 1)
@@ -21642,7 +22010,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "31402623-f184-435c-8d4c-96b83ba700e7")
+			(uuid "67eaf3e1-3f0a-4c10-bf6e-9f6c7415d703")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21655,7 +22023,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "edc7a2ea-8dbb-4f41-b720-91854b85d922")
+			(uuid "b72c5124-7b94-4d97-8f78-63dd8756540e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21692,6 +22060,15 @@
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/6079e92d-dff8-4b0b-95e5-c92f5ccb7547")
 		(sheetname "/MotorSystem/")
 		(sheetfile "NoU3-MotorSystem.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "23" "24" "22" "20" "26" "27" "28" "1" "2" "21" "29" "25" "11"
+					"3" "4" "5" "6" "7" "8" "9" "10" "12" "13" "14" "15" "16" "17" "18"
+					"19"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22365,6 +22742,296 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-28-1EP_6x6mm_P0.65mm_EP4.25x4.25mm.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "AlfredoFootprints:D_SOD-323"
+		(layer "F.Cu")
+		(uuid "da908faa-f330-4deb-8219-48b01492eff3")
+		(at 12 -17.2 180)
+		(descr "SOD-323")
+		(tags "SOD-323")
+		(property "Reference" "D2"
+			(at 0 -1.85 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e0eff4e5-34e3-4ff1-986e-40f69e3d287b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "1N5819"
+			(at 0.1 1.9 0)
+			(layer "F.Fab")
+			(uuid "ba433724-f732-4d1c-b6f5-a55bcf0ed488")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_Guangdong-Hottech-Guangdong-Hottech-1N5819WS_C191023.html"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7c6e8342-3870-4551-a03c-dae946790f1d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a9973c62-9d8d-406e-b6b3-fe82f1cdd03b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C191023"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "361941f8-7775-4eab-a736-940004f364de")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
+		(path "/c3d195b5-23f8-44f0-bcad-c751929be1ab")
+		(sheetname "/")
+		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -1.85 0.75)
+			(end 1.26 0.75)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "515f8ef3-a33e-4313-847c-849d0078f91b")
+		)
+		(fp_line
+			(start -1.85 -0.75)
+			(end 1.25 -0.75)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2a91f776-537e-4409-b2cd-78ec73e75b07")
+		)
+		(fp_line
+			(start -1.85 -0.75)
+			(end -1.85 0.75)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "919d5fe5-96c9-4d41-b608-4dde8a902c20")
+		)
+		(fp_line
+			(start 1.85 -0.75)
+			(end 1.85 0.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "1495d138-9877-4247-8eb8-3bab6f3c907e")
+		)
+		(fp_line
+			(start -1.85 0.75)
+			(end 1.85 0.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "268528ac-6886-4964-ba63-c3004052daa3")
+		)
+		(fp_line
+			(start -1.85 -0.75)
+			(end 1.85 -0.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "2fab2d28-bd9c-4903-b175-4d3af435fe21")
+		)
+		(fp_line
+			(start -1.85 -0.75)
+			(end -1.85 0.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "702b8bbd-84fa-4667-9df5-b3933f91ee47")
+		)
+		(fp_line
+			(start 0.9 0.7)
+			(end -0.9 0.7)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "bec23199-d728-4d1a-9485-787f08bb7e6c")
+		)
+		(fp_line
+			(start 0.9 -0.7)
+			(end 0.9 0.7)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3d64d682-1282-4380-9ed5-c746be52d74e")
+		)
+		(fp_line
+			(start 0.2 0.35)
+			(end -0.3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d0fdbc0d-b633-45d7-8237-55b9df49fddd")
+		)
+		(fp_line
+			(start 0.2 0)
+			(end 0.45 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1498d863-cf0c-4182-81a9-b964d522bcaa")
+		)
+		(fp_line
+			(start 0.2 -0.35)
+			(end 0.2 0.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "38c78df3-8483-4769-8915-a35daaff5a37")
+		)
+		(fp_line
+			(start -0.3 0)
+			(end 0.2 -0.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "450aa454-6257-485d-b852-084978dd8bf6")
+		)
+		(fp_line
+			(start -0.3 0)
+			(end -0.5 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8382c26c-9bfc-41af-bffd-066e3fd69ef3")
+		)
+		(fp_line
+			(start -0.3 -0.35)
+			(end -0.3 0.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "01a2dcc2-3b81-4b2d-959a-c5de11757d08")
+		)
+		(fp_line
+			(start -0.9 0.7)
+			(end -0.9 -0.7)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "44ca59ae-5703-4caa-a76c-bc590dcd4246")
+		)
+		(fp_line
+			(start -0.9 -0.7)
+			(end 0.9 -0.7)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "51dcfe2c-8355-4140-ab0e-82e1eabbfca9")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.85 0)
+			(layer "F.Fab")
+			(uuid "b5b8653d-7d42-4f59-a03a-84973f744489")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -1.25 0 180)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "VCC")
+			(pinfunction "K_1")
+			(pintype "passive")
+			(uuid "bece444f-6016-4dae-beec-c67f5c5da873")
+		)
+		(pad "2" smd roundrect
+			(at 1.25 0 180)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "/VUSB")
+			(pinfunction "A_2")
+			(pintype "passive")
+			(uuid "d671b865-2913-4a59-ab8a-a330a6398f86")
+		)
+		(embedded_fonts no)
+		(model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23131,7 +23798,7 @@
 			(at 0 -1.17 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "57d950a5-3e18-41ad-a3db-f443757407ce")
+			(uuid "8d056b5c-8339-44a5-9927-e53c308ea2db")
 			(effects
 				(font
 					(size 1 1)
@@ -23143,7 +23810,7 @@
 			(at 0 1.17 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "13a1c522-aad5-4af2-a657-02344877c459")
+			(uuid "f53c1ac2-0706-4093-9e2f-0a211c486ed1")
 			(effects
 				(font
 					(size 1 1)
@@ -23156,7 +23823,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "84a9290f-e4b9-45da-8ca5-08723f366df9")
+			(uuid "a9bb6374-5a73-4e31-897c-df676e5c46c9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23169,7 +23836,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "87d39293-a5ad-4107-ba2c-3e0386dfca39")
+			(uuid "ac4746f3-1439-4f61-bc9c-36b747d210a7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23189,10 +23856,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "40ab5393-fa3d-4a03-8d0b-4a86fc09a84d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/1dca188a-95e4-4ddc-bf1a-3c100d1e4214")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -23289,7 +23975,7 @@
 			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "c374d4b4-ae5b-4d04-b37b-d984b2a82ecd")
+			(uuid "954d4101-2640-4541-9359-56c33d44c218")
 			(effects
 				(font
 					(size 1 1)
@@ -23301,7 +23987,7 @@
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "34a7cc85-72a8-435a-8596-33abac5eca1c")
+			(uuid "a77b44c5-7d87-4bf6-aedb-fce04fbd2c60")
 			(effects
 				(font
 					(size 1 1)
@@ -23314,7 +24000,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a9446e36-98bf-4a92-b382-bf33537c91a1")
+			(uuid "82a7a6f1-7960-495c-b5dc-8475e0192333")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23327,7 +24013,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "dbe5a3da-51d2-49ee-a9d5-90fde13d8b46")
+			(uuid "74fa4cd0-5d25-4666-bdae-2e79f3642872")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23347,10 +24033,29 @@
 				)
 			)
 		)
+		(property "LCSC" "C25879"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eb2f75b6-fef4-4bb2-9781-c821f51fb7af")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/5ed88106-45da-49ce-8662-7dbcccd4ab9a")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -23581,7 +24286,7 @@
 			(at 0 -1.16 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "3e17bcbf-1293-4d49-80cd-0c1e99528779")
+			(uuid "36d9736e-869b-4ffb-96ea-eb9ff03b0aff")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -23593,7 +24298,7 @@
 			(at 0 1.16 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "16ada8b4-f8a4-493b-83ce-e9ba92992ef7")
+			(uuid "88f51086-0d45-4506-828e-d8af8c5c238e")
 			(effects
 				(font
 					(size 1 1)
@@ -23606,7 +24311,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ad1051d1-dea0-43d1-8534-92d036413db2")
+			(uuid "1d46e579-9ae8-40b7-8588-aced3bee6936")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23619,7 +24324,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "72f7d6c8-6eff-43a6-bb53-127f11063cf1")
+			(uuid "6d42e190-ea25-47ab-9f31-2075314c97bc")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23655,6 +24360,12 @@
 		(path "/023b4df2-74fa-473a-85f9-5c0251fa5595/fe7af735-d8e7-4837-8e2c-f9f1b609ab21")
 		(sheetname "/MotorSystem/")
 		(sheetfile "NoU3-MotorSystem.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -23752,7 +24463,7 @@
 			(at 0 -1.85 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "aa4027a3-a958-4f70-82fa-433f23d0190c")
+			(uuid "cded0bd7-9f90-464c-964a-a72a52388da4")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -23764,7 +24475,7 @@
 			(at 0 1.85 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6f948671-2a05-4b3c-959b-a15d5edd007e")
+			(uuid "c8f2ae89-5f52-49c4-aff9-f457fb729017")
 			(effects
 				(font
 					(size 1 1)
@@ -23777,7 +24488,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9c5a7c82-9699-49af-a2c4-dccd8d2429c9")
+			(uuid "882751e9-2509-4d87-ab36-3eb9cc72fd04")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23790,7 +24501,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "482eb142-1cbc-404a-97e9-b9d111039a1d")
+			(uuid "ace03791-8d7b-4377-a805-153d661bf473")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23810,9 +24521,28 @@
 				)
 			)
 		)
+		(property "LCSC" "C127629"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a4c8ae96-6fb9-4452-95e1-183cc55ce707")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/211fc7c5-b35a-40a7-8aa3-3c1b2c8a0a38")
 		(sheetname "/")
 		(sheetfile "NoU3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -23911,7 +24641,7 @@
 			(at 0 -3.3 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "93cc2260-4935-4436-a9ef-88d57bcacd09")
+			(uuid "ba777b13-9443-44c7-af59-1948a5867116")
 			(effects
 				(font
 					(size 1 1)
@@ -23922,7 +24652,7 @@
 		(property "Value" "JST SR/SZ"
 			(at 0 3.3 90)
 			(layer "F.Fab")
-			(uuid "53663581-3df1-4c0b-bb3d-4fde03e3a8ab")
+			(uuid "6270af58-0e53-4e70-808a-cf4482056d66")
 			(effects
 				(font
 					(size 1 1)
@@ -23935,7 +24665,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5e6ed563-e9c0-484b-95f2-eb48cfccb13c")
+			(uuid "cd07c400-3abc-492a-87d0-3c8b00fd6428")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23948,7 +24678,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d5d23aa7-7e2a-4a35-b930-955ba7ab32b2")
+			(uuid "42563106-d936-4126-9a6d-457a635f674c")
 			(effects
 				(font
 					(size 1.27 1.27)
