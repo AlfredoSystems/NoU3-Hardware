@@ -716,7 +716,7 @@
         "uuid": "e83aa78a-7ee8-4825-a22a-a2646798082a"
       }
     ],
-    "used_designators": "#PWR43,#PWR45-46,#PWR57,#PWR84-85,#PWR88-89,#PWR94-95,D4,J1,J20-22",
+    "used_designators": "#PWR39-43,#PWR45-46,#PWR52-54,#PWR57-59,#PWR63-64,#PWR69-71,#PWR84-85,#PWR88-91,#PWR94-100,#PWR103-104,#PWR118-119,D4,D60-61,R23,R29-43,R67-68,J1,J20-24,U10,U12-13,C17-19,C39,C41,C44-52,Q2",
     "variants": []
   },
   "sheets": [
@@ -743,6 +743,14 @@
     [
       "75fe67a7-abdc-45df-8399-29a3950a166e",
       "MotorDriver-4"
+    ],
+    [
+      "eb721a2c-269c-472d-92a9-46f98a719b02",
+      "NoU3-MotorMCU-PYA"
+    ],
+    [
+      "b67b0930-0e52-4d94-a531-e1f8fde8ac77",
+      "NoU3-MotorMCU-PYB"
     ]
   ],
   "text_variables": {},

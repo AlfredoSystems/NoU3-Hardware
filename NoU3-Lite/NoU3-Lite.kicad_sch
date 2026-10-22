@@ -4899,7 +4899,7 @@
 				)
 			)
 		)
-		(symbol "NoU265:SY8113BADC"
+		(symbol "AlfredoSymbols:SY8113BADC"
 			(pin_names
 				(offset 1.016)
 			)
@@ -16520,7 +16520,7 @@
 		)
 	)
 	(symbol
-		(lib_id "NoU265:SY8113BADC")
+		(lib_id "AlfredoSymbols:SY8113BADC")
 		(at -76.2 -1.27 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18158,7 +18158,7 @@
 		)
 	)
 	(symbol
-		(lib_id "NoU265:SY8113BADC")
+		(lib_id "AlfredoSymbols:SY8113BADC")
 		(at -62.23 -38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
