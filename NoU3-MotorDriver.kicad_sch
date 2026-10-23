@@ -1716,10 +1716,10 @@
 		(uuid "04602ed1-3a70-40b3-9f7d-2febfbe6b1bb")
 	)
 	(junction
-		(at 116.84 88.9)
+		(at 116.84 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "276e8269-c0b5-46c3-890d-4da59b576bd6")
+		(uuid "224f0051-7460-45e5-8ea1-669734534544")
 	)
 	(junction
 		(at 157.48 63.5)
@@ -1752,16 +1752,16 @@
 		(uuid "8d93d99f-044b-4daa-ba26-0e4ad0a0f18a")
 	)
 	(junction
-		(at 121.92 104.14)
+		(at 106.68 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "952173f0-5aa1-4c38-9208-ca27e35ae443")
+	)
+	(junction
+		(at 111.76 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ce1b811a-e56f-41cf-a39d-d4e1712926e6")
-	)
-	(junction
-		(at 127 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f05df128-74a7-4273-b960-f6f17073e41a")
 	)
 	(no_connect
 		(at 171.45 91.44)
@@ -1789,6 +1789,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 88.9) (xy 140.97 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15131549-fe7f-4137-a878-b3277ad5fab5")
+	)
+	(wire
+		(pts
 			(xy 199.39 123.19) (xy 201.93 123.19)
 		)
 		(stroke
@@ -1796,16 +1806,6 @@
 			(type default)
 		)
 		(uuid "1a8c5df4-cf02-4d61-85a3-fa1f99f190ec")
-	)
-	(wire
-		(pts
-			(xy 140.97 88.9) (xy 116.84 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ae8a545-2520-48cd-9dbd-4124a1214bef")
 	)
 	(wire
 		(pts
@@ -1829,7 +1829,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 96.52) (xy 127 91.44)
+			(xy 116.84 96.52) (xy 116.84 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1839,7 +1839,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 91.44) (xy 127 91.44)
+			(xy 100.33 91.44) (xy 116.84 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1859,7 +1859,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 106.68) (xy 121.92 104.14)
+			(xy 111.76 106.68) (xy 111.76 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1899,7 +1899,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 104.14) (xy 127 104.14)
+			(xy 111.76 104.14) (xy 116.84 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1959,7 +1959,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 88.9) (xy 116.84 96.52)
+			(xy 106.68 88.9) (xy 106.68 96.52)
 		)
 		(stroke
 			(width 0)
@@ -2016,16 +2016,6 @@
 			(type default)
 		)
 		(uuid "92086508-61ea-4500-9526-4e32f99a1e7a")
-	)
-	(wire
-		(pts
-			(xy 127 91.44) (xy 140.97 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99d125dd-8283-4dc6-8ed5-824008af2b87")
 	)
 	(wire
 		(pts
@@ -2119,7 +2109,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 88.9) (xy 116.84 88.9)
+			(xy 100.33 88.9) (xy 106.68 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2149,7 +2139,17 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 104.14) (xy 121.92 104.14)
+			(xy 116.84 91.44) (xy 140.97 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0749ce1-04a7-4791-ac5d-a2d7050a893d")
+	)
+	(wire
+		(pts
+			(xy 106.68 104.14) (xy 111.76 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2177,7 +2177,7 @@
 		)
 		(uuid "fdac0442-ed9c-4cb8-9e97-98a30901dbe0")
 	)
-	(hierarchical_label "BIN1"
+	(hierarchical_label "MOTOR_SIGNAL_2B"
 		(shape input)
 		(at 138.43 104.14 180)
 		(effects
@@ -2188,9 +2188,9 @@
 		)
 		(uuid "27367c57-ee40-4e60-8f54-843a50b2b64a")
 	)
-	(hierarchical_label "AISEN"
+	(hierarchical_label "SENSEI_1"
 		(shape input)
-		(at 114.3 88.9 180)
+		(at 100.33 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2199,7 +2199,7 @@
 		)
 		(uuid "375a4eed-2486-4e98-89ad-e3453c212107")
 	)
-	(hierarchical_label "BIN2"
+	(hierarchical_label "MOTOR_SIGNAL_2A"
 		(shape input)
 		(at 138.43 101.6 180)
 		(effects
@@ -2210,7 +2210,7 @@
 		)
 		(uuid "3fc42480-30b7-44eb-a935-2ae1fbf0bbb8")
 	)
-	(hierarchical_label "ENC_B2"
+	(hierarchical_label "ENCODER_2B"
 		(shape input)
 		(at 201.93 128.27 180)
 		(effects
@@ -2221,7 +2221,7 @@
 		)
 		(uuid "638c6e39-df81-4d28-be23-1c829834c977")
 	)
-	(hierarchical_label "ENC_A1"
+	(hierarchical_label "ENCODER_1A"
 		(shape input)
 		(at 201.93 77.47 180)
 		(effects
@@ -2232,7 +2232,7 @@
 		)
 		(uuid "8861e8f1-737e-48ec-8f75-060aed7b03f8")
 	)
-	(hierarchical_label "ENC_B1"
+	(hierarchical_label "ENCODER_1B"
 		(shape input)
 		(at 201.93 80.01 180)
 		(effects
@@ -2243,7 +2243,7 @@
 		)
 		(uuid "cf752b93-fdcd-45df-838f-2689cbd30f53")
 	)
-	(hierarchical_label "AIN2"
+	(hierarchical_label "MOTOR_SIGNAL_1B"
 		(shape input)
 		(at 138.43 99.06 180)
 		(effects
@@ -2254,9 +2254,9 @@
 		)
 		(uuid "d6181639-cbf9-4c88-962d-5fe082ac58b9")
 	)
-	(hierarchical_label "BISEN"
+	(hierarchical_label "SENSEI_2"
 		(shape input)
-		(at 114.3 91.44 180)
+		(at 100.33 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2265,7 +2265,7 @@
 		)
 		(uuid "d872fa40-df61-4dd8-ac5c-36bd3ebf9ac6")
 	)
-	(hierarchical_label "AIN1"
+	(hierarchical_label "MOTOR_SIGNAL_1A"
 		(shape input)
 		(at 138.43 96.52 180)
 		(effects
@@ -2276,7 +2276,7 @@
 		)
 		(uuid "e922efff-2366-45aa-a9a4-920e89c50367")
 	)
-	(hierarchical_label "ENC_A2"
+	(hierarchical_label "ENCODER_2A"
 		(shape input)
 		(at 201.93 125.73 180)
 		(effects
@@ -2380,7 +2380,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 121.92 106.68 0)
+		(at 111.76 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2390,7 +2390,7 @@
 		(dnp no)
 		(uuid "0f238f6e-de81-4479-85b0-03d50b4ca95a")
 		(property "Reference" "#PWR08"
-			(at 121.92 113.03 0)
+			(at 111.76 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2401,7 +2401,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 124.46 110.49 0)
+			(at 114.3 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2412,7 +2412,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 121.92 106.68 0)
+			(at 111.76 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2423,7 +2423,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 121.92 106.68 0)
+			(at 111.76 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2434,7 +2434,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 121.92 106.68 0)
+			(at 111.76 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2570,7 +2570,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2e0062b3-be84-45e0-97f0-05e91248492e")
-		(property "Reference" "J3"
+		(property "Reference" "J6"
 			(at 198.12 103.505 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2645,19 +2645,19 @@
 		(instances
 			(project "NoU3"
 				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/168e54f9-ad57-43fb-858f-563992cf0dc4"
-					(reference "J3")
+					(reference "J6")
 					(unit 1)
 				)
 				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/5ac6842d-21ec-4136-97d4-4945b97c774c"
-					(reference "J9")
-					(unit 1)
-				)
-				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/75fe67a7-abdc-45df-8399-29a3950a166e"
 					(reference "J12")
 					(unit 1)
 				)
+				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/75fe67a7-abdc-45df-8399-29a3950a166e"
+					(reference "J3")
+					(unit 1)
+				)
 				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/effd9ea2-ab6a-45db-ac14-0a90b48b44ef"
-					(reference "J6")
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -2675,7 +2675,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3b48cb38-e7fa-4fe8-81dc-383834e2dcbe")
-		(property "Reference" "J1"
+		(property "Reference" "J19"
 			(at 209.55 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2762,19 +2762,19 @@
 		(instances
 			(project "NoU3"
 				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/168e54f9-ad57-43fb-858f-563992cf0dc4"
-					(reference "J1")
+					(reference "J19")
 					(unit 1)
 				)
 				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/5ac6842d-21ec-4136-97d4-4945b97c774c"
-					(reference "J7")
-					(unit 1)
-				)
-				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/75fe67a7-abdc-45df-8399-29a3950a166e"
 					(reference "J10")
 					(unit 1)
 				)
+				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/75fe67a7-abdc-45df-8399-29a3950a166e"
+					(reference "J1")
+					(unit 1)
+				)
 				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/effd9ea2-ab6a-45db-ac14-0a90b48b44ef"
-					(reference "J19")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -2792,7 +2792,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "454b411f-d616-4aba-9243-84dfb7c11ba9")
-		(property "Reference" "J2"
+		(property "Reference" "J5"
 			(at 198.12 98.425 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2867,19 +2867,19 @@
 		(instances
 			(project "NoU3"
 				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/168e54f9-ad57-43fb-858f-563992cf0dc4"
-					(reference "J2")
+					(reference "J5")
 					(unit 1)
 				)
 				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/5ac6842d-21ec-4136-97d4-4945b97c774c"
-					(reference "J8")
-					(unit 1)
-				)
-				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/75fe67a7-abdc-45df-8399-29a3950a166e"
 					(reference "J11")
 					(unit 1)
 				)
+				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/75fe67a7-abdc-45df-8399-29a3950a166e"
+					(reference "J2")
+					(unit 1)
+				)
 				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/effd9ea2-ab6a-45db-ac14-0a90b48b44ef"
-					(reference "J5")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -2897,7 +2897,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "459054a9-0e4e-4f80-93ac-9357281ba141")
-		(property "Reference" "J20"
+		(property "Reference" "J4"
 			(at 209.55 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2984,19 +2984,19 @@
 		(instances
 			(project "NoU3"
 				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/168e54f9-ad57-43fb-858f-563992cf0dc4"
-					(reference "J20")
+					(reference "J4")
 					(unit 1)
 				)
 				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/5ac6842d-21ec-4136-97d4-4945b97c774c"
-					(reference "J13")
-					(unit 1)
-				)
-				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/75fe67a7-abdc-45df-8399-29a3950a166e"
 					(reference "J17")
 					(unit 1)
 				)
+				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/75fe67a7-abdc-45df-8399-29a3950a166e"
+					(reference "J20")
+					(unit 1)
+				)
 				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/effd9ea2-ab6a-45db-ac14-0a90b48b44ef"
-					(reference "J4")
+					(reference "J13")
 					(unit 1)
 				)
 			)
@@ -3525,7 +3525,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 127 100.33 0)
+		(at 116.84 100.33 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -3536,7 +3536,7 @@
 		(dnp no)
 		(uuid "73854573-3516-4f91-9e93-af51772c976c")
 		(property "Reference" "R29"
-			(at 125.73 99.06 0)
+			(at 115.57 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3547,7 +3547,7 @@
 			)
 		)
 		(property "Value" "100mR"
-			(at 125.73 101.6 0)
+			(at 115.57 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3558,7 +3558,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 128.778 100.33 90)
+			(at 118.618 100.33 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3569,7 +3569,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/partdetail/YAGEO-RL0805FR7W0R1L/C327057"
-			(at 127 100.33 0)
+			(at 116.84 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3580,7 +3580,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 127 100.33 0)
+			(at 116.84 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3591,7 +3591,7 @@
 			)
 		)
 		(property "LCSC" "C327057"
-			(at 127 100.33 0)
+			(at 116.84 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4283,7 +4283,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 116.84 100.33 0)
+		(at 106.68 100.33 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -4294,7 +4294,7 @@
 		(dnp no)
 		(uuid "ce5215f2-67db-4b64-b7f8-6b74db6847f0")
 		(property "Reference" "R33"
-			(at 115.57 99.06 0)
+			(at 105.41 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4305,7 +4305,7 @@
 			)
 		)
 		(property "Value" "100mR"
-			(at 115.57 101.6 0)
+			(at 105.41 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4316,7 +4316,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 118.618 100.33 90)
+			(at 108.458 100.33 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4327,7 +4327,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/partdetail/YAGEO-RL0805FR7W0R1L/C327057"
-			(at 116.84 100.33 0)
+			(at 106.68 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4338,7 +4338,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 116.84 100.33 0)
+			(at 106.68 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4349,7 +4349,7 @@
 			)
 		)
 		(property "LCSC" "C327057"
-			(at 116.84 100.33 0)
+			(at 106.68 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
