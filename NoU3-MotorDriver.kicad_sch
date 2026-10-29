@@ -1710,16 +1710,22 @@
 		)
 	)
 	(junction
-		(at 182.88 99.06)
+		(at 106.68 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "04602ed1-3a70-40b3-9f7d-2febfbe6b1bb")
+		(uuid "080ac50c-864b-452b-bb91-7b07fe61b6ae")
 	)
 	(junction
-		(at 116.84 91.44)
+		(at 180.34 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "224f0051-7460-45e5-8ea1-669734534544")
+		(uuid "0d607f05-756e-4d35-a7d5-273c9ec57355")
+	)
+	(junction
+		(at 182.88 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ae16a90-9ceb-4b06-9455-306ee4c84685")
 	)
 	(junction
 		(at 157.48 63.5)
@@ -1728,10 +1734,10 @@
 		(uuid "3ebe512e-50cd-4f1a-bd5c-ef6b119d143b")
 	)
 	(junction
-		(at 180.34 104.14)
+		(at 182.88 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "708906dc-abb4-4262-9a9e-64419fe80056")
+		(uuid "5687f904-5625-4902-a287-10660f786c71")
 	)
 	(junction
 		(at 156.21 111.76)
@@ -1740,22 +1746,10 @@
 		(uuid "7ce56580-1f4b-4d10-96df-775ff95f68b6")
 	)
 	(junction
-		(at 180.34 96.52)
+		(at 180.34 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "840c900c-c5a6-4451-9fb6-a180f04444c9")
-	)
-	(junction
-		(at 182.88 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8d93d99f-044b-4daa-ba26-0e4ad0a0f18a")
-	)
-	(junction
-		(at 106.68 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "952173f0-5aa1-4c38-9208-ca27e35ae443")
+		(uuid "85dc5b27-372b-443c-87bc-20385a94ba21")
 	)
 	(junction
 		(at 111.76 104.14)
@@ -1763,9 +1757,25 @@
 		(color 0 0 0 0)
 		(uuid "ce1b811a-e56f-41cf-a39d-d4e1712926e6")
 	)
+	(junction
+		(at 116.84 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f9640494-fc1a-439b-9f85-5911242689d1")
+	)
 	(no_connect
 		(at 171.45 91.44)
 		(uuid "376c4eac-17af-4411-90c0-7e5c9bcac213")
+	)
+	(wire
+		(pts
+			(xy 182.88 72.39) (xy 182.88 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0035baa7-2b8f-4d6f-9810-8249710bf877")
 	)
 	(wire
 		(pts
@@ -1779,13 +1789,23 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 101.6) (xy 190.5 101.6)
+			(xy 95.25 91.44) (xy 116.84 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0c3f7baa-73bd-464c-828a-c5ef37f20477")
+		(uuid "0a9e63b4-f79c-4134-b020-fa4cbbfaa108")
+	)
+	(wire
+		(pts
+			(xy 180.34 99.06) (xy 190.5 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c4f1052-6e9c-4f88-b7aa-aa9959157530")
 	)
 	(wire
 		(pts
@@ -1819,16 +1839,6 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 101.6) (xy 182.88 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26b9ef4b-672d-4eb7-bb22-45d49cc2e3ef")
-	)
-	(wire
-		(pts
 			(xy 116.84 96.52) (xy 116.84 91.44)
 		)
 		(stroke
@@ -1839,7 +1849,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 91.44) (xy 116.84 91.44)
+			(xy 77.47 91.44) (xy 87.63 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1849,13 +1859,33 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 99.06) (xy 182.88 99.06)
+			(xy 171.45 99.06) (xy 180.34 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3624eb96-104b-436e-9602-eafab090e1ae")
+		(uuid "31d149f9-6e11-4549-b979-81f06765a2f6")
+	)
+	(wire
+		(pts
+			(xy 182.88 96.52) (xy 190.5 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "391e5518-f5c5-43be-8b86-227987456fc4")
+	)
+	(wire
+		(pts
+			(xy 182.88 104.14) (xy 182.88 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a961cbf-0b71-489b-945e-6c1b614c1d5e")
 	)
 	(wire
 		(pts
@@ -1879,26 +1909,6 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 104.14) (xy 180.34 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43612c04-c7a0-40a0-91f0-d62084a1f43d")
-	)
-	(wire
-		(pts
-			(xy 182.88 72.39) (xy 182.88 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f9d43da-3bec-4b24-a685-5b70ff2ee7e8")
-	)
-	(wire
-		(pts
 			(xy 111.76 104.14) (xy 116.84 104.14)
 		)
 		(stroke
@@ -1909,23 +1919,23 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 69.85) (xy 180.34 96.52)
+			(xy 180.34 69.85) (xy 180.34 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "55316447-d508-4a57-9a29-2df870e3281d")
+		(uuid "666dacba-03e9-4717-a5f0-86e64bb1132c")
 	)
 	(wire
 		(pts
-			(xy 180.34 104.14) (xy 190.5 104.14)
+			(xy 171.45 101.6) (xy 180.34 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "68da7a6a-b6ea-49c4-9b83-91482d50044c")
+		(uuid "6933e9ab-deec-478b-bd2e-459f8732522a")
 	)
 	(wire
 		(pts
@@ -1939,13 +1949,23 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 120.65) (xy 182.88 120.65)
+			(xy 201.93 120.65) (xy 180.34 120.65)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6c9603e0-4985-4ce6-b9e4-7c7711c18b4f")
+	)
+	(wire
+		(pts
+			(xy 182.88 104.14) (xy 190.5 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cbc1306-84c7-4b10-9d45-ff2a9eb5ba45")
 	)
 	(wire
 		(pts
@@ -1979,16 +1999,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 96.52) (xy 190.5 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ddf270c-b8df-4bf4-87f3-8ec4cad4e8d9")
-	)
-	(wire
-		(pts
 			(xy 161.29 63.5) (xy 161.29 76.2)
 		)
 		(stroke
@@ -2009,6 +2019,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 101.6) (xy 190.5 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d12235e-aafc-4dee-ad62-fac2c66d7bcb")
+	)
+	(wire
+		(pts
 			(xy 180.34 69.85) (xy 201.93 69.85)
 		)
 		(stroke
@@ -2019,6 +2039,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 96.52) (xy 182.88 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a64704b-4180-4d01-970a-3ceb6e984c66")
+	)
+	(wire
+		(pts
 			(xy 163.83 76.2) (xy 171.45 76.2)
 		)
 		(stroke
@@ -2026,16 +2056,6 @@
 			(type default)
 		)
 		(uuid "9cf438dd-a001-4f1b-83d9-f291e5212f1e")
-	)
-	(wire
-		(pts
-			(xy 180.34 118.11) (xy 180.34 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e19ffd4-f961-4d46-9297-6b29cf474e2b")
 	)
 	(wire
 		(pts
@@ -2079,17 +2099,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 120.65) (xy 182.88 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b8b1d5f2-af0b-4072-b4f3-8b7ff816dc38")
-	)
-	(wire
-		(pts
-			(xy 201.93 118.11) (xy 180.34 118.11)
+			(xy 201.93 118.11) (xy 182.88 118.11)
 		)
 		(stroke
 			(width 0)
@@ -2109,13 +2119,23 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 88.9) (xy 106.68 88.9)
+			(xy 77.47 88.9) (xy 87.63 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c705792a-1ccd-4f67-bcf8-68ea43acf020")
+	)
+	(wire
+		(pts
+			(xy 95.25 88.9) (xy 106.68 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d27e3603-ff0c-45b7-8e84-e6e9d7f0de16")
 	)
 	(wire
 		(pts
@@ -2129,13 +2149,13 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 96.52) (xy 180.34 96.52)
+			(xy 171.45 104.14) (xy 182.88 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "da900eeb-3b09-4b4f-92d0-a620c2c71943")
+		(uuid "d903a29b-2f49-4ddc-ab67-e0e777971557")
 	)
 	(wire
 		(pts
@@ -2159,13 +2179,13 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 99.06) (xy 190.5 99.06)
+			(xy 180.34 101.6) (xy 180.34 120.65)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fa48d114-2d3c-4b20-8703-b2903858297b")
+		(uuid "efeba76f-be25-426c-9696-06165a0845a0")
 	)
 	(wire
 		(pts
@@ -2190,7 +2210,7 @@
 	)
 	(hierarchical_label "SENSEI_1"
 		(shape input)
-		(at 100.33 88.9 180)
+		(at 77.47 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2256,7 +2276,7 @@
 	)
 	(hierarchical_label "SENSEI_2"
 		(shape input)
-		(at 100.33 91.44 180)
+		(at 77.47 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2997,6 +3017,109 @@
 				)
 				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/effd9ea2-ab6a-45db-ac14-0a90b48b44ef"
 					(reference "J13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 91.44 91.44 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4d716da6-51cd-4853-9394-1bcef0c03e3e")
+		(property "Reference" "R37"
+			(at 91.44 91.44 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 91.44 93.98 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 91.44 93.218 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor---Surface-Mount_UNI-ROYALUniroyal-Elec-UNI-ROYALUniroyal-Elec-0402WGF1001TCE_C11702.html"
+			(at 91.44 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 91.44 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 91.44 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cf9a24c8-68a4-4a52-9023-0d46aba98b40")
+		)
+		(pin "2"
+			(uuid "25d18401-7378-4c08-8711-e63c6f409f46")
+		)
+		(instances
+			(project "NoU3"
+				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/168e54f9-ad57-43fb-858f-563992cf0dc4"
+					(reference "R37")
+					(unit 1)
+				)
+				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/5ac6842d-21ec-4136-97d4-4945b97c774c"
+					(reference "R45")
+					(unit 1)
+				)
+				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/75fe67a7-abdc-45df-8399-29a3950a166e"
+					(reference "R49")
+					(unit 1)
+				)
+				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/effd9ea2-ab6a-45db-ac14-0a90b48b44ef"
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -4381,6 +4504,109 @@
 				)
 				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/effd9ea2-ab6a-45db-ac14-0a90b48b44ef"
 					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 91.44 88.9 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f4ca55b6-6c52-4c1b-b123-481bf9a6526b")
+		(property "Reference" "R23"
+			(at 91.44 88.9 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 91.186 86.36 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 91.44 90.678 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor---Surface-Mount_UNI-ROYALUniroyal-Elec-UNI-ROYALUniroyal-Elec-0402WGF1001TCE_C11702.html"
+			(at 91.44 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 91.44 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 91.44 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7e223f02-f40f-4ce7-bb22-9294923746d0")
+		)
+		(pin "2"
+			(uuid "e1c6e9d0-df47-49c4-9262-e1c15d292b65")
+		)
+		(instances
+			(project "NoU3"
+				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/168e54f9-ad57-43fb-858f-563992cf0dc4"
+					(reference "R23")
+					(unit 1)
+				)
+				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/5ac6842d-21ec-4136-97d4-4945b97c774c"
+					(reference "R44")
+					(unit 1)
+				)
+				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/75fe67a7-abdc-45df-8399-29a3950a166e"
+					(reference "R48")
+					(unit 1)
+				)
+				(path "/e83aa78a-7ee8-4825-a22a-a2646798082a/023b4df2-74fa-473a-85f9-5c0251fa5595/effd9ea2-ab6a-45db-ac14-0a90b48b44ef"
+					(reference "R40")
 					(unit 1)
 				)
 			)
