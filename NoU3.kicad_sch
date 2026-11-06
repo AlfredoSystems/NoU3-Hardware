@@ -5619,6 +5619,12 @@
 		(uuid "59bb1d91-427c-49e1-84e6-bd277f28821b")
 	)
 	(junction
+		(at 86.36 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "615b14c3-de5a-497d-bc4f-e13160afe513")
+	)
+	(junction
 		(at 148.59 184.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5855,6 +5861,16 @@
 			(type default)
 		)
 		(uuid "206f4052-6e38-47fb-bf1c-5b8f66aa6d4e")
+	)
+	(wire
+		(pts
+			(xy 86.36 73.66) (xy 86.36 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2497e2d8-93b9-4ead-98a3-ede80a0c746f")
 	)
 	(wire
 		(pts
@@ -6348,7 +6364,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 66.04) (xy 86.36 77.47)
+			(xy 86.36 66.04) (xy 86.36 73.66)
 		)
 		(stroke
 			(width 0)
@@ -6375,6 +6391,16 @@
 			(type default)
 		)
 		(uuid "b90bd214-aeee-44f5-a0b3-8b5477b9291a")
+	)
+	(wire
+		(pts
+			(xy 86.36 73.66) (xy 96.52 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b99ebf38-d1b6-44a8-b808-f513c9013d1c")
 	)
 	(wire
 		(pts
@@ -6408,7 +6434,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 73.66) (xy 96.52 73.66)
+			(xy 76.2 73.66) (xy 86.36 73.66)
 		)
 		(stroke
 			(width 0)
@@ -9200,6 +9226,7 @@
 	(symbol
 		(lib_id "Power_Protection:USBLC6-2P6")
 		(at 241.3 68.58 90)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9209,7 +9236,7 @@
 		(dnp no)
 		(uuid "20c95053-cf7a-4573-b165-992620b527e1")
 		(property "Reference" "U9"
-			(at 251.46 64.77 90)
+			(at 250.698 62.484 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9219,7 +9246,7 @@
 			)
 		)
 		(property "Value" "USBLC6-2P6"
-			(at 256.54 62.23 90)
+			(at 256.032 64.516 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9240,7 +9267,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/partdetail/TechPublic-USBLC62P6/C2827693"
-			(at 232.41 63.5 0)
+			(at 232.41 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
