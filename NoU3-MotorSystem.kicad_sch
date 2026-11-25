@@ -4846,7 +4846,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5.8 ZSPT"
+		(property "Value" "PS-5850A-6PL"
 			(at 40.64 93.98 90)
 			(show_name no)
 			(do_not_autoplace no)
